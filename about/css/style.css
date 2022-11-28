@@ -1121,7 +1121,7 @@ body.dark-theme {
 .demo .container .demo-list .item {
   width: 100%;
   background-color: var(--background-color, hsl(0, 0%, 100%));
-  box-shadow: 2px 2px 6px 5px var(--shadow-color, hsl(275, 10%, 90%));
+  box-shadow: 1px 1px 6px 2px var(--shadow-color, hsl(275, 10%, 90%));
   border-radius: 2rem;
   margin-bottom: 4rem;
   padding: 2rem;
@@ -1185,7 +1185,7 @@ body.dark-theme {
   margin: 1rem;
   padding: 1rem;
   border-radius: 2rem;
-  box-shadow: 2px 2px 6px 5px var(--shadow-color, hsl(275, 10%, 90%));
+  box-shadow: 1px 1px 6px 2px var(--shadow-color, hsl(275, 10%, 90%));
 }
 .demo2 .container .demo2-list .item img,
 .demo2 .container .demo2-list .item video {

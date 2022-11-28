@@ -51,29 +51,9 @@ qualificationButtons.forEach((button, index) => {
 });
 
 /* Service */
-let openModals = document.querySelectorAll('.card-button');
-let closeModals = document.querySelectorAll('.modal-close');
-let serviceModals = document.querySelectorAll('.service-modal');
-// console.log(openModals);
-// console.log(serviceModals);
-// console.log(closeModals);
-
-openModals.forEach((btn, index) => {
-  btn.addEventListener('click', function () {
-    serviceModals[index].classList.add('-active');
-  });
-});
-
-closeModals.forEach((btn, index) => {
-  btn.addEventListener('click', function () {
-    serviceModals[index].classList.remove('-active');
-  });
-});
 
 /* portfolio-carousel */
-
 const portfolioCarousel = document.querySelector('.portfolio-carousel');
-
 new Glide(portfolioCarousel, {
   type: 'carousel',
   gap: 0, // A size of the space between slides
@@ -157,18 +137,36 @@ themeBtn.addEventListener('click', function () {
   }
 });
 
-// 切换按钮的样式
-// darkMode.addEventListener('click', function () {
-//   this.style.display = 'none';
-//   this.classList.remove('-active');
-//   lightMode.style.display = 'block';
-//   lightMode.classList.add('-active');
-//   body.classList.remove('dark-theme');
-// });
-// lightMode.addEventListener('click', function () {
-//   this.style.display = 'none';
-//   this.classList.remove('-active');
-//   darkMode.style.display = 'block';
-//   darkMode.classList.add('-active');
-//   body.classList.add('dark-theme');
-// });
+/* 懒加载 */
+let imgs = document.querySelectorAll('#demo .demo-list img');
+const imgFormat = {
+  clock: 'jpg',
+  richText: 'jpg',
+  jigsaw: 'gif',
+  drawing: 'jpg',
+  '3dCube': 'gif',
+  flappybird: 'gif',
+  maze: 'gif',
+  tetris: 'gif'
+};
+const url = 'assets/img/';
+console.log(imgs);
+
+let observer = new IntersectionObserver(changes => {
+  for (const change of changes) {
+    // console.log('时间戳', change.time);
+    console.log('目标对象', change.target);
+    console.log('可见比例', change.intersectionRatio);
+    if (change.intersectionRatio > 0.01) {
+      let imgName = change.target.alt;
+      change.target.src = url + imgName + '.' + imgFormat[imgName];
+      console.log(url + imgName + '.' + imgFormat[imgName]);
+    }
+  }
+});
+imgs.forEach(img => {
+  observer.observe(img);
+  img.onload = () => {
+    observer.unobserve(img);
+  };
+});

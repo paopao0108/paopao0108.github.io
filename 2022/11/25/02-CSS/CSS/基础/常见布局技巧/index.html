@@ -19,7 +19,7 @@
     <meta name="description" content="常见布局技巧margin负值的利用让每个盒子往左侧移动 边框大小的负值 正好压住相邻盒子边框 鼠标经过某个盒子时，提高当前合资的层级即可（若无定位，则加相对定位；若有定位，则加z-index） 12345678910111213141516171819202122232425262728&lt;style&gt;    li &amp;#123;        list-style: none;    &amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常见布局技巧">
-<meta property="og:url" content="https://paopao0108.github.io/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/index.html">
+<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="常见布局技巧margin负值的利用让每个盒子往左侧移动 边框大小的负值 正好压住相邻盒子边框 鼠标经过某个盒子时，提高当前合资的层级即可（若无定位，则加相对定位；若有定位，则加z-index） 12345678910111213141516171819202122232425262728&lt;style&gt;    li &amp;#123;        list-style: none;    &amp;">
 <meta property="og:locale" content="zh_CN">
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"paopao0108.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -297,17 +297,17 @@
 </ol>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.box</span> &#123;<br>    <span class="hljs-attribute">text-align</span>: center;<br>&#125;<br><br><span class="hljs-selector-class">.box</span> <span class="hljs-selector-tag">a</span> &#123;<br>    <span class="hljs-attribute">display</span>: inline-block;<br>    <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;<br>    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;<br>    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">50px</span>;<br>    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#000</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220325114301191.png" srcset="/img/loading.gif" lazyload alt="image-20220325114301191" style="zoom:80%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220325114301191.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220325114301191" style="zoom:80%;" />
 
 <h3 id="CSS三角"><a href="#CSS三角" class="headerlink" title="CSS三角"></a>CSS三角</h3><h4 id="三角写法"><a href="#三角写法" class="headerlink" title="三角写法"></a>三角写法</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">        </span><br><span class="language-css"><span class="hljs-comment">/* 三角的写法 */</span></span><br><span class="language-css">    <span class="hljs-selector-class">.box4</span> &#123;</span><br><span class="language-css">        <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;</span><br><span class="language-css">        <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;</span><br><span class="language-css">        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">0</span>;</span><br><span class="language-css">        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0</span>;</span><br><span class="language-css">        <span class="hljs-attribute">border</span>: <span class="hljs-number">50px</span> solid transparent;</span><br><span class="language-css">        <span class="hljs-attribute">border-left-color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">49</span>, <span class="hljs-number">33</span>, <span class="hljs-number">190</span>);</span><br><span class="language-css">        &#125;</span><br><span class="language-css"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<p>要做如右所示的效果：<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220323224700894.png" srcset="/img/loading.gif" lazyload alt="image-20220323224700894" style="zoom:40%;" /></p>
+<p>要做如右所示的效果：<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220323224700894.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220323224700894" style="zoom:40%;" /></p>
 <p>可以定义两个盒子，其中一个盒子为正方形，为父元素；另一个为三角，为子元素，然后再用定位position来确定小三角的位置。</p>
-<h4 id="三角强化"><a href="#三角强化" class="headerlink" title="三角强化"></a>三角强化</h4><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220325120252453.png" srcset="/img/loading.gif" lazyload alt="image-20220325120252453" style="zoom:60%;" />
+<h4 id="三角强化"><a href="#三角强化" class="headerlink" title="三角强化"></a>三角强化</h4><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220325120252453.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220325120252453" style="zoom:60%;" />
 
 
 
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220325124124753.png" srcset="/img/loading.gif" lazyload alt="image-20220325124124753" style="zoom:67%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220325124124753.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220325124124753" style="zoom:67%;" />
 
 
 
@@ -365,7 +365,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>常见布局技巧</div>
-      <div>https://paopao0108.github.io/2022/11/25/02-CSS/CSS/基础/常见布局技巧/</div>
+      <div>https://kathyu.gitee.io/blog/2022/11/25/02-CSS/CSS/基础/常见布局技巧/</div>
     </div>
     <div class="license-meta">
       

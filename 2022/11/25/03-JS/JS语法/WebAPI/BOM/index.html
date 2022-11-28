@@ -19,7 +19,7 @@
     <meta name="description" content="BOM概述什么是BOMBOM-Browser Object Model 浏览器对象模型，提供了独立于内容而与浏览器窗口进行交互的对象，核心对象是window BOM是由一系列相关的对象构成，并且每个对象都提供了很多方法和属性 DOM和BOM的区别    DOM BOM    文档对象模型 浏览器对象模型   把【文档】当作一个【对象】来看 把【浏览器】当作一个【对象】来看   顶级对象是【文档】">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BOM">
-<meta property="og:url" content="https://paopao0108.github.io/2022/11/25/03-JS/JS%E8%AF%AD%E6%B3%95/WebAPI/BOM/index.html">
+<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/11/25/03-JS/JS%E8%AF%AD%E6%B3%95/WebAPI/BOM/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="BOM概述什么是BOMBOM-Browser Object Model 浏览器对象模型，提供了独立于内容而与浏览器窗口进行交互的对象，核心对象是window BOM是由一系列相关的对象构成，并且每个对象都提供了很多方法和属性 DOM和BOM的区别    DOM BOM    文档对象模型 浏览器对象模型   把【文档】当作一个【对象】来看 把【浏览器】当作一个【对象】来看   顶级对象是【文档】">
 <meta property="og:locale" content="zh_CN">
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"paopao0108.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -308,7 +308,7 @@
 <td>是浏览器厂商在各自的浏览器上定义的，兼容性较差</td>
 </tr>
 </tbody></table>
-<h2 id="BOM的构成"><a href="#BOM的构成" class="headerlink" title="BOM的构成"></a>BOM的构成</h2><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220417211457970.png" srcset="/img/loading.gif" lazyload alt="image-20220417211457970"></p>
+<h2 id="BOM的构成"><a href="#BOM的构成" class="headerlink" title="BOM的构成"></a>BOM的构成</h2><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220417211457970.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220417211457970"></p>
 <p>window对象是浏览器的顶级对象，具有双重角色</p>
 <ul>
 <li><p>是JS访问浏览器窗口的一个接口</p>
@@ -477,9 +477,9 @@
 <li>异步任务（回调函数）放入任务队列中（异步任务会根据谁先触发 就先执行谁）</li>
 <li>一旦执行栈中的所有同步任务执行完毕，系统就会按次序读取任务队列中的异步任务，于是被读取的异步任务结束等待状态，进入执行栈，开始执行</li>
 </ol>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220419182607679.png" srcset="/img/loading.gif" lazyload alt="image-20220419182607679" style="zoom:67%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220419182607679.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220419182607679" style="zoom:67%;" />
 
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220419183956503.png" srcset="/img/loading.gif" lazyload alt="image-20220419183956503"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220419183956503.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220419183956503"></p>
 <p>由于线程不断的重复获得任务、执行任务、再获取任务、再执行，所以这种机制被称为<strong>事件循环(even loop)</strong></p>
 <h2 id="location对象"><a href="#location对象" class="headerlink" title="location对象"></a>location对象</h2><p>window对象提供了一个location属性用于<strong>获取或设置</strong>窗体的<strong>URL</strong>，并且可以用于解析URL，因这个属性返回的是一个对象，故称之为location对象</p>
 <h3 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h3><p>Uniform Resource Locator，即URL 统一资源定位符 是互联网上标准的地址，互联网上每个文件都有一个唯一的URL，它包含的信息指出文件位置以及浏览器如何处理它</p>
@@ -744,7 +744,7 @@
 
 <h3 id="淘宝flexible源码分析"><a href="#淘宝flexible源码分析" class="headerlink" title="淘宝flexible源码分析"></a>淘宝flexible源码分析</h3><p>不太理解，后续用到补上</p>
 <h2 id="元素滚动scroll"><a href="#元素滚动scroll" class="headerlink" title="元素滚动scroll"></a>元素滚动scroll</h2><p>利用scroll可以动态获得该元素的大小、滚动距离等等</p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220421161820005.png" srcset="/img/loading.gif" lazyload alt="image-20220421161820005" style="zoom:67%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220421161820005.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220421161820005" style="zoom:67%;" />
 
 
 
@@ -982,7 +982,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>BOM</div>
-      <div>https://paopao0108.github.io/2022/11/25/03-JS/JS语法/WebAPI/BOM/</div>
+      <div>https://kathyu.gitee.io/blog/2022/11/25/03-JS/JS语法/WebAPI/BOM/</div>
     </div>
     <div class="license-meta">
       
