@@ -1,0 +1,830 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Yu Pingping">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="CSS背景背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等 背景颜色backgroun-color属性定义了元素的背景颜色 一般情况下元素背景颜色默认值为：transparent(透明) 1background-color: transparent;    背景色半透明 1background: rgba(0,0,0,0.3);   最后一个参数时alpha透明度，取值范">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS背景">
+<meta property="og:url" content="https://paopao0108.github.io/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/CSS%E8%83%8C%E6%99%AF/index.html">
+<meta property="og:site_name" content="个人站点">
+<meta property="og:description" content="CSS背景背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等 背景颜色backgroun-color属性定义了元素的背景颜色 一般情况下元素背景颜色默认值为：transparent(透明) 1background-color: transparent;    背景色半透明 1background: rgba(0,0,0,0.3);   最后一个参数时alpha透明度，取值范">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171729442.png">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171803503.png">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171830251.png">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171900350.png">
+<meta property="article:published_time" content="2022-11-25T15:07:43.014Z">
+<meta property="article:modified_time" content="2022-11-27T16:58:39.314Z">
+<meta property="article:author" content="Yu Pingping">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171729442.png">
+  
+  
+  
+  <title>CSS背景 - 个人站点</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"paopao0108.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="CSS背景"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-11-25 23:07" pubdate>
+          2022年11月25日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          14 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">CSS背景</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="CSS背景"><a href="#CSS背景" class="headerlink" title="CSS背景"></a>CSS背景</h2><p>背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等</p>
+<h3 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h3><p>backgroun-color属性定义了元素的背景颜色</p>
+<p>一般情况下元素背景颜色默认值为：transparent(透明)</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background-color: transparent;<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>背景色半透明</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background: rgba(0,0,0,0.3);<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>最后一个参数时alpha透明度，取值范围在0~1之间</li>
+<li>习惯把透明度小数前的0去掉，写为background: rgba(0,0,0,.3);</li>
+<li>注意，背景半透明指的是盒子背景半透明，盒子里面的内容的不受影响</li>
+</ul>
+<h3 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h3><p>background-image属性描述了元素的背景图像，实际开发中常见于logo或者一些装饰小图片、超大背景图等，优点电视非常便于控制位置</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background-image: none | url(背景图地址)<br></code></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>参数值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>无背景图（默认）</td>
+</tr>
+<tr>
+<td>url</td>
+<td>使用绝对或者相对地址指定背景图像，url里面的路径不需要加引号</td>
+</tr>
+</tbody></table>
+<p>注意：属性值url()括号里面写路径，<strong>url不能省</strong>！</p>
+<p>如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">01女性角色.png</span>);<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="背景平铺"><a href="#背景平铺" class="headerlink" title="背景平铺"></a>背景平铺</h3><p>background-repeat</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background-repeat: repeat | no-repeat | repeat-x |repeat-y<br></code></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>参数值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>repeat</td>
+<td>背景图像可以在纵向和横向上平铺</td>
+</tr>
+<tr>
+<td>no-repeat</td>
+<td>背景图像不平铺</td>
+</tr>
+<tr>
+<td>repeat-x</td>
+<td>在横向上平铺</td>
+</tr>
+<tr>
+<td>repeat-y</td>
+<td>在纵向上平铺</td>
+</tr>
+</tbody></table>
+<p>注意：页面既可以添加背景颜色，也可以添加背景图片，不过背景图片会压着背景颜色</p>
+<h3 id="背景图片的位置"><a href="#背景图片的位置" class="headerlink" title="背景图片的位置"></a>背景图片的位置</h3><p>background-position 属性可以改变图片在背景中的位置</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background-position: x y;<br></code></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>参数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>length</td>
+<td>百分数 | 由浮点数和单位标识符组成的长度值</td>
+</tr>
+<tr>
+<td>position</td>
+<td>top | bottom | left | center | right 方位名词</td>
+</tr>
+</tbody></table>
+<p><strong>参数是方位名词</strong></p>
+<ul>
+<li>若指定的两个都是方位名词，则两个值前后顺序无关，如 left top 和 top left效果一致</li>
+<li>若之制定了一个方位名词，另一个值省略，则第二个默认居中对齐</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background-position: top center;<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>参数是精确单位</strong></p>
+<ul>
+<li>若参数值是精确坐标，那么第一个一定是x坐标，第二个一定是y坐标</li>
+<li>若只指定一个数值，那么该数值一定是x坐标，另一个默认居中</li>
+</ul>
+<p><strong>参数是混合单位</strong></p>
+<ul>
+<li>若指定的两个值是精确单位和方位名词混合使用，第一个还是x坐标，第二个值是y坐标</li>
+</ul>
+<h3 id="背景固定"><a href="#背景固定" class="headerlink" title="背景固定"></a>背景固定</h3><p>background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动</p>
+<p>可以制作视差滚动的效果</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background-attachment: scroll | fixed;<br></code></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>scroll</td>
+<td>背景图像是随对象内容滚动</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>背景图像固定</td>
+</tr>
+</tbody></table>
+<h3 id="背景延伸"><a href="#背景延伸" class="headerlink" title="背景延伸"></a>背景延伸</h3><p>background-clip 设置元素的背景（背景图片或颜色）是否延伸到边框、内边距盒子、内容盒子下面</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>border-box</td>
+<td>背景延伸至边框外沿</td>
+</tr>
+<tr>
+<td>padding-box</td>
+<td>背景延伸至内边距padding外沿</td>
+</tr>
+<tr>
+<td>conten-box</td>
+<td>背景被裁剪至内容区外沿</td>
+</tr>
+<tr>
+<td>text</td>
+<td>背景被裁剪成文字的<strong>前景</strong>色</td>
+</tr>
+</tbody></table>
+<p>示例:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-clip</span>: border-box;<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171729442.png" srcset="/img/loading.gif" lazyload alt="image-20220703171729442"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-clip</span>: padding-box;<br></code></pre></td></tr></table></figure>
+
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171803503.png" srcset="/img/loading.gif" lazyload alt="image-20220703171803503" style="zoom:67%;" />
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-clip</span>: content-box;<br></code></pre></td></tr></table></figure>
+
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171830251.png" srcset="/img/loading.gif" lazyload alt="image-20220703171830251" style="zoom:67%;" />
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-clip</span>: text;<br>-webkit-<span class="hljs-attribute">background-clip</span>: text;<br><span class="hljs-comment">/* 通过color设置文字的透明程度，若文字完全透明，则可以完全显示出前景色 */</span><br><span class="hljs-attribute">color</span>: transparent;<br></code></pre></td></tr></table></figure>
+
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220703171900350.png" srcset="/img/loading.gif" lazyload alt="image-20220703171900350" style="zoom:67%;" />
+
+
+
+<h3 id="背景属性的复合写法"><a href="#背景属性的复合写法" class="headerlink" title="背景属性的复合写法"></a>背景属性的复合写法</h3><p>为了简化属性的代码，可以将这些背景属性合并简写在同一个属性background中。从而节约代码量。</p>
+<p>使用简写时，没有特定的书写顺序，一般习惯性约定顺序为：</p>
+<p>background: 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">background: transparent url() no-repeat fixed top;<br></code></pre></td></tr></table></figure>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/02-CSS/" class="category-chain-item">02-CSS</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/02-CSS/CSS/" class="category-chain-item">CSS</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/02-CSS/CSS/%E5%9F%BA%E7%A1%80/" class="category-chain-item">基础</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>CSS背景</div>
+      <div>https://paopao0108.github.io/2022/11/25/02-CSS/CSS/基础/CSS背景/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Yu Pingping</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年11月25日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" title="盒子模型">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">盒子模型</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/CSS%E6%96%87%E6%9C%AC/" title="CSS文本">
+                        <span class="hidden-mobile">CSS文本</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

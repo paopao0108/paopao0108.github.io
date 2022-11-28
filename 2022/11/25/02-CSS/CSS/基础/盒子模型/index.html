@@ -1,0 +1,865 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Yu Pingping">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="盒子模型所谓盒子模型：就是把HTML页面中的布局元素看作是一个矩形的盒子，也就是一个盛装内容的容器 CSS合作模式本质上就是一个盒子，封装周围的HTML元素，它包括：边框、外边距、内边距、实际内容 边框border可以设置元素的边框。 边框由三部分组成：边框宽度（粗细）、边框样式、边框颜色 语法： 1border: border-width | border-style | border-colo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="盒子模型">
+<meta property="og:url" content="https://paopao0108.github.io/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
+<meta property="og:site_name" content="个人站点">
+<meta property="og:description" content="盒子模型所谓盒子模型：就是把HTML页面中的布局元素看作是一个矩形的盒子，也就是一个盛装内容的容器 CSS合作模式本质上就是一个盒子，封装周围的HTML元素，它包括：边框、外边距、内边距、实际内容 边框border可以设置元素的边框。 边框由三部分组成：边框宽度（粗细）、边框样式、边框颜色 语法： 1border: border-width | border-style | border-colo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173753314.png">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173921857.png">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173822776.png">
+<meta property="article:published_time" content="2022-11-25T15:09:37.263Z">
+<meta property="article:modified_time" content="2022-11-27T16:58:39.331Z">
+<meta property="article:author" content="Yu Pingping">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173753314.png">
+  
+  
+  
+  <title>盒子模型 - 个人站点</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"paopao0108.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="盒子模型"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-11-25 23:09" pubdate>
+          2022年11月25日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          36 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">盒子模型</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><p>所谓盒子模型：就是把HTML页面中的布局元素看作是一个矩形的盒子，也就是一个盛装内容的容器</p>
+<p>CSS合作模式本质上就是一个盒子，封装周围的HTML元素，它包括：边框、外边距、内边距、实际内容</p>
+<h4 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h4><p>border可以设置元素的边框。</p>
+<p>边框由三部分组成：边框宽度（粗细）、边框样式、边框颜色</p>
+<p>语法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">border: border-width | border-style | border-color;<br></code></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>border-width</td>
+<td>边框粗细，单位px</td>
+</tr>
+<tr>
+<td>border-style</td>
+<td>边框样式</td>
+</tr>
+<tr>
+<td>border-color</td>
+<td>边框颜色</td>
+</tr>
+</tbody></table>
+<p>常用边框样式：</p>
+<ul>
+<li>border-style: solid; 即实现边框</li>
+<li>border-style: dashed; 即虚线边框</li>
+<li>border-style: dotted; 即点线边框</li>
+</ul>
+<p><strong>边框简写：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs html">border: 边框粗细 边框样式 边框颜色；<br>border: 1px solid red;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>设定某一条边框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs html">border-left: 1px solid red;<br>border-right: 1px solid red;<br>border-top: 1px solid red;<br>border-bottom: 1px solid red;<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>表格细边框</strong></p>
+<p>border-collapse属性控制浏览器回至表格边框的方式，它控制相邻单元格的边框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">border-collapse: collapse;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>collapse 是合并的意思</li>
+<li>border-collapse: collapse; 表示将相邻边框合并在一起</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs html">table,<br>td,<br>th &#123;<br>    border: 2px solid pink;<br>    border-collapse: collapse;<br>    font-size: 14px;<br>    text-align: center;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>注意：</strong>边框会额外增加盒子的实际大小，对此有两个处理方法</p>
+<ul>
+<li>测量盒子大小的时候，不量边框</li>
+<li>若测量的时候包含了边框，则需要width、height减去边框宽度</li>
+</ul>
+<h4 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h4><p>当给盒子指定padding值之后，会发生两件事：</p>
+<ul>
+<li>内容和边框有了距离，添加了内边距</li>
+<li>padding影响了盒子实际大小、</li>
+</ul>
+<p>即如果盒子已经有了宽度和高度，此时在指定内边距，会撑大盒子</p>
+<p><strong>解决方案</strong>：</p>
+<p>要保证盒子跟效果图大小一致，需让width、height减去多出来的内边距大小。（包括上下和左右）</p>
+<p>如：要保证盒子大小为200px*200px，且内边距为10px，则width=200-10*2=180,同理height=180</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs html">div &#123;<br>    width: 180px;<br>    height: 180px;<br>    background-color: pink;<br>    padding: 10px;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>如果盒子本身没有指定的width和height属性，此时padding不会撑开盒子大小</p>
+<h4 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h4><p>margin属性用于设置外边距，即控制盒子与盒子之间的距离</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>margin-left</td>
+<td>左外边距</td>
+</tr>
+<tr>
+<td>margin-right</td>
+<td>右外边距</td>
+</tr>
+<tr>
+<td>margin-top</td>
+<td>上外边距</td>
+</tr>
+<tr>
+<td>margin-bottom</td>
+<td>下外边距</td>
+</tr>
+</tbody></table>
+<p>margin: 30px; 表示上下左右四个外边距都为30px</p>
+<p>margin: 30px 50px; 表示上下30px，左右50px</p>
+<p>margin: 0px 10px 0px 10px; 表示上右下左（从“上”开始顺时针方向赋值）</p>
+<p><strong>外边距典型应用</strong></p>
+<p>外边距可以让<strong>块级</strong>盒子<strong>水平居中</strong>，但必须满足两个条件：</p>
+<ul>
+<li>盒子必须指定了<strong>宽度</strong>（width）</li>
+<li>盒子<strong>左右的外边距都设置为 auto</strong></li>
+</ul>
+<p>常见的写法：</p>
+<ul>
+<li>margin-left: auto; margin-right: auto;</li>
+<li>margin: auto;</li>
+<li><strong>margin: 0 auto;</strong></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">div</span> &#123;</span><br><span class="language-css">            <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">background-color</span>: pink;</span><br><span class="language-css">            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>外边距合并</strong></p>
+<p>使用margin定义块元素的垂直外边距时，可能会出现外边距的合并</p>
+<ul>
+<li>相邻块元素垂直外边距的合并</li>
+<li>嵌套块元素垂直外边距的塌陷</li>
+</ul>
+<p><strong>相邻块元素垂直外边距的合并</strong>：</p>
+<p>当上下两个块元素（兄弟关系）相遇时，若上面的元素有下外边距margin-bottom，下面的元素有上外边距margin-top，则他们之间的垂直间距不是margin-bottom与margin-top之和，而是取两个值中的较大者，这种现象称为相邻元素垂直外边距的合并。</p>
+<p><strong>解决方案</strong>：尽量只给一个盒子添加margin值</p>
+<p><strong>嵌套块元素垂直外边距的塌陷</strong>：</p>
+<p>对于两个嵌套关系（父子关系）的块元素，父元素有 上外边距 同时子元素也有 上外边距 ，此时父元素会塌陷较大的外边距值。</p>
+<p>解决方案：</p>
+<ol>
+<li>可以为父元素定义上边框</li>
+<li>可以为父元素定义上内边距</li>
+<li>可以为父元素添加overflow:hidden;</li>
+</ol>
+<blockquote>
+<p><strong>脱标盒子不会触发外边距塌陷</strong></p>
+<p>如：浮动元素、绝对定位、固定定位元素都不会触发外边距合并的问题）</p>
+</blockquote>
+<h4 id="清除内外边距"><a href="#清除内外边距" class="headerlink" title="清除内外边距"></a>清除内外边距</h4><p>网页元素很多都带有默认的内外边距，而且不同的浏览器默认的也不一样，因此我们在布局前，首先要清楚下网页元素的内外边距。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs html">* &#123;<br>	padding: 0;		/* 清除内边距 */<br>	margin: 0;		/* 清除外边距 */<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<p>行内元素为了照顾兼容性，尽量值设置左右内外边距，不要设置上下内外边距，但实际转换为块级和行内块元素就可以了。</p>
+<h3 id="圆角边框"><a href="#圆角边框" class="headerlink" title="圆角边框"></a>圆角边框</h3><p>在CSS3中，新增了圆角便框样式</p>
+<p>border-radius 属性哟ing与设置元素的外边框圆角</p>
+<p>语法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">border-radius:长度;<br></code></pre></td></tr></table></figure>
+
+<p>radius半径（圆的半径）原理：(椭)圆与边框的交集形成的圆角效果</p>
+<ul>
+<li>参数可以<strong>实数值</strong>或者<strong>百分比</strong>的形式</li>
+<li><strong>如果是正方形，要得到圆形，可以通过将数值改为高度的一半或者宽度的一半即可，或者直接写成50%</strong></li>
+<li><strong>如果是个矩形，设置为高度一半可以将两则设置为圆角，如下所示</strong>：![image-20220319164232335](<a target="_blank" rel="noopener" href="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01">https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01</a>  HTML与CSS/image-20220319164232335-1650191811723.png)</li>
+<li>若只写一个参数，实际是一个简写方式，其后实际可以跟4个值，分别代表<strong>左上角、右上角、右下角、左下角</strong></li>
+<li>还可以分开写每一个角：border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">    <span class="hljs-selector-class">.rectangle</span> &#123;</span><br><span class="language-css">        <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">background-color</span>: yellow;</span><br><span class="language-css">        <span class="hljs-comment">/* border-radius后既可以是具体数值，也可以是百分比 */</span></span><br><span class="language-css">        <span class="hljs-comment">/* border-radius: 20px; */</span></span><br><span class="language-css">        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10%</span>;</span><br><span class="language-css">    &#125;</span><br><span class="language-css"></span><br><span class="language-css">    <span class="hljs-selector-class">.circle</span> &#123;</span><br><span class="language-css">        <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">background-color</span>: pink;</span><br><span class="language-css">        <span class="hljs-comment">/* border-radius: 100px; */</span></span><br><span class="language-css">        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;</span><br><span class="language-css">    &#125;</span><br><span class="language-css"></span><br><span class="language-css">    <span class="hljs-selector-class">.ellipse</span> &#123;</span><br><span class="language-css">        <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">background-color</span>: purple;</span><br><span class="language-css">        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50px</span>;</span><br><span class="language-css">    &#125;</span><br><span class="language-css"></span><br><span class="language-css">    <span class="hljs-selector-class">.diff</span> &#123;</span><br><span class="language-css">        <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;</span><br><span class="language-css">        <span class="hljs-attribute">background-color</span>: green;</span><br><span class="language-css">        <span class="hljs-comment">/* 四个数值分别对应 左上 右上 右下 左下， 即从“左上” 开始顺时针*/</span></span><br><span class="language-css">        <span class="hljs-comment">/* border-radius: 0px 30px 50px 70px;  */</span></span><br><span class="language-css">        <span class="hljs-comment">/* 两个数值分别对应：左上与右下为0，右上和左下为70 */</span></span><br><span class="language-css">        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0px</span> <span class="hljs-number">70px</span>;</span><br><span class="language-css">    &#125;</span><br><span class="language-css"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="盒子阴影"><a href="#盒子阴影" class="headerlink" title="盒子阴影"></a>盒子阴影</h3><p>使用box-shadow属性为盒子添加阴影</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">box-shadow: h-shadow v-shadow blur spread color inset<br></code></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>h-shadow</strong></td>
+<td>必需，水平阴影的位置，允许负值</td>
+</tr>
+<tr>
+<td><strong>v-shadow</strong></td>
+<td>必需。垂直阴影的位置，允许负值</td>
+</tr>
+<tr>
+<td>blur</td>
+<td>可选。模糊距离</td>
+</tr>
+<tr>
+<td>spread</td>
+<td>可选。阴影的尺寸</td>
+</tr>
+<tr>
+<td>color</td>
+<td>可选。阴影的颜色。（参阅CSS颜色值）</td>
+</tr>
+<tr>
+<td>inset</td>
+<td>可选。将外部阴影(outset)改为内部阴影</td>
+</tr>
+</tbody></table>
+<p>注意：改为内部阴影需要写inset，但默认就是外阴影，需要外部阴影时不需要写outset</p>
+<p>示例：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;style&gt;<br><span class="hljs-selector-tag">div</span> &#123;<br>    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;<br>    <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;<br>    <span class="hljs-attribute">background-color</span>: pink;<br>    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;<br><br>&#125;<br><br><span class="hljs-comment">/* 鼠标经过时显示阴影效果 */</span><br><span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:hover</span> &#123;<br>    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">10px</span> <span class="hljs-number">10px</span> <span class="hljs-number">25px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, .<span class="hljs-number">5</span>);<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>
+
+<p>示例效果：</p>
+<p>无阴影时<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173753314.png" srcset="/img/loading.gif" lazyload alt="image-20220701173753314" style="zoom:50%;" /></p>
+<p>有阴影时<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173921857.png" srcset="/img/loading.gif" lazyload alt="image-20220701173921857" style="zoom:50%;" /></p>
+<p>当修改box-shadow后（添加了inset，将外部阴影改为内部阴影）：<code>box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, .5) inset;</code></p>
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173822776.png" srcset="/img/loading.gif" lazyload alt="image-20220701173822776" style="zoom:50%;" />
+
+
+
+<p>注意：默认是外部阴影outset，但是不能为box-shoadow写outset，会造成阴影无效，如：<code>box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, .5) outset;</code> 不能这样写，会使阴影没有效果。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/02-CSS/" class="category-chain-item">02-CSS</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/02-CSS/CSS/" class="category-chain-item">CSS</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/02-CSS/CSS/%E5%9F%BA%E7%A1%80/" class="category-chain-item">基础</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>盒子模型</div>
+      <div>https://paopao0108.github.io/2022/11/25/02-CSS/CSS/基础/盒子模型/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Yu Pingping</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年11月25日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/CSS%E6%B5%AE%E5%8A%A8/" title="CSS浮动">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">CSS浮动</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/CSS%E8%83%8C%E6%99%AF/" title="CSS背景">
+                        <span class="hidden-mobile">CSS背景</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
