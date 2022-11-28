@@ -965,8 +965,8 @@ body.dark-theme {
   height: auto;
   margin: 0 auto;
 }
-.portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide picture img {
-  width: 100%;
+.portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide video {
+  width: 20rem;
   height: auto;
   border-radius: 1rem;
   margin-bottom: 2rem;
@@ -1049,9 +1049,8 @@ body.dark-theme {
     display: flex;
     justify-content: center;
   }
-  .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide picture img {
+  .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide video {
     width: 24.4rem;
-    height: 16.3rem;
     height: auto;
   }
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide .portfolio-content {
@@ -1062,9 +1061,10 @@ body.dark-theme {
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide {
     margin: 6rem;
   }
-  .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide picture img {
+  .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide video {
+    max-width: 35rem;
     width: auto;
-    height: 22rem;
+    height: auto;
     margin-bottom: 4rem;
     margin-right: 2rem;
   }
@@ -1130,14 +1130,14 @@ body.dark-theme {
 .demo .container .demo-list .item.drawing {
   column-span: 1;
 }
-.demo .container .demo-list .item img {
+.demo .container .demo-list .item video {
   margin: 0 auto 2rem;
   width: 100%;
   border-radius: 1rem;
   scale: 1;
   transition: 0.3s;
 }
-.demo .container .demo-list .item img:hover {
+.demo .container .demo-list .item video:hover {
   cursor: pointer;
   scale: 1.05;
   transition: 0.3s;
