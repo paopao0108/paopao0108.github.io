@@ -112,6 +112,8 @@ const start = document.querySelector('.start');
 const colors = ['#2B7AF5', '#2B9DF5'];
 const bgColors = ['linear-gradient(to right, #FF8489 0%, #fbb0b3 100%)', 'linear-gradient(to right, #D7749B 0%, #e991b4 100%)', 'linear-gradient(to right, #A46C9F 0%, #d195cc 100%)', 'linear-gradient(to right, #706493 0%, #9081bc 100%)', 'linear-gradient(to right, #FF8359 0%, #f7ab91 100%)', 'linear-gradient(to right, #9BB41E 0%, #d0e46a 100%)', 'linear-gradient(to right, #339E3D 0%, #339E3D 100%)'];
 
+const keys = document.querySelectorAll('.key');
+
 // 定时器，自动下落
 let timer = null;
 start.addEventListener('click', function () {
@@ -121,6 +123,10 @@ start.addEventListener('click', function () {
     moveDown();
   }, 1000);
   document.addEventListener('keydown', move);
+  keys.forEach(key => {
+    key.addEventListener('click', moveBymouse);
+  });
+  // document.addEventListener('click', moveBymouse);
 });
 
 // 初始化
@@ -165,7 +171,7 @@ function createModel() {
   }
 }
 
-// 移动模型
+// 键盘控制移动模型
 function move(e) {
   const activeModel = document.querySelector('.active-model');
   switch (e.key) {
@@ -199,6 +205,44 @@ function move(e) {
       break;
   }
 }
+
+function moveBymouse(e) {
+  const activeModel = document.querySelector('.active-model');
+  console.log(e.target.parentNode.id);
+  let key = e.target.parentNode.id;
+  switch (key) {
+    case 'rotate':
+      // console.log('space'); // 按下空格键
+      rotate();
+      break;
+    case 'ArrowDown':
+      moveDown();
+      break;
+    case 'ArrowLeft':
+      if (isCrash(currentX - 1, currentY)) {
+        // 检测的是下一个位置是否重叠碰撞
+        break;
+      }
+      currentX--;
+      if (isOutBound()) currentX++; // 出界后退 ---> 向右移一步
+      console.log('currentX', currentX);
+      activeModel.style.left = currentX * blockSize + 'px';
+
+      break;
+    case 'ArrowRight':
+      if (isCrash(currentX + 1, currentY)) {
+        // 检测的是下一个位置是否重叠碰撞
+        break;
+      }
+      currentX++;
+      if (isOutBound()) currentX--; // 出界 后退---> 向左移一步
+      console.log('currentX', currentX);
+      activeModel.style.left = currentX * blockSize + 'px';
+      break;
+  }
+}
+
+// 鼠标控制移动模型
 
 /**
  * @description: 下落操作
