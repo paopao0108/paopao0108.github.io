@@ -701,11 +701,21 @@ body.dark-theme {
       justify-content: center;
 
       // align-items: center;
+      // picture {
+      //   border-radius: 1rem;
+      //   margin-bottom: 2rem;
+      //   source {
+      //   }
+      //   @media screen and (min-width: 1024px) {
+      //     width: 35.5rem;
+      //     height: auto;
+      //   }
+      // }
       picture {
+        
         img {
           border-radius: 1rem;
           margin-bottom: 2rem;
-
           @media screen and (min-width: 1024px) {
             width: 35.5rem;
             height: auto;
@@ -1231,9 +1241,17 @@ body.dark-theme {
           cursor: pointer;
         }
 
-        .glide__arrow--left {}
+        .glide__arrow--left {
+          path {
+            fill: @first-color;
+          }
+        }
 
-        .glide__arrow--right {}
+        .glide__arrow--right {
+          path {
+            fill: @first-color;
+          }
+        }
       }
 
       .glide__bullets {
@@ -1284,18 +1302,18 @@ body.dark-theme {
         .glide__track {
           .glide__slides {
             .glide__slide {
-              margin: 6rem;
+              margin: 3rem;
               video {
-                max-width: 35rem;
+                max-width: 60rem;
                 width: auto;
                 height: auto;
-                margin-bottom: 4rem;
-                margin-right: 2rem;
+                margin-bottom: 1rem;
+                margin-right: 1rem;
               }
 
               .portfolio-content {
-                max-width: 50%;
-                padding: 1rem 12rem 3rem 5rem;
+                max-width: 80%;
+                padding: 1rem 5rem 3rem 5rem;
 
                 .title {
                   font-size: 2.1rem;

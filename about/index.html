@@ -139,7 +139,7 @@
               </a>
             </li>
             <li class="item">
-              <a href="https://github.com/paopao0108" class="link" target="_blank" rel="noopener">
+              <a href="../" class="link" target="_blank" rel="noopener">
                 <svg t="1667696586795" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="12530" width="18.017578125" height="18" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>blog</title>
                   <path d="M384 0l0 96c73.472 0 144.704 14.368 211.712 42.72 64.768 27.392 122.944 66.624 172.96 116.608s89.216 108.192 116.64 172.96c28.352 67.008 42.72 138.24 42.72 211.712l96 0c0-353.472-286.528-640-640-640z" p-id="12531" fill="#0069D1"></path>
@@ -220,14 +220,14 @@
     <!-- About -->
     <section id="about" class="section about">
       <div class="section-title">
-        <h2 class="title">关于我</h2>
+        <h2 class="title">简介</h2>
         <span class="subtitle">介绍</span>
       </div>
       <div class="container">
         <div class="about-photo">
           <picture>
-            <source srcset="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/about.jpg" type="image/jpg" />
             <source srcset="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/about.webp" type="image/webp" />
+            <source srcset="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/about.jpg" type="image/jpg" />
             <img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/about.jpg" alt="photo ypp" width="197" height="155" />
           </picture>
         </div>
@@ -269,7 +269,7 @@
       <div class="container">
         <!-- 工作经验1 -->
         <div class="skill-accordion">
-          <button class="skill-button -active">
+          <button class="skill-button">
             <svg class="icon" width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Frontend icon</title>
               <path
@@ -570,7 +570,7 @@
     <!-- 作品集Portfolio -->
     <section id="portfolio" class="section portfolio">
       <div class="section-title">
-        <h2 class="title">作品</h2>
+        <h2 class="title">项目</h2>
         <span class="subtitle">项目作品展示</span>
       </div>
       <div class="container">
@@ -579,13 +579,36 @@
             <ul class="glide__slides">
               <li class="glide__slide">
                 <video autoplay loop muted playsinline>
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/echarts.webm" type="video/webm" />
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/echarts.mp4" type="video/mp4" />
+                </video>
+                <div class="portfolio-content">
+                  <h3 class="title">数据可视化</h3>
+                  <p class="desc">
+                    <strong>作品概述</strong>
+                    ：
+                    <br />
+                    <strong>主要技术</strong>
+                    ：Echarts & HTML & LESS & JS & VUE，利用Echarts将各类数据可视化展示
+                  </p>
+                  <a href="https://github.com/paopao0108/cube" class="more" target="_blank" rel="noopener">
+                    查看更多
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <title>Right Arrow</title>
+                      <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#FFF" />
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <video autoplay loop muted playsinline>
                   <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.webm" type="video/webm" />
                   <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.mp4" type="video/mp4" />
                 </video>
                 <div class="portfolio-content">
                   <h3 class="title">3D魔方</h3>
                   <p class="desc">
-                    主要技术：HTML&CSS$JS&VUE
+                    主要技术：HTML&CSS&JS&VUE
                     <br />
                     1. CSS的3D样式来实现魔方块的结构；
                     <br />
@@ -608,6 +631,30 @@
                   <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/map.mp4" type="video/mp4" />
                 </video>
                 <div class="portfolio-content">
+                  <h3 class="title">疫情地图</h3>
+                  <p class="desc">
+                    <strong>作品概述</strong>
+                    ：展示各个地区的疫情数据
+                    <br />
+                    <strong>主要技术</strong>
+                    ：Echarts & VUE & HTML & CSS & JS，使用Echarts绘制中国地图、世界地图
+                  </p>
+                  <a href="" class="more">
+                    More
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <title>Right Arrow</title>
+                      <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#FFF" />
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <!-- pinyougou -->
+              <!-- <li class="glide__slide">
+                <video autoplay loop muted playsinline>
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/pinyougou.webm" type="video/webm" />
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/pinyougou.mp4" type="video/mp4" />
+                </video>
+                <div class="portfolio-content">
                   <h3 class="title">Modern Website</h3>
                   <p class="desc">Website adaptable to all devices, with ui components and animated interactions.</p>
                   <a href="" class="more">
@@ -618,15 +665,21 @@
                     </svg>
                   </a>
                 </div>
-              </li>
+              </li> -->
               <li class="glide__slide">
                 <video autoplay loop muted playsinline>
-                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/pinyougou.webm" type="video/webm" />
-                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/pinyougou.mp4" type="video/mp4" />
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/houtai.webm" type="video/webm" />
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/houtai.mp4" type="video/mp4" />
                 </video>
                 <div class="portfolio-content">
-                  <h3 class="title">Modern Website</h3>
-                  <p class="desc">Website adaptable to all devices, with ui components and animated interactions.</p>
+                  <h3 class="title">后台管理</h3>
+                  <p class="desc">
+                    <strong>作品概述</strong>
+                    ：
+                    <br />
+                    <strong>主要技术</strong>
+                    ：ElementUI & Echarts & HTML & CSS & JS
+                  </p>
                   <a href="" class="more">
                     More
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -656,6 +709,8 @@
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
             <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
           </div>
         </div>
       </div>
@@ -670,8 +725,8 @@
       <div class="container">
         <div class="demo-category">
           <div class="category all -active">全部</div>
-          <div class="category part1">分类1</div>
-          <div class="category part2">分类2</div>
+          <div class="category part1">原生项目</div>
+          <div class="category part2">VUE项目</div>
         </div>
         <ul class="demo-list">
           <li class="item clock">
@@ -679,12 +734,39 @@
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/clock.webm" type="video/webm" />
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/clock.mp4" type="video/mp4" />
             </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：时钟效果，可显示当前北京时间
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&CSS&JS，布局主要使用flex布局以及定位实现，使用JS获取当前系统时间进行设置
+            </span>
+          </li>
+          <li class="item drag">
+            <video autoplay loop muted playsinline>
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drag.webm" type="video/webm" />
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drag.mp4" type="video/mp4" />
+            </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：拖动效果，可使用鼠标将卡片拖动到正确的位置上
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&CSS&JS，拖动效果是通过监听鼠标按下、移动、抬起事件以及定位实现
+            </span>
           </li>
           <li class="item richText">
             <video autoplay loop muted playsinline>
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/richtext.webm" type="video/webm" />
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/richtext.mp4" type="video/mp4" />
             </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：富文本编辑器，可实现基本的加粗、斜体、下划线等功能
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&CSS&JS，富文本编辑器中修改文本样式通过document.execCommand()实现
+            </span>
           </li>
 
           <li class="item jigsaw">
@@ -692,44 +774,77 @@
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/jigsaw.webm" type="video/webm" />
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/jigsaw.mp4" type="video/mp4" />
             </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：拼图，点击方块，若旁边有空白块，可交换位置，当数字顺序为正序时，通关成功
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&CSS&JS，使用逆序数通过设置定位实现方块的排列位置、方块的移动
+            </span>
+          </li>
+          <li class="item maze">
+            <video autoplay loop muted playsinline>
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/maze.webm" type="video/webm" />
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/maze.mp4" type="video/mp4" />
+            </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：迷宫，指定键盘按键按下时控制角色在迷宫地图中移动，角色只能在路径上移动，不能移到路径外。
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&LESS$JS，使用Prim算法来生成迷宫，使用定时器控制角色平滑的在路径上移动
+            </span>
           </li>
           <li class="item drawing">
             <video autoplay loop muted playsinline>
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drawing.webm" type="video/webm" />
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drawing.mp4" type="video/mp4" />
             </video>
-            <span class="desc">CSS3提供了个新属性columns用于多列布局。</span>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：画板，可实现基本的书写、绘图、擦除等功能
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&CSS&JS&Canvas，使用Canvas来实现画板
+            </span>
           </li>
           <li class="item cube">
             <video autoplay loop muted playsinline>
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.mp4" type="video/mp4" />
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.webm" type="video/webm" />
-            </video>
-            <span class="desc">CSS3提供了个新属性columns用于多列布局。基本属性如下</span>
-          </li>
-          <li class="item flappybird">
-            <video autoplay loop muted playsinline>
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/flappybird.mp4" type="video/mp4" />
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/flappybird.webm" type="video/webm" />
-            </video>
-          </li>
-          <li class="item maze">
-            <video autoplay loop muted playsinline>
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/maze.mp4" type="video/mp4" />
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/maze.webm" type="video/webm" />
-            </video>
-          </li>
-          <li class="item tetris">
-            <video autoplay loop muted playsinline>
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/tetris.mp4" type="video/mp4" />
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/tetris.webm" type="video/webm" />
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.mp4" type="video/mp4" />
             </video>
             <span class="desc">
               <strong>作品概述</strong>
-              ：俄罗斯方块
+              ：3D魔方，实现鼠标来控制魔方块的转动； 通过键盘上下左右的按键控制魔方的整体转动
               <br />
               <strong>主要技术</strong>
-              ：HTML&LESS$JS
+              ：HTML&CSS$JS&VUE，CSS的3D样式来实现魔方块的结构； 利用vue实现手势操作
+            </span>
+          </li>
+          <li class="item flappybird">
+            <video autoplay loop muted playsinline>
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/flappybird.webm" type="video/webm" />
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/flappybird.mp4" type="video/mp4" />
+            </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：flappybird，点击屏幕可控制角色跳动，碰到障碍物或下落到地面，游戏结束；通过障碍物，分数加一
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&LESS&JS，通过定时器和定位来实现障碍物移动、地面移动，以及玩家跳动
+            </span>
+          </li>
+          <li class="item tetris">
+            <video autoplay loop muted playsinline>
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/tetris.webm" type="video/webm" />
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/tetris.mp4" type="video/mp4" />
+            </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：俄罗斯方块，游戏开始方块自动下落，可通过键盘控制方块朝左朝右朝下的方向移动，通过键盘可以改变下落方块的旋转，当满行时，可以消除，当占满容器高度，游戏结束
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&LESS$JS，在16宫格中存放方块，通过定位放置不同类型的方块模型，同时通过移动16宫格来移动方块
             </span>
           </li>
         </ul>
@@ -1036,9 +1151,10 @@
     <a href="#" class="btn-totop">
       <img width="13" height="12" src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/arrow-up.svg" alt="to top icon" />
     </a>
-
-    <!-- 轮播图 Glide js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js" integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="js/index.js"></script>
   </body>
+  <!-- 懒加载 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script> -->
+  <!-- 轮播图 Glide js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js" integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </html>

@@ -1024,6 +1024,12 @@ body.dark-theme {
 .portfolio .container .portfolio-carousel .glide__arrows .glide__arrow {
   cursor: pointer;
 }
+.portfolio .container .portfolio-carousel .glide__arrows .glide__arrow--left path {
+  fill: hsl(275, 100%, 41%);
+}
+.portfolio .container .portfolio-carousel .glide__arrows .glide__arrow--right path {
+  fill: hsl(275, 100%, 41%);
+}
 .portfolio .container .portfolio-carousel .glide__bullets {
   position: absolute;
   left: 50%;
@@ -1059,18 +1065,18 @@ body.dark-theme {
 }
 @media screen and (min-width: 1024px) {
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide {
-    margin: 6rem;
+    margin: 3rem;
   }
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide video {
-    max-width: 35rem;
+    max-width: 60rem;
     width: auto;
     height: auto;
-    margin-bottom: 4rem;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
   }
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide .portfolio-content {
-    max-width: 50%;
-    padding: 1rem 12rem 3rem 5rem;
+    max-width: 80%;
+    padding: 1rem 5rem 3rem 5rem;
   }
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide .portfolio-content .title {
     font-size: 2.1rem;
