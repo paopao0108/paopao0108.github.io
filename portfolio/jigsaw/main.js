@@ -7,8 +7,8 @@ var success = document.querySelector('.success');
 var second = 0; // 计时器秒数
 var timerInterval;
 
-const blockWidth = 80; // 一个块的长宽
-const blockHeight = 80;
+const blockWidth = 110; // 一个块的长宽
+const blockHeight = 110;
 
 let rowsNumber = 3; // 默认几行几列
 let colsNumber = 3;

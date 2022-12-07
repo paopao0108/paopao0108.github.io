@@ -52,6 +52,81 @@ qualificationButtons.forEach((button, index) => {
 
 /* Service */
 
+/* Scroll事件 会触发两件事：
+  1. 回到顶部按钮的显示隐藏
+  2. 头部导航栏的 边框阴影的显示隐藏
+*/
+let toTopBtn = document.querySelector('.btn-totop');
+let header = document.querySelector('.header');
+// 监听页面的滚动事件
+window.addEventListener('scroll', function () {
+  if (this.scrollY >= 550) {
+    toTopBtn.classList.add('-visible');
+  } else {
+    toTopBtn.classList.remove('-visible');
+  }
+  if (this.scrollY >= 50) {
+    header.classList.add('-scroll');
+  } else {
+    header.classList.remove('-scroll');
+  }
+});
+
+/* 主体切换：dark-mode light-mode */
+let themeBtn = document.querySelector('.theme-button');
+let darkMode = document.querySelector('.dark-mode');
+let lightMode = document.querySelector('.light-mode');
+let body = document.body;
+let themeActive = window.localStorage.getItem('theme');
+console.log(themeBtn);
+themeBtn.addEventListener('click', function () {
+  let themeActive = window.localStorage.getItem('theme');
+  console.log(themeActive);
+  let dark = this.classList.contains('-dark-mode');
+  // console.log(dark);
+  if (!dark) {
+    // 若不是 dark 模式，点击后需要切换为dark模式
+    this.classList.add('-dark-mode');
+    body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    this.classList.remove('-dark-mode');
+    body.classList.remove('dark-theme');
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+/* 作品Start */
+// 筛选展示作品
+let categories = document.querySelectorAll('.demo-category .category');
+let originalProjs = document.querySelectorAll('.demo-list .original');
+let vueProjs = document.querySelectorAll('.demo-list .vue');
+let allProjs = document.querySelectorAll('.demo-list .item');
+categories.forEach(item => {
+  item.addEventListener('click', function () {
+    // 先移除所有的active类
+    for (let i = 0; i < categories.length; i++) {
+      if (categories[i].classList.contains('-active')) {
+        categories[i].classList.remove('-active');
+        break;
+      }
+    }
+    // 为当前类添加active类
+    item.classList.add('-active');
+    // 先隐藏所有
+    allProjs.forEach(item => (item.style.display = 'none'));
+    // 再显示当前分类所属
+    if (item.classList.contains('part1')) {
+      originalProjs.forEach(item => (item.style.display = 'block'));
+    } else if (item.classList.contains('part2')) {
+      vueProjs.forEach(item => (item.style.display = 'block'));
+    } else if (item.classList.contains('all')) {
+      allProjs.forEach(item => (item.style.display = 'block'));
+    }
+  });
+});
+/* 作品End */
+
 /* portfolio-carousel */
 const portfolioCarousel = document.querySelector('.portfolio-carousel');
 new Glide(portfolioCarousel, {
@@ -92,112 +167,3 @@ new Glide(testimonialCarousel, {
     // breakpoints 外面设置的就是在 992px 以上的屏幕中
   }
 }).mount();
-
-/* Scroll事件 会触发两件事：
-  1. 回到顶部按钮的显示隐藏
-  2. 头部导航栏的 边框阴影的显示隐藏
-*/
-let toTopBtn = document.querySelector('.btn-totop');
-let header = document.querySelector('.header');
-// 监听页面的滚动事件
-window.addEventListener('scroll', function () {
-  if (this.scrollY >= 550) {
-    toTopBtn.classList.add('-visible');
-  } else {
-    toTopBtn.classList.remove('-visible');
-  }
-  if (this.scrollY >= 50) {
-    header.classList.add('-scroll');
-  } else {
-    header.classList.remove('-scroll');
-  }
-});
-
-/* 主体切换：dark-mode light-mode */
-let themeBtn = document.querySelector('.theme-button');
-let darkMode = document.querySelector('.dark-mode');
-let lightMode = document.querySelector('.light-mode');
-let body = document.body;
-let themeActive = window.localStorage.getItem('theme');
-
-themeBtn.addEventListener('click', function () {
-  let themeActive = window.localStorage.getItem('theme');
-  console.log(themeActive);
-  let dark = this.classList.contains('-dark-mode');
-  // console.log(dark);
-  if (!dark) {
-    // 若不是 dark 模式，点击后需要切换为dark模式
-    this.classList.add('-dark-mode');
-    body.classList.add('dark-theme');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    this.classList.remove('-dark-mode');
-    body.classList.remove('dark-theme');
-    localStorage.setItem('theme', 'light');
-  }
-});
-
-/* 懒加载 */
-// let imgs = document.querySelectorAll('#demo .demo-list img');
-// const imgFormat = {
-//   clock: 'jpg',
-//   richText: 'jpg',
-//   jigsaw: 'gif',
-//   drawing: 'jpg',
-//   '3dCube': 'gif',
-//   flappybird: 'gif',
-//   maze: 'gif',
-//   tetris: 'gif'
-// };
-// const url = 'assets/img/';
-// console.log(imgs);
-
-// let observer = new IntersectionObserver(changes => {
-//   for (const change of changes) {
-//     // console.log('时间戳', change.time);
-//     console.log('目标对象', change.target);
-//     console.log('可见比例', change.intersectionRatio);
-//     if (change.intersectionRatio > 0.01) {
-//       let imgName = change.target.alt;
-//       change.target.src = url + imgName + '.' + imgFormat[imgName];
-//       console.log(url + imgName + '.' + imgFormat[imgName]);
-//     }
-//   }
-// });
-// imgs.forEach(img => {
-//   observer.observe(img);
-//   img.onload = () => {
-//     observer.unobserve(img);
-//   };
-// });
-
-/* 作品Start */
-// 筛选展示作品
-let categories = document.querySelectorAll('.demo-category .category');
-let originalProjs = document.querySelectorAll('.demo-list .original');
-let vueProjs = document.querySelectorAll('.demo-list .vue');
-let allProjs = document.querySelectorAll('.demo-list .item');
-categories.forEach(item => {
-  item.addEventListener('click', function () {
-    // 先移除所有的active类
-    for (let i = 0; i < categories.length; i++) {
-      if (categories[i].classList.contains('-active')) {
-        categories[i].classList.remove('-active');
-        break;
-      }
-    }
-    // 为当前类添加active类
-    item.classList.add('-active');
-    // 先隐藏所有
-    allProjs.forEach(item => (item.style.display = 'none'));
-    // 再显示当前分类所属
-    if (item.classList.contains('part1')) {
-      originalProjs.forEach(item => (item.style.display = 'block'));
-    } else if (item.classList.contains('part2')) {
-      vueProjs.forEach(item => (item.style.display = 'block'));
-    } else if (item.classList.contains('all')) {
-      allProjs.forEach(item => (item.style.display = 'block'));
-    }
-  });
-});
-/* 作品End */

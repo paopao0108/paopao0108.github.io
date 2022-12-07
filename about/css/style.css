@@ -698,20 +698,20 @@ body.dark-theme {
   height: auto;
 }
 .skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-first .skill-bar.-html:before {
-  animation: htmlcss 1s ease-in-out running forwards;
+  animation: html 1s ease-in-out running forwards;
 }
-@keyframes htmlcss {
+@keyframes html {
   0% {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 80%;
   }
 }
 .skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-first .skill-bar.-css:before {
-  animation: javascript 1s ease-in-out running forwards;
+  animation: css 1s ease-in-out running forwards;
 }
-@keyframes javascript {
+@keyframes css {
   0% {
     width: 0%;
   }
@@ -720,6 +720,72 @@ body.dark-theme {
   }
 }
 .skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-first .skill-bar.-javascript:before {
+  animation: js 1s ease-in-out running forwards;
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-first .skill-bar.-jquery:before {
+  animation: js 1s ease-in-out running forwards;
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-first .skill-bar.-canvas:before {
+  animation: canvas 1s ease-in-out running forwards;
+}
+@keyframes canvas {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-second .skill-bar.-elemui:before {
+  animation: elemui 1s ease-in-out running forwards;
+}
+@keyframes elemui {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-second .skill-bar.-echarts:before {
+  animation: echarts 1s ease-in-out running forwards;
+}
+@keyframes echarts {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-second .skill-bar.-bootstrap:before {
+  animation: bootstrap 1s ease-in-out running forwards;
+}
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-third .skill-bar.-vue:before {
   animation: vue 1s ease-in-out running forwards;
 }
 @keyframes vue {
@@ -730,59 +796,15 @@ body.dark-theme {
     width: 80%;
   }
 }
-.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-second .skill-bar.-vue:before {
-  animation: vue 1s ease-in-out running forwards;
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-third .skill-bar.-webpack:before {
+  animation: webpack 1s ease-in-out running forwards;
 }
-@keyframes vue {
+@keyframes webpack {
   0% {
     width: 0%;
   }
   100% {
-    width: 70%;
-  }
-}
-.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-second .skill-bar.-php:before {
-  animation: php 1s ease-in-out running forwards;
-}
-@keyframes php {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-second .skill-bar.-mongoDB:before {
-  animation: mongoDB 1s ease-in-out running forwards;
-}
-@keyframes mongoDB {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-third .skill-bar.-PS:before {
-  animation: PS 1s ease-in-out running forwards;
-}
-@keyframes PS {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-third .skill-bar.-Figma:before {
-  animation: Figma 1s ease-in-out running forwards;
-}
-@keyframes Figma {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 65%;
+    width: 50%;
   }
 }
 .skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-third .skill-bar.-Sketch:before {
@@ -794,6 +816,39 @@ body.dark-theme {
   }
   100% {
     width: 90%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-git:before {
+  animation: git 1s ease-in-out running forwards;
+}
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-webpack:before {
+  animation: webpack 1s ease-in-out running forwards;
+}
+@keyframes webpack {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-Sketch:before {
+  animation: Sketch 1s ease-in-out running forwards;
+}
+@keyframes Sketch {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
   }
 }
 .skills .container .skill-accordion .skill-content {

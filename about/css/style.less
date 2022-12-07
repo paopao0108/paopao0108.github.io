@@ -886,40 +886,40 @@ body.dark-theme {
 
             .skill-list {
               &.-first {
-
-                // .loop(@i:1) when(@i <= @ratioArrLen) {
-                //   .skill-bar.-extract(@skillArr,@i):before {
-                //     .slideAnimation (extract(@skillArr,@i), extract(@ratio,@i), running);
-                //   }
-                //   .loop(@i+1);
-                // }
                 .skill-bar {
                   &.-html:before {
-                    .slideAnimation (htmlcss, 90%, running);
+                    .slideAnimation (html, 80%, running);
                   }
 
                   &.-css:before {
-                    .slideAnimation (javascript, 80%, running);
+                    .slideAnimation (css, 80%, running);
                   }
 
                   &.-javascript:before {
-                    .slideAnimation (vue, 80%, running);
+                    .slideAnimation (js, 80%, running);
+                  }
+
+                  &.-jquery:before {
+                    .slideAnimation (js, 80%, running);
+                  }
+                  &.-canvas:before {
+                    .slideAnimation (canvas, 80%, running);
                   }
                 }
               }
 
               &.-second {
                 .skill-bar {
-                  &.-vue:before {
-                    .slideAnimation (vue, 70%, running);
+                  &.-elemui:before {
+                    .slideAnimation (elemui, 75%, running);
                   }
 
-                  &.-php:before {
-                    .slideAnimation (php, 70%, running);
+                  &.-echarts:before {
+                    .slideAnimation (echarts, 80%, running);
                   }
 
-                  &.-mongoDB:before {
-                    .slideAnimation (mongoDB, 60%, running);
+                  &.-bootstrap:before {
+                    .slideAnimation (bootstrap, 70%, running);
                   }
 
                 }
@@ -927,16 +927,32 @@ body.dark-theme {
 
               &.-third {
                 .skill-bar {
-                  &.-PS:before {
-                    .slideAnimation (PS, 80%, running);
+                  &.-vue:before {
+                    .slideAnimation (vue, 80%, running);
                   }
 
-                  &.-Figma:before {
-                    .slideAnimation (Figma, 65%, running);
+                  &.-webpack:before {
+                    .slideAnimation (webpack, 50%, running);
                   }
 
                   &.-Sketch:before {
                     .slideAnimation (Sketch, 90%, running);
+                  }
+                }
+              }
+
+              &.-fourth {
+                .skill-bar {
+                  &.-git:before {
+                    .slideAnimation (git, 80%, running);
+                  }
+
+                  &.-webpack:before {
+                    .slideAnimation (webpack, 50%, running);
+                  }
+
+                  &.-Sketch:before {
+                    .slideAnimation (Sketch, 80%, running);
                   }
                 }
               }
