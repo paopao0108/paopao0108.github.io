@@ -1,5 +1,5 @@
 // 声明全局变量
-const blockSize = 20;
+const blockSize = 30;
 const colNum = 10;
 const rowNum = 18;
 const step = blockSize;
@@ -208,8 +208,8 @@ function move(e) {
 
 function moveBymouse(e) {
   const activeModel = document.querySelector('.active-model');
-  console.log(e.target.parentNode.id);
-  let key = e.target.parentNode.id;
+  console.log(e.target.id);
+  let key = e.target.id;
   switch (key) {
     case 'rotate':
       // console.log('space'); // 按下空格键
