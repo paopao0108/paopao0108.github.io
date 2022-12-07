@@ -214,22 +214,27 @@
         <span class="subtitle">介绍</span>
       </div>
       <div class="container">
-        <div class="about-photo">
-          <picture>
-            <source srcset="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/about.webp" type="image/webp" />
-            <source srcset="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/about.jpg" type="image/jpg" />
-            <img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/about.jpg" alt="photo ypp" width="197" height="155" />
-          </picture>
-        </div>
         <div class="about-content">
           <p class="description">
-            <strong>工作方面：</strong>
-            自学前端半年多，自学能力较强，学习期间独立开发一些小项目，能够熟练掌握并使用前端相关技术，能够根据需求设计出相应的页面
-            <br />
-            <strong>个人性格：</strong>
-            性格乐观活泼，为人和善，对生活充满积极，工作态度认真负责，善于自我反省
+            <span class="tojob">
+              <strong class="title">工作方面</strong>
+              <br />
+              自学前端半年多，自学能力较强，学习期间独立开发一些小项目，能够熟练掌握并使用前端相关技术，能够根据需求设计出相应的页面
+            </span>
+
+            <span class="tocharacter">
+              <strong class="title">个人性格</strong>
+              <br />
+              性格乐观活泼，为人和善，对生活充满积极性，工作态度认真负责，善于自我反省
+            </span>
+
+            <span class="tohobby">
+              <strong class="title">爱好习惯</strong>
+              <br />
+              户内喜欢做手工、听歌；户外喜欢旅游、登山
+            </span>
           </p>
-          <ul class="about-numbers">
+          <!-- <ul class="about-numbers">
             <li class="item">
               <p class="value">30+</p>
               <p class="text">HTML&CSS</p>
@@ -242,8 +247,8 @@
               <p class="value">03+</p>
               <p class="text">VUE项目</p>
             </li>
-          </ul>
-          <a href="assets/pdf" class="download" rel="noopener" target="_blank">
+          </ul> -->
+          <a href="assets/pdf/resume.pdf" class="download" rel="noopener" target="_blank">
             下载 简历
             <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Download CV</title>
@@ -266,13 +271,11 @@
         <!-- 基本技术 -->
         <div class="skill-accordion">
           <button class="skill-button">
-            <svg class="icon" width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title>Frontend icon</title>
-              <path
-                d="M4 15.467c.77-.08 1.355-.312 1.756-.697.417-.384.625-.888.625-1.513 0-.576-.064-1.633-.192-3.17-.145-1.442-.217-2.595-.217-3.46 0-1.137.329-2.026.986-2.666C7.632 3.32 8.514 3 9.604 3h1.612v2.378h-1.058c-.514 0-.899.12-1.155.36-.24.225-.36.593-.36 1.105 0 .385.023.897.071 1.538.048.64.08 1.097.097 1.369.144 1.473.216 2.674.216 3.603 0 .817-.208 1.498-.625 2.042-.401.545-1.027.905-1.876 1.081v.048c.85.176 1.475.537 1.876 1.081.417.544.625 1.225.625 2.042 0 .929-.072 2.13-.216 3.603-.017.272-.049.729-.097 1.37-.048.64-.072 1.152-.072 1.537 0 .512.12.88.36 1.105.257.24.642.36 1.155.36h1.059V30H9.604c-1.09 0-1.972-.32-2.646-.96-.657-.641-.986-1.53-.986-2.667 0-.865.072-2.018.217-3.46.128-1.537.192-2.594.192-3.17 0-.625-.208-1.13-.625-1.513-.401-.385-.986-.617-1.756-.697v-2.066zM29 17.533c-.77.08-1.363.312-1.78.697-.4.384-.601.888-.601 1.513 0 .576.064 1.633.192 3.17.145 1.442.217 2.595.217 3.46 0 1.137-.337 2.026-1.01 2.666-.658.64-1.532.961-2.622.961h-1.612v-2.378h1.059c.513 0 .89-.12 1.13-.36.257-.225.385-.593.385-1.105 0-.385-.024-.897-.072-1.538a97.14 97.14 0 0 1-.097-1.369c-.144-1.473-.216-2.674-.216-3.603 0-.817.2-1.497.601-2.042.417-.544 1.05-.905 1.9-1.081v-.048c-.85-.176-1.483-.536-1.9-1.081-.4-.544-.601-1.225-.601-2.042 0-.929.072-2.13.216-3.603.017-.272.049-.729.097-1.37.048-.64.072-1.152.072-1.537 0-.512-.128-.88-.385-1.105-.24-.24-.617-.36-1.13-.36h-1.059V3h1.612c1.09 0 1.964.32 2.621.96.674.641 1.01 1.53 1.01 2.667 0 .865-.072 2.018-.216 3.46-.128 1.537-.192 2.594-.192 3.17 0 .625.2 1.13.601 1.514.417.384 1.01.616 1.78.696v2.066z"
-                fill="#0069D1"
-              />
+            <svg t="1670425170816" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3728" width="25" height="25">
+              <path d="M435.2 326.4a32 32 0 0 0-44.8 6.4l-96 128a31.968 31.968 0 0 0 0 38.4l96 128a32 32 0 0 0 51.2-38.4L360 480l81.6-108.8a32 32 0 0 0-6.4-44.8z m313.6 307.2a32 32 0 0 0 44.8-6.4l96-128a31.968 31.968 0 0 0 0-38.4l-96-128a32 32 0 0 0-51.2 38.4L824 480l-81.6 108.8a32 32 0 0 0 6.4 44.8zM592.768 313.056l-64 288a32 32 0 1 0 62.464 13.888l64-288a32 32 0 1 0-62.464-13.888z" p-id="3729"></path>
+              <path d="M864 636.384a32 32 0 0 0-32 32V736h-96a96 96 0 0 0-96 96v96H227.04c-19.328 0-35.04-16.576-35.04-36.928V132.928C192 112.576 207.712 96 227.04 96h569.888C816.288 96 832 112.576 832 132.928v124.448a32 32 0 1 0 64 0V132.928C896 77.28 851.552 32 796.928 32H227.04C172.448 32 128 77.28 128 132.928v758.144C128 946.72 172.448 992 227.04 992h435.008c1.568 0 2.912-0.672 4.416-0.896 8.96 1.6 18.464-0.256 25.984-6.528l192-160a32 32 0 0 0 10.144-33.888c0.544-2.272 1.408-4.416 1.408-6.848V668.384a32 32 0 0 0-32-32zM736 800h78.016L704 891.68V832a32 32 0 0 1 32-32z" p-id="3730"></path>
             </svg>
+
             <div class="label">
               <h3 class="title">基本技术</h3>
               <!-- <span class="subtitle">More than 4 years</span> -->
@@ -315,6 +318,13 @@
               </li>
               <li class="skill-item">
                 <div class="skill-title">
+                  <span class="name">Ajax</span>
+                  <span class="value">80%</span>
+                </div>
+                <div class="skill-bar -ajax"></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-title">
                   <span class="name">Canvas</span>
                   <span class="value">80%</span>
                 </div>
@@ -324,18 +334,17 @@
           </div>
         </div>
 
-        <!-- 常用库 -->
+        <!-- 样式库 -->
         <div class="skill-accordion">
           <button class="skill-button">
-            <svg class="icon" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title>Backend icon</title>
+            <svg t="1670425343350" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11357" width="25" height="25">
               <path
-                d="M7.5 6.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zM23.75 22.5h-7.725a3.75 3.75 0 0 0-2.275-2.275V17.5h5a3.75 3.75 0 0 0 3.75-3.75v-2.5a3.75 3.75 0 0 0-.975-2.5 3.75 3.75 0 0 0 .975-2.5v-2.5A3.75 3.75 0 0 0 18.75 0H6.25A3.75 3.75 0 0 0 2.5 3.75v2.5a3.75 3.75 0 0 0 .975 2.5 3.75 3.75 0 0 0-.975 2.5v2.5a3.75 3.75 0 0 0 3.75 3.75h5v2.725A3.75 3.75 0 0 0 8.975 22.5H1.25a1.25 1.25 0 0 0 0 2.5h7.725a3.75 3.75 0 0 0 7.05 0h7.725a1.25 1.25 0 0 0 0-2.5zM5 3.75A1.25 1.25 0 0 1 6.25 2.5h12.5A1.25 1.25 0 0 1 20 3.75v2.5a1.25 1.25 0 0 1-1.25 1.25H6.25A1.25 1.25 0 0 1 5 6.25v-2.5zM6.25 15A1.25 1.25 0 0 1 5 13.75v-2.5A1.25 1.25 0 0 1 6.25 10h12.5A1.25 1.25 0 0 1 20 11.25v2.5A1.25 1.25 0 0 1 18.75 15H6.25zm6.25 10a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm-5-13.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"
-                fill="#0069D1"
-              />
+                d="M959.984 1024h-896a64 64 0 0 1-64-64V64a64 64 0 0 1 64-64h896a64 64 0 0 1 64 64v896a64 64 0 0 1-64 64z m-424-848a341.632 341.632 0 0 0-133.904 27.024 342.128 342.128 0 0 0-109.328 73.712 343.184 343.184 0 0 0-73.728 109.328A342.064 342.064 0 0 0 192 519.984a341.776 341.776 0 0 0 27.024 133.872 342.4 342.4 0 0 0 73.728 109.328 342.768 342.768 0 0 0 109.328 73.728 342.128 342.128 0 0 0 133.904 27.04c42.704-5.84 65.6-14.816 71.872-28.24s-3.712-29.504-15.296-48.336l-0.096-0.144a149.28 149.28 0 0 1-22.832-50.064 62.272 62.272 0 0 1 20.8-56.864 81.248 81.248 0 0 1 61.472-23.072 329.04 329.04 0 0 1 59.584 7.728h0.128a328.112 328.112 0 0 0 60.048 7.808 82.08 82.08 0 0 0 67.792-29.28c20.496-24.352 33.728-64.768 40.432-123.552a342.192 342.192 0 0 0-27.024-133.92 343.408 343.408 0 0 0-73.712-109.328 342.4 342.4 0 0 0-109.36-73.712A341.456 341.456 0 0 0 535.984 176zM339.408 681.456a49.2 49.2 0 0 1-49.152-49.12 49.2 49.2 0 0 1 49.152-49.152 49.2 49.2 0 0 1 49.152 49.152 49.2 49.2 0 0 1-49.136 49.12z m0-196.576a49.2 49.2 0 0 1-49.152-49.12 49.2 49.2 0 0 1 49.152-49.152 49.2 49.2 0 0 1 49.152 49.152 49.2 49.2 0 0 1-49.136 49.12z m379.12-28.048a49.216 49.216 0 0 1-49.152-49.168 49.2 49.2 0 0 1 49.152-49.152 49.184 49.184 0 0 1 49.12 49.152 49.2 49.2 0 0 1-49.104 49.168z m-189.584-70.224a56.208 56.208 0 0 1-56.144-56.16 56.208 56.208 0 0 1 56.144-56.16 56.24 56.24 0 0 1 56.192 56.16 56.24 56.24 0 0 1-56.176 56.16z"
+                p-id="11358"
+              ></path>
             </svg>
             <div class="label">
-              <h3 class="title">常用库</h3>
+              <h3 class="title">样式库</h3>
               <!-- <span class="subtitle">More than 5 years</span> -->
             </div>
             <svg class="chevron" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -374,16 +383,10 @@
         <!-- 常用框架 -->
         <div class="skill-accordion">
           <button class="skill-button">
-            <svg class="icon" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title>Backend icon</title>
-              <path
-                d="M7.5 6.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zM23.75 22.5h-7.725a3.75 3.75 0 0 0-2.275-2.275V17.5h5a3.75 3.75 0 0 0 3.75-3.75v-2.5a3.75 3.75 0 0 0-.975-2.5 3.75 3.75 0 0 0 .975-2.5v-2.5A3.75 3.75 0 0 0 18.75 0H6.25A3.75 3.75 0 0 0 2.5 3.75v2.5a3.75 3.75 0 0 0 .975 2.5 3.75 3.75 0 0 0-.975 2.5v2.5a3.75 3.75 0 0 0 3.75 3.75h5v2.725A3.75 3.75 0 0 0 8.975 22.5H1.25a1.25 1.25 0 0 0 0 2.5h7.725a3.75 3.75 0 0 0 7.05 0h7.725a1.25 1.25 0 0 0 0-2.5zM5 3.75A1.25 1.25 0 0 1 6.25 2.5h12.5A1.25 1.25 0 0 1 20 3.75v2.5a1.25 1.25 0 0 1-1.25 1.25H6.25A1.25 1.25 0 0 1 5 6.25v-2.5zM6.25 15A1.25 1.25 0 0 1 5 13.75v-2.5A1.25 1.25 0 0 1 6.25 10h12.5A1.25 1.25 0 0 1 20 11.25v2.5A1.25 1.25 0 0 1 18.75 15H6.25zm6.25 10a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm-5-13.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"
-                fill="#0069D1"
-              />
-            </svg>
+            <svg t="1670425104188" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2635" width="25" height="25"><path d="M896 320H128V160c0-17.6 14.4-32 32-32h704c17.6 0 32 14.4 32 32v160zM320 896H160c-17.6 0-32-14.4-32-32V384h192v512zM864 896H384V384h512v480c0 17.6-14.4 32-32 32z" p-id="2636"></path></svg>
             <div class="label">
               <h3 class="title">常用框架</h3>
-              <span class="subtitle">More than 2 years</span>
+              <!-- <span class="subtitle">More than 2 years</span> -->
             </div>
             <svg class="chevron" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Chevron button icon</title>
@@ -407,16 +410,19 @@
         <!-- 常用工具 -->
         <div class="skill-accordion">
           <button class="skill-button">
-            <svg class="icon" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title>Backend icon</title>
+            <svg t="1670425409792" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15870" width="25" height="25">
               <path
-                d="M7.5 6.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zM23.75 22.5h-7.725a3.75 3.75 0 0 0-2.275-2.275V17.5h5a3.75 3.75 0 0 0 3.75-3.75v-2.5a3.75 3.75 0 0 0-.975-2.5 3.75 3.75 0 0 0 .975-2.5v-2.5A3.75 3.75 0 0 0 18.75 0H6.25A3.75 3.75 0 0 0 2.5 3.75v2.5a3.75 3.75 0 0 0 .975 2.5 3.75 3.75 0 0 0-.975 2.5v2.5a3.75 3.75 0 0 0 3.75 3.75h5v2.725A3.75 3.75 0 0 0 8.975 22.5H1.25a1.25 1.25 0 0 0 0 2.5h7.725a3.75 3.75 0 0 0 7.05 0h7.725a1.25 1.25 0 0 0 0-2.5zM5 3.75A1.25 1.25 0 0 1 6.25 2.5h12.5A1.25 1.25 0 0 1 20 3.75v2.5a1.25 1.25 0 0 1-1.25 1.25H6.25A1.25 1.25 0 0 1 5 6.25v-2.5zM6.25 15A1.25 1.25 0 0 1 5 13.75v-2.5A1.25 1.25 0 0 1 6.25 10h12.5A1.25 1.25 0 0 1 20 11.25v2.5A1.25 1.25 0 0 1 18.75 15H6.25zm6.25 10a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm-5-13.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"
-                fill="#0069D1"
-              />
+                d="M814.933333 1009.066667c-38.4 0-74.666667-14.933333-104.533333-42.666667l-258.133333-256 76.8-76.8 12.8 12.8 29.866666-29.866667 46.933334 46.933334-46.933334 46.933333 196.266667 196.266667c23.466667 23.466667 64 23.466667 89.6 0l53.333333-53.333334c25.6-25.6 25.6-64 0-89.6l-196.266666-196.266666-46.933334 46.933333-46.933333-46.933333 29.866667-29.866667-10.666667-14.933333 76.8-76.8 256 258.133333c57.6 57.6 57.6 151.466667 0 209.066667l-53.333333 53.333333c-29.866667 29.866667-66.133333 42.666667-104.533334 42.666667zM328.533333 490.666667l-85.333333-83.2-113.066667-59.733334L6.4 189.866667 196.266667 0l157.866666 123.733333 59.733334 115.2 89.6 87.466667-59.733334 61.866667-130.133333-130.133334 10.666667-8.533333-36.266667-70.4-85.333333-64-81.066667 81.066667 64 85.333333 70.4 36.266667 8.533333-10.666667 123.733334 123.733333z"
+                p-id="15871"
+              ></path>
+              <path
+                d="M179.2 1009.066667c-29.866667 0-57.6-10.666667-81.066667-34.133334l-53.333333-53.333333c-44.8-44.8-44.8-117.333333 0-162.133333l452.266667-452.266667c-12.8-83.2 12.8-166.4 72.533333-226.133333C650.666667 0 772.266667-19.2 874.666667 34.133333l51.2 27.733334-149.333334 149.333333 32 32 149.333334-149.333333 27.733333 51.2c53.333333 102.4 34.133333 224-46.933333 305.066666-59.733333 59.733333-145.066667 85.333333-226.133334 72.533334L260.266667 977.066667c-21.333333 21.333333-51.2 32-81.066667 32z m576-917.333334c-44.8 0-89.6 17.066667-123.733333 51.2-44.8 44.8-61.866667 108.8-44.8 168.533334l6.4 23.466666L106.666667 821.333333c-10.666667 10.666667-10.666667 29.866667 0 40.533334l53.333333 53.333333c10.666667 10.666667 29.866667 10.666667 40.533333 0l486.4-486.4 23.466667 6.4c59.733333 17.066667 125.866667-2.133333 168.533333-44.8 38.4-38.4 57.6-93.866667 51.2-145.066667L810.666667 364.8 657.066667 213.333333l119.466666-119.466666c-6.4-2.133333-14.933333-2.133333-21.333333-2.133334z"
+                p-id="15872"
+              ></path>
             </svg>
             <div class="label">
               <h3 class="title">常用工具</h3>
-              <span class="subtitle">More than 5 years</span>
+              <!-- <span class="subtitle">More than 5 years</span> -->
             </div>
             <svg class="chevron" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Chevron button icon</title>
@@ -428,24 +434,45 @@
             <ul class="skill-list -fourth">
               <li class="skill-item">
                 <div class="skill-title">
-                  <span class="name">Git</span>
+                  <span class="name">Vue-cli</span>
                   <span class="value">80%</span>
+                </div>
+                <div class="skill-bar -vuecli"></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-title">
+                  <span class="name">Vite</span>
+                  <span class="value">75%</span>
+                </div>
+                <div class="skill-bar -vite"></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-title">
+                  <span class="name">Vuex</span>
+                  <span class="value">75%</span>
+                </div>
+                <div class="skill-bar -vuex"></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-title">
+                  <span class="name">VueRouter</span>
+                  <span class="value">75%</span>
+                </div>
+                <div class="skill-bar -vuerouter"></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-title">
+                  <span class="name">Git</span>
+                  <span class="value">70%</span>
                 </div>
                 <div class="skill-bar -git"></div>
               </li>
               <li class="skill-item">
                 <div class="skill-title">
                   <span class="name">webpack</span>
-                  <span class="value">50%</span>
+                  <span class="value">60%</span>
                 </div>
                 <div class="skill-bar -webpack"></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-title">
-                  <span class="name">Bootstrap</span>
-                  <span class="value">80%</span>
-                </div>
-                <div class="skill-bar -Sketch"></div>
               </li>
             </ul>
           </div>
@@ -590,7 +617,7 @@
                     <strong>主要技术</strong>
                     ：Echarts & HTML & LESS & JS & VUE，利用Echarts将各类数据可视化展示
                   </p>
-                  <a href="https://github.com/paopao0108/cube" class="more" target="_blank" rel="noopener">
+                  <a href="https://github.com/paopao0108/vision" class="more" target="_blank" rel="noopener">
                     查看更多
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <title>Right Arrow</title>
@@ -601,7 +628,7 @@
               </li>
               <!-- 疫情地图 -->
               <li class="glide__slide">
-                <video autoplay loop muted playsinline>
+                <video class="map" autoplay loop muted playsinline>
                   <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/map.webm" type="video/webm" />
                   <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/map.mp4" type="video/mp4" />
                 </video>
@@ -614,7 +641,7 @@
                     <strong>主要技术</strong>
                     ：Echarts & VUE & HTML & CSS & JS，使用Echarts绘制中国地图、世界地图
                   </p>
-                  <a href="" class="more">
+                  <a href="https://github.com/paopao0108/vue-covid19" class="more">
                     查看更多
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <title>Right Arrow</title>
@@ -638,7 +665,31 @@
                     <strong>主要技术</strong>
                     ：ElementUI & Echarts & HTML & CSS & JS，基于vue-admin-template模板进行后台系统开发，使用elementUI组件进行布局
                   </p>
-                  <a href="" class="more">
+                  <a href="https://github.com/paopao0108/manageSystem" class="more">
+                    查看更多
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <title>Right Arrow</title>
+                      <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#FFF" />
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <!-- 绘图工具 -->
+              <li class="glide__slide">
+                <video autoplay loop muted playsinline>
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drawing.webm" type="video/webm" />
+                  <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drawing.mp4" type="video/mp4" />
+                </video>
+                <div class="portfolio-content">
+                  <h3 class="title">绘图工具</h3>
+                  <p class="desc">
+                    <strong>作品概述</strong>
+                    ：画板，可实现基本的书写、绘图、擦除等功能
+                    <br />
+                    <strong>主要技术</strong>
+                    ：HTML & CSS & JS & Canvas，使用Canvas来实现画板
+                  </p>
+                  <a href="https://github.com/paopao0108/manageSystem" class="more">
                     查看更多
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <title>Right Arrow</title>
@@ -667,6 +718,7 @@
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
             <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
             <!-- <button class="glide__bullet" data-glide-dir="=3"></button> -->
           </div>
         </div>
@@ -686,6 +738,19 @@
           <div class="category part2">VUE项目</div>
         </div>
         <ul class="demo-list">
+          <li class="item cube vue">
+            <video autoplay loop muted playsinline>
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.webm" type="video/webm" />
+              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.mp4" type="video/mp4" />
+            </video>
+            <span class="desc">
+              <strong>作品概述</strong>
+              ：3D魔方，实现鼠标来控制魔方块的转动； 通过键盘上下左右的按键控制魔方的整体转动
+              <br />
+              <strong>主要技术</strong>
+              ：HTML&CSS$JS&VUE，CSS的3D样式来实现魔方块的结构； 利用vue实现手势操作
+            </span>
+          </li>
           <li class="item clock original">
             <video autoplay loop muted playsinline>
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/clock.webm" type="video/webm" />
@@ -752,35 +817,10 @@
               ：迷宫，指定键盘按键按下时控制角色在迷宫地图中移动，角色只能在路径上移动，不能移到路径外。
               <br />
               <strong>主要技术</strong>
-              ：HTML&LESS$JS，使用Prim算法来生成迷宫，使用定时器控制角色平滑的在路径上移动
+              ：HTML&LESS&JS，使用Prim算法来生成迷宫，使用定时器控制角色平滑的在路径上移动
             </span>
           </li>
-          <li class="item drawing original">
-            <video autoplay loop muted playsinline>
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drawing.webm" type="video/webm" />
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/drawing.mp4" type="video/mp4" />
-            </video>
-            <span class="desc">
-              <strong>作品概述</strong>
-              ：画板，可实现基本的书写、绘图、擦除等功能
-              <br />
-              <strong>主要技术</strong>
-              ：HTML&CSS&JS&Canvas，使用Canvas来实现画板
-            </span>
-          </li>
-          <li class="item cube vue">
-            <video autoplay loop muted playsinline>
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.webm" type="video/webm" />
-              <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/3dcube.mp4" type="video/mp4" />
-            </video>
-            <span class="desc">
-              <strong>作品概述</strong>
-              ：3D魔方，实现鼠标来控制魔方块的转动； 通过键盘上下左右的按键控制魔方的整体转动
-              <br />
-              <strong>主要技术</strong>
-              ：HTML&CSS$JS&VUE，CSS的3D样式来实现魔方块的结构； 利用vue实现手势操作
-            </span>
-          </li>
+
           <li class="item flappybird original">
             <video autoplay loop muted playsinline>
               <source src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/video/flappybird.webm" type="video/webm" />
@@ -822,7 +862,7 @@
                 ：静态网页
                 <br />
                 <strong>主要技术</strong>
-                ：HTML&CSS，利用定位、浮动来布局，使用懒加载提升用户体验
+                ：HTML&CSS&JS，利用定位、浮动来布局，使用懒加载提升用户体验
               </span>
             </a>
           </li>
@@ -832,13 +872,13 @@
 
     <!-- 作品demo2 -->
 
-    <!-- newproject ====> contanctMe -->
+    <!-- Join ====> contanctMe -->
     <section class="section newproject">
       <div class="container">
         <div class="newproject-content">
-          <h3 class="title">期待加入贵公司</h3>
+          <h3 class="title">非常期待加入贵公司</h3>
           <p class="subtitle">
-            <strong>薪资要求：</strong>
+            <strong>期望薪资：</strong>
             8K
             <br />
             <strong>入职时间：</strong>
@@ -873,7 +913,7 @@
       <div class="container">
         <div class="contactme-contacts">
           <div class="contact">
-            <svg class="icon" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon" width="50" height="50" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Phone icon</title>
               <path
                 d="M23.653 14.893c-.298 0-.61-.095-.907-.163a12.767 12.767 0 0 1-1.775-.53 2.703 2.703 0 0 0-3.36 1.359l-.298.611a16.51 16.51 0 0 1-3.604-2.717 16.55 16.55 0 0 1-2.71-3.615l.57-.38a2.725 2.725 0 0 0 1.355-3.37 14.078 14.078 0 0 1-.53-1.78 10.14 10.14 0 0 1-.162-.924A4.08 4.08 0 0 0 10.822.94 4.057 4.057 0 0 0 8.167 0H4.103a4.054 4.054 0 0 0-3.09 1.384 4.08 4.08 0 0 0-.975 3.25 25.846 25.846 0 0 0 7.367 15.032A25.713 25.713 0 0 0 22.421 27h.514A4.058 4.058 0 0 0 27 22.91v-4.076a4.083 4.083 0 0 0-.97-2.572 4.062 4.062 0 0 0-2.377-1.369zm.678 8.153a1.363 1.363 0 0 1-.98 1.306 1.432 1.432 0 0 1-.592.053 23.007 23.007 0 0 1-13.396-6.617A23.127 23.127 0 0 1 2.83 4.32a1.485 1.485 0 0 1 .339-1.114 1.355 1.355 0 0 1 1.016-.462H8.25A1.352 1.352 0 0 1 9.603 3.82c.055.371.122.738.204 1.1.156.717.364 1.42.623 2.106l-1.897.884a1.355 1.355 0 0 0-.789 1.29c.008.179.05.355.125.517a19.66 19.66 0 0 0 9.484 9.512c.33.135.7.135 1.03 0a1.353 1.353 0 0 0 .772-.707l.84-1.902c.7.25 1.416.46 2.141.625.361.081.727.15 1.097.204a1.354 1.354 0 0 1 1.07 1.358l.028 4.24z"
@@ -882,11 +922,11 @@
             </svg>
             <div class="data">
               <h3 class="title">Call Me</h3>
-              <span class="subtitle">180****8507</span>
+              <span class="subtitle">18019308507</span>
             </div>
           </div>
           <div class="contact">
-            <svg class="icon" width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon" width="50" height="50" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Email icon</title>
               <path d="M22.95 0H4.05A4.05 4.05 0 0 0 0 4.05v13.5a4.05 4.05 0 0 0 4.05 4.05h18.9A4.05 4.05 0 0 0 27 17.55V4.05A4.05 4.05 0 0 0 22.95 0zm-.553 2.7-7.938 7.938a1.35 1.35 0 0 1-1.918 0L4.603 2.7h17.794zM24.3 17.55a1.35 1.35 0 0 1-1.35 1.35H4.05a1.35 1.35 0 0 1-1.35-1.35V4.603l7.938 7.938a4.05 4.05 0 0 0 5.724 0L24.3 4.603V17.55z" fill="#000000" />
             </svg>
@@ -896,7 +936,7 @@
             </div>
           </div>
           <div class="contact">
-            <svg t="1667696912671" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14423" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30">
+            <svg t="1667696912671" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14423" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50">
               <path
                 d="M664.250054 368.541681c10.015098 0 19.892049 0.732687 29.67281 1.795902-26.647917-122.810047-159.358451-214.077703-310.826188-214.077703-169.353083 0-308.085774 114.232694-308.085774 259.274068 0 83.708494 46.165436 152.460344 123.281791 205.78483l-30.80868 91.730191 107.688651-53.455469c38.558178 7.53665 69.459978 15.308661 107.924012 15.308661 9.66308 0 19.230993-0.470721 28.752858-1.225921-6.025227-20.36584-9.521864-41.723264-9.521864-63.862493C402.328693 476.632491 517.908058 368.541681 664.250054 368.541681zM498.62897 285.87389c23.200398 0 38.557154 15.120372 38.557154 38.061874 0 22.846334-15.356756 38.156018-38.557154 38.156018-23.107277 0-46.260603-15.309684-46.260603-38.156018C452.368366 300.994262 475.522716 285.87389 498.62897 285.87389zM283.016307 362.090758c-23.107277 0-46.402843-15.309684-46.402843-38.156018 0-22.941502 23.295566-38.061874 46.402843-38.061874 23.081695 0 38.46301 15.120372 38.46301 38.061874C321.479317 346.782098 306.098002 362.090758 283.016307 362.090758zM945.448458 606.151333c0-121.888048-123.258255-221.236753-261.683954-221.236753-146.57838 0-262.015505 99.348706-262.015505 221.236753 0 122.06508 115.437126 221.200938 262.015505 221.200938 30.66644 0 61.617359-7.609305 92.423993-15.262612l84.513836 45.786813-23.178909-76.17082C899.379213 735.776599 945.448458 674.90216 945.448458 606.151333zM598.803483 567.994292c-15.332197 0-30.807656-15.096836-30.807656-30.501688 0-15.190981 15.47546-30.477129 30.807656-30.477129 23.295566 0 38.558178 15.286148 38.558178 30.477129C637.361661 552.897456 622.099049 567.994292 598.803483 567.994292zM768.25071 567.994292c-15.213493 0-30.594809-15.096836-30.594809-30.501688 0-15.190981 15.381315-30.477129 30.594809-30.477129 23.107277 0 38.558178 15.286148 38.558178 30.477129C806.808888 552.897456 791.357987 567.994292 768.25071 567.994292z"
                 p-id="14424"
@@ -908,7 +948,7 @@
             </div>
           </div>
         </div>
-        <div class="contactme-form">
+        <!-- <div class="contactme-form">
           <div class="contactme-field -name">
             <label for="name" class="label">Name</label>
             <input id="name" type="text" class="input" />
@@ -932,7 +972,7 @@
               <path d="M14.67 5.853 3.472.251A2.4 2.4 0 0 0 .207 3.372l1.92 4.298a.849.849 0 0 1 0 .656l-1.92 4.297A2.402 2.402 0 0 0 2.4 16a2.51 2.51 0 0 0 1.08-.256l11.2-5.602a2.4 2.4 0 0 0 0-4.289h-.008zM13.96 8.71l-11.2 5.601a.8.8 0 0 1-1.08-1.04l1.912-4.297c.025-.057.046-.116.064-.176h5.512a.8.8 0 0 0 0-1.6H3.655a1.6 1.6 0 0 0-.064-.177L1.68 2.724a.8.8 0 0 1 1.08-1.04l11.2 5.601a.8.8 0 0 1 0 1.425z" />
             </svg>
           </button>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -946,7 +986,7 @@
         <div class="sitemap">
           <ul class="list">
             <li class="item">
-              <a href="#services" class="link">服务</a>
+              <a href="#about" class="link">介绍</a>
             </li>
             <li class="item">
               <a href="#portfolio" class="link">作品</a>

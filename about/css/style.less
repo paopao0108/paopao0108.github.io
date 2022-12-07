@@ -691,67 +691,70 @@ body.dark-theme {
 
 /* About Start */
 .about {
+  width: 100%;
   .container {
     justify-content: center;
     align-items: center;
 
-    .about-photo {
-      width: 50%;
-      display: flex;
-      justify-content: center;
+    // .about-photo {
+    //   width: 50%;
+    //   display: flex;
+    //   justify-content: center;
 
-      // align-items: center;
-      // picture {
-      //   border-radius: 1rem;
-      //   margin-bottom: 2rem;
-      //   source {
-      //   }
-      //   @media screen and (min-width: 1024px) {
-      //     width: 35.5rem;
-      //     height: auto;
-      //   }
-      // }
-      picture {
+    //   picture {
         
-        img {
-          border-radius: 1rem;
-          margin-bottom: 2rem;
-          @media screen and (min-width: 1024px) {
-            width: 35.5rem;
-            height: auto;
-          }
-        }
-      }
-    }
+    //     img {
+    //       border-radius: 1rem;
+    //       margin-bottom: 2rem;
+    //       @media screen and (min-width: 1024px) {
+    //         width: 35.5rem;
+    //         height: auto;
+    //       }
+    //     }
+    //   }
+    // }
 
     .about-content {
+      width: 100%;
       text-align: center;
-
-      @media screen and (min-width: 610px) {
-        width: 50%;
-        padding: 0 1.5rem;
-      }
-
-      @media screen and (min-width: 1024px) {
-        width: 40%;
-        padding: 0 2.4rem;
-      }
-
       .description {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 22rem);
         font-size: 1.5rem;
         color: @text-color-lighter;
         text-align: center;
-        margin-bottom: 3.6rem;
-
+        margin-bottom: 6rem;
+        gap: 10px;
+        span {
+          width: 100%;
+          height: 20rem;
+          padding: 4rem 2rem 2rem;
+          border-radius: 20px;
+          box-shadow: 2px 2px 6px 3px @shadow-color;
+          background-color: @background-color;
+          text-align: center;
+          .title {
+            display: inline-block;
+            padding-bottom: 2rem;
+            font-size: 2rem;
+            color: @title-color
+          }
+        }
         @media screen and (min-width: 1024px) {
-          text-align: left;
-          font-size: 1.6rem;
+          display: flex;
+          justify-content: space-evenly;
+          span {
+            width: 30%;
+            height: 30rem;
+          }
         }
       }
 
       .about-numbers {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: flex-start;
         margin-bottom: 6rem;
         padding: 0 2rem;
@@ -789,7 +792,7 @@ body.dark-theme {
         .button();
 
         @media screen and (min-width: 1024px) {
-          margin: 0;
+          // margin: 0;
         }
       }
     }
@@ -905,6 +908,9 @@ body.dark-theme {
                   &.-canvas:before {
                     .slideAnimation (canvas, 80%, running);
                   }
+                  &.-ajax:before {
+                    .slideAnimation (ajax, 80%, running);
+                  }
                 }
               }
 
@@ -943,17 +949,26 @@ body.dark-theme {
 
               &.-fourth {
                 .skill-bar {
+                  &.-vuecli:before {
+                    .slideAnimation (vuecli, 80%, running);
+                  }
+                  &.-vite:before {
+                    .slideAnimation (vite, 75%, running);
+                  }
+                  &.-vuex:before {
+                    .slideAnimation (vuex, 75%, running);
+                  }
+                  &.-vuerouter:before {
+                    .slideAnimation (vuerouter, 75%, running);
+                  }
                   &.-git:before {
-                    .slideAnimation (git, 80%, running);
+                    .slideAnimation (git, 70%, running);
                   }
 
                   &.-webpack:before {
-                    .slideAnimation (webpack, 50%, running);
+                    .slideAnimation (webpack, 60%, running);
                   }
 
-                  &.-Sketch:before {
-                    .slideAnimation (Sketch, 80%, running);
-                  }
                 }
               }
             }
@@ -1216,6 +1231,9 @@ body.dark-theme {
               height: auto;
               border-radius: 1rem;
               margin-bottom: 2rem;
+              &.map {
+                max-height: 38.7rem;
+              }
             }
 
             .portfolio-content {
@@ -1719,11 +1737,16 @@ body.dark-theme {
 /* Testimonial End */
 
 /* ContactMe Start */
-.contact {
+#contact {
+  margin-bottom: 20px;
   .container {
-    align-items: flex-start;
+    // align-items: flex-start;
+    align-items: center;
 
     .contactme-contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       width: 100%;
 
       .contact {
@@ -1798,6 +1821,11 @@ body.dark-theme {
   @media screen and (min-width: 610px) {
     .container {
       flex-direction: row;
+      .contactme-contacts {
+        flex-direction: row;
+        justify-content: space-between;
+
+      }
     }
   }
 
@@ -1809,7 +1837,10 @@ body.dark-theme {
       padding-right: 4rem;
 
       .contactme-contacts {
-        width: 75%;
+        // display: flex;
+        
+        // width: 75%;
+        width: 100%;
       }
 
       .contactme-form {

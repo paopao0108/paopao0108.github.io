@@ -509,55 +509,56 @@ body.dark-theme {
 }
 /* Home End */
 /* About Start */
+.about {
+  width: 100%;
+}
 .about .container {
   justify-content: center;
   align-items: center;
 }
-.about .container .about-photo {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.about .container .about-photo picture img {
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-}
-@media screen and (min-width: 1024px) {
-  .about .container .about-photo picture img {
-    width: 35.5rem;
-    height: auto;
-  }
-}
 .about .container .about-content {
+  width: 100%;
   text-align: center;
 }
-@media screen and (min-width: 610px) {
-  .about .container .about-content {
-    width: 50%;
-    padding: 0 1.5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .about .container .about-content {
-    width: 40%;
-    padding: 0 2.4rem;
-  }
-}
 .about .container .about-content .description {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 22rem);
   font-size: 1.5rem;
   color: hsl(275, 8%, 65%);
   text-align: center;
-  margin-bottom: 3.6rem;
+  margin-bottom: 6rem;
+  gap: 10px;
+}
+.about .container .about-content .description span {
+  width: 100%;
+  height: 20rem;
+  padding: 4rem 2rem 2rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px 3px var(--shadow-color, hsl(275, 10%, 90%));
+  background-color: var(--background-color, hsl(0, 0%, 100%));
+  text-align: center;
+}
+.about .container .about-content .description span .title {
+  display: inline-block;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--title-color, hsl(275, 8%, 15%));
 }
 @media screen and (min-width: 1024px) {
   .about .container .about-content .description {
-    text-align: left;
-    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about .container .about-content .description span {
+    width: 30%;
+    height: 30rem;
   }
 }
 .about .container .about-content .about-numbers {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
   margin-bottom: 6rem;
   padding: 0 2rem;
@@ -616,9 +617,6 @@ body.dark-theme {
   fill: var(--high-contrast, hsl(0, 0%, 100%));
 }
 @media screen and (min-width: 1024px) {
-  .about .container .about-content .download {
-    margin: 0;
-  }
 }
 /* About End */
 /* Skills Start */
@@ -752,6 +750,17 @@ body.dark-theme {
     width: 80%;
   }
 }
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-first .skill-bar.-ajax:before {
+  animation: ajax 1s ease-in-out running forwards;
+}
+@keyframes ajax {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 .skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-second .skill-bar.-elemui:before {
   animation: elemui 1s ease-in-out running forwards;
 }
@@ -818,6 +827,50 @@ body.dark-theme {
     width: 90%;
   }
 }
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-vuecli:before {
+  animation: vuecli 1s ease-in-out running forwards;
+}
+@keyframes vuecli {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-vite:before {
+  animation: vite 1s ease-in-out running forwards;
+}
+@keyframes vite {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-vuex:before {
+  animation: vuex 1s ease-in-out running forwards;
+}
+@keyframes vuex {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-vuerouter:before {
+  animation: vuerouter 1s ease-in-out running forwards;
+}
+@keyframes vuerouter {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
 .skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-git:before {
   animation: git 1s ease-in-out running forwards;
 }
@@ -826,7 +879,7 @@ body.dark-theme {
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 70%;
   }
 }
 .skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-webpack:before {
@@ -837,18 +890,7 @@ body.dark-theme {
     width: 0%;
   }
   100% {
-    width: 50%;
-  }
-}
-.skills .container .skill-accordion .skill-button.-active + .skill-content .skill-list.-fourth .skill-bar.-Sketch:before {
-  animation: Sketch 1s ease-in-out running forwards;
-}
-@keyframes Sketch {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
+    width: 60%;
   }
 }
 .skills .container .skill-accordion .skill-content {
@@ -1025,6 +1067,9 @@ body.dark-theme {
   height: auto;
   border-radius: 1rem;
   margin-bottom: 2rem;
+}
+.portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide video.map {
+  max-height: 38.7rem;
 }
 .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide .portfolio-content {
   width: auto;
@@ -1399,45 +1444,51 @@ body.dark-theme {
 }
 /* Testimonial End */
 /* ContactMe Start */
-.contact .container {
-  align-items: flex-start;
+#contact {
+  margin-bottom: 20px;
 }
-.contact .container .contactme-contacts {
+#contact .container {
+  align-items: center;
+}
+#contact .container .contactme-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
 }
-.contact .container .contactme-contacts .contact {
+#contact .container .contactme-contacts .contact {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 3.5rem;
 }
-.contact .container .contactme-contacts .contact svg {
+#contact .container .contactme-contacts .contact svg {
   margin-right: 1.5rem;
 }
-.contact .container .contactme-contacts .contact svg path {
+#contact .container .contactme-contacts .contact svg path {
   fill: hsl(275, 100%, 41%);
 }
-.contact .container .contactme-contacts .contact .data .title {
+#contact .container .contactme-contacts .contact .data .title {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--title-color, hsl(275, 8%, 15%));
 }
-.contact .container .contactme-contacts .contact .data .subtitle {
+#contact .container .contactme-contacts .contact .data .subtitle {
   font-size: 1.3rem;
   color: hsl(275, 8%, 65%);
 }
 @media screen and (min-width: 1024px) {
-  .contact .container .contactme-contacts .contact .data .title {
+  #contact .container .contactme-contacts .contact .data .title {
     font-size: 2.1rem;
   }
-  .contact .container .contactme-contacts .contact .data .subtitle {
+  #contact .container .contactme-contacts .contact .data .subtitle {
     font-size: 1.4rem;
   }
 }
-.contact .container .contactme-form {
+#contact .container .contactme-form {
   width: 100%;
 }
-.contact .container .contactme-form .contactme-field {
+#contact .container .contactme-form .contactme-field {
   background-color: var(--input-color, hsl(275, 70%, 96%));
   display: flex;
   flex-direction: column;
@@ -1445,14 +1496,14 @@ body.dark-theme {
   padding: 1.6rem;
   margin-bottom: 2.4rem;
 }
-.contact .container .contactme-form .contactme-field .label {
+#contact .container .contactme-form .contactme-field .label {
   color: hsl(275, 8%, 65%);
 }
-.contact .container .contactme-form .contactme-field .input {
+#contact .container .contactme-form .contactme-field .input {
   padding: 0.5rem;
   background-color: transparent;
 }
-.contact .container .contactme-form .sendMsg {
+#contact .container .contactme-form .sendMsg {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: var(--high-contrast, hsl(0, 0%, 100%));
@@ -1461,50 +1512,54 @@ body.dark-theme {
   border-radius: 1rem;
 }
 @media screen and (min-width: 1024px) {
-  .contact .container .contactme-form .sendMsg {
+  #contact .container .contactme-form .sendMsg {
     font-size: 1.6rem;
     cursor: pointer;
     transition: 0.3s;
   }
-  .contact .container .contactme-form .sendMsg:hover {
+  #contact .container .contactme-form .sendMsg:hover {
     background-color: hsl(275, 100%, 35%);
     transition: 0.3s;
   }
 }
-.contact .container .contactme-form .sendMsg svg {
+#contact .container .contactme-form .sendMsg svg {
   margin-left: 0.5rem;
 }
-.contact .container .contactme-form .sendMsg svg path {
+#contact .container .contactme-form .sendMsg svg path {
   fill: var(--high-contrast, hsl(0, 0%, 100%));
 }
 @media screen and (min-width: 610px) {
-  .contact .container {
+  #contact .container {
     flex-direction: row;
+  }
+  #contact .container .contactme-contacts {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1024px) {
-  .contact .container {
+  #contact .container {
     max-width: 99.2rem;
     margin: 0 auto;
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .contact .container .contactme-contacts {
-    width: 75%;
+  #contact .container .contactme-contacts {
+    width: 100%;
   }
-  .contact .container .contactme-form {
+  #contact .container .contactme-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'a b' 'project project' 'message message' 'sendMsg .';
     column-gap: 2.4rem;
   }
-  .contact .container .contactme-form .contactme-field.-project {
+  #contact .container .contactme-form .contactme-field.-project {
     grid-area: project;
   }
-  .contact .container .contactme-form .contactme-field.-message {
+  #contact .container .contactme-form .contactme-field.-message {
     grid-area: message;
   }
-  .contact .container .contactme-form .sendMsg {
+  #contact .container .contactme-form .sendMsg {
     grid-area: sendMsg;
     width: 70%;
   }
