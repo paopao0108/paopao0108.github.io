@@ -174,8 +174,9 @@ themeBtn.addEventListener('click', function () {
 /* 作品Start */
 // 筛选展示作品
 let categories = document.querySelectorAll('.demo-category .category');
-let originalProjs = document.querySelectorAll('.original');
-let vueProjs = document.querySelectorAll('.vue');
+let originalProjs = document.querySelectorAll('.demo-list .original');
+let vueProjs = document.querySelectorAll('.demo-list .vue');
+let allProjs = document.querySelectorAll('.demo-list .item');
 categories.forEach(item => {
   item.addEventListener('click', function () {
     // 先移除所有的active类
@@ -185,7 +186,18 @@ categories.forEach(item => {
         break;
       }
     }
+    // 为当前类添加active类
     item.classList.add('-active');
+    // 先隐藏所有
+    allProjs.forEach(item => (item.style.display = 'none'));
+    // 再显示当前分类所属
+    if (item.classList.contains('part1')) {
+      originalProjs.forEach(item => (item.style.display = 'block'));
+    } else if (item.classList.contains('part2')) {
+      vueProjs.forEach(item => (item.style.display = 'block'));
+    } else if (item.classList.contains('all')) {
+      allProjs.forEach(item => (item.style.display = 'block'));
+    }
   });
 });
 /* 作品End */

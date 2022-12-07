@@ -1165,18 +1165,6 @@ body.dark-theme {
     columns: 3;
   }
 }
-.demo .original {
-  display: block;
-}
-.demo .original.hidden {
-  display: none;
-}
-.demo .vue {
-  display: block;
-}
-.demo .vue.hidden {
-  display: none;
-}
 /* 作品demo End */
 /* Newproject Start */
 .newproject {
