@@ -170,3 +170,22 @@ themeBtn.addEventListener('click', function () {
 //     observer.unobserve(img);
 //   };
 // });
+
+/* 作品Start */
+// 筛选展示作品
+let categories = document.querySelectorAll('.demo-category .category');
+let originalProjs = document.querySelectorAll('.original');
+let vueProjs = document.querySelectorAll('.vue');
+categories.forEach(item => {
+  item.addEventListener('click', function () {
+    // 先移除所有的active类
+    for (let i = 0; i < categories.length; i++) {
+      if (categories[i].classList.contains('-active')) {
+        categories[i].classList.remove('-active');
+        break;
+      }
+    }
+    item.classList.add('-active');
+  });
+});
+/* 作品End */

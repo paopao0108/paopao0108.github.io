@@ -966,7 +966,7 @@ body.dark-theme {
   margin: 0 auto;
 }
 .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide video {
-  width: 20rem;
+  width: 26rem;
   height: auto;
   border-radius: 1rem;
   margin-bottom: 2rem;
@@ -1056,7 +1056,8 @@ body.dark-theme {
     justify-content: center;
   }
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide video {
-    width: 24.4rem;
+    max-width: 40rem;
+    width: auto;
     height: auto;
   }
   .portfolio .container .portfolio-carousel .glide__track .glide__slides .glide__slide .portfolio-content {
@@ -1114,9 +1115,10 @@ body.dark-theme {
   color: hsl(275, 8%, 65%);
   font-size: 2rem;
   font-weight: 500;
+  cursor: pointer;
 }
 .demo .container .demo-category .category.-active {
-  color: var(--text-color, hsl(275, 8%, 45%));
+  color: hsl(275, 100%, 41%);
   font-weight: 600;
 }
 .demo .container .demo-list {
@@ -1163,77 +1165,19 @@ body.dark-theme {
     columns: 3;
   }
 }
+.demo .original {
+  display: block;
+}
+.demo .original.hidden {
+  display: none;
+}
+.demo .vue {
+  display: block;
+}
+.demo .vue.hidden {
+  display: none;
+}
 /* 作品demo End */
-/* demo2 Start */
-.demo2 .container {
-  flex-direction: column;
-}
-.demo2 .container .demo2-category {
-  display: flex;
-}
-.demo2 .container .demo2-category .category {
-  padding: 2rem 3rem;
-  color: hsl(275, 8%, 65%);
-  font-size: 2rem;
-  font-weight: 500;
-}
-.demo2 .container .demo2-category .category.-active {
-  color: var(--text-color, hsl(275, 8%, 45%));
-  font-weight: 600;
-}
-.demo2 .container .demo2-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-template-rows: minmax(20rem, auto);
-  grid-auto-flow: dense;
-}
-.demo2 .container .demo2-list .item {
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 2rem;
-  box-shadow: 1px 1px 6px 2px var(--shadow-color, hsl(275, 10%, 90%));
-}
-.demo2 .container .demo2-list .item img,
-.demo2 .container .demo2-list .item video {
-  width: 100%;
-  border-radius: 1rem;
-  scale: 1;
-  transition: 0.3s;
-}
-.demo2 .container .demo2-list .item img:hover,
-.demo2 .container .demo2-list .item video:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
-.demo2 .container .demo2-list .item.drag {
-  grid-column: span 1;
-}
-.demo2 .container .demo2-list .item.richText {
-  grid-column: span 2;
-}
-.demo2 .container .demo2-list .item.drawing {
-  grid-column: span 2;
-}
-.demo2 .container .demo2-list .item.cube {
-  grid-column: span 1;
-}
-.demo2 .container .demo2-list .item.flappybird {
-  grid-column: span 2;
-}
-.demo2 .container .demo2-list .item.jigsaw {
-  grid-column: span 1;
-}
-.demo2 .container .demo2-list .item.maze {
-  grid-column: span 1;
-}
-.demo2 .container .demo2-list .item.tetris {
-  grid-column: span 1;
-}
-.demo2 .container .demo2-list .item .desc {
-  font-size: 1.2rem;
-  color: hsl(275, 8%, 65%);
-}
-/* demo2 End */
 /* Newproject Start */
 .newproject {
   background-color: hsl(275, 100%, 41%);

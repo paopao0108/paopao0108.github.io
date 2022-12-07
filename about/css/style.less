@@ -1196,7 +1196,7 @@ body.dark-theme {
         .glide__slides {
           .glide__slide {
             video {
-              width: 20rem;
+              width: 26rem;
               height: auto;
               border-radius: 1rem;
               margin-bottom: 2rem;
@@ -1286,7 +1286,8 @@ body.dark-theme {
               display: flex;
               justify-content: center;
               video {
-                width: 24.4rem;
+                max-width: 40rem;
+                width: auto;
                 height: auto;
               }
 
@@ -1373,9 +1374,9 @@ body.dark-theme {
         color: @text-color-lighter;
         font-size: 2rem;
         font-weight: @medium-font;
-
+        cursor: pointer;
         &.-active {
-          color: @text-color;
+          color: @first-color;
           font-weight: @semi-font;
         }
       }
@@ -1476,99 +1477,22 @@ body.dark-theme {
       // }
     }
   }
-}
-
-/* 作品demo End */
-
-
-/* demo2 Start */
-.demo2 {
-  .container {
-    flex-direction: column;
-
-    .demo2-category {
-      display: flex;
-
-      .category {
-        padding: 2rem 3rem;
-        color: @text-color-lighter;
-        font-size: 2rem;
-        font-weight: @medium-font;
-
-        &.-active {
-          color: @text-color;
-          font-weight: @semi-font;
-        }
-      }
+  .original {
+    display: block;
+    &.hidden {
+      display: none;
     }
-
-    .demo2-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-      grid-template-rows: minmax(20rem, auto);
-      grid-auto-flow: dense;
-
-      .item {
-        margin: 1rem;
-        padding: 1rem;
-        border-radius: 2rem;
-        box-shadow: 1px 1px 6px 2px @shadow-color;
-
-        img,
-        video {
-          width: 100%;
-          border-radius: 1rem;
-          scale: 1;
-          transition: .3s;
-
-          &:hover {
-            scale: 103%;
-            transition: .3s;
-          }
-        }
-
-        &.drag {
-          grid-column: span 1;
-        }
-
-        &.richText {
-          grid-column: span 2;
-        }
-
-        &.drawing {
-          grid-column: span 2;
-        }
-
-        &.cube {
-          grid-column: span 1;
-        }
-
-        &.flappybird {
-          grid-column: span 2;
-        }
-
-        &.jigsaw {
-          grid-column: span 1;
-        }
-
-        &.maze {
-          grid-column: span 1;
-        }
-
-        &.tetris {
-          grid-column: span 1;
-        }
-
-        .desc {
-          font-size: 1.2rem;
-          color: @text-color-lighter;
-        }
-      }
+  }
+  .vue {
+    display: block;
+    &.hidden {
+      display: none;
     }
   }
 }
 
-/* demo2 End */
+/* 作品demo End */
+
 
 /* Newproject Start */
 .newproject {

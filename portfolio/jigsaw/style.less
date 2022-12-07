@@ -1,0 +1,142 @@
+:root {
+  --block-width: 80;
+  --block-height: 80;
+  --block-number: 3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(113, 119, 235);
+  overflow: hidden;
+}
+
+.wrap {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px; */
+  width: calc(var(--block-width) *3px);
+  height: calc(var(--block-height) *3px);
+  background-color: rgb(2, 17, 76);
+  position: relative;
+  .block {
+    position: absolute;
+    width: calc(var(--block-width) *1px);
+    height: calc(var(--block-height) *1px);
+    user-select: none;
+    color: rgb(27, 30, 83);
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: calc(var(--block-height) *1px);
+    background-color: rgb(243, 214, 141);
+    border: 1px solid rgb(27, 30, 83);
+    transition: .3s;
+    &:nth-child(3n) {
+      left: calc(var(--block-width) * 2px);
+    }
+    &:nth-child(3n-1) {
+      left: calc(var(--block-width) * 1px);
+    }
+    &:nth-child(3n-2) {
+      left: 0;
+    }
+    // 注意以下三个选择器 设置top时的顺序 不能错
+    &:nth-child(-n+9) {
+      top: calc(var(--block-width) * 2px);
+    }
+    &:nth-child(-n+6) {
+      top: calc(var(--block-width) * 1px);
+    }
+    &:nth-child(-n+3) {
+      top: 0;
+    }
+    &.blank {
+      text-indent: 9999px;
+    }
+  }
+}
+
+.button {
+  margin-top: 20px;
+  .btn {
+    color: rgb(181, 206, 236);
+    background-color: rgb(2, 17, 76);
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 6;
+  }
+}
+
+.timer {
+  width: calc(var(--block-width) *3px);
+  color: rgb(181, 206, 236);
+  margin: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+  .title {
+    background-color: rgb(2, 17, 76);
+    border-radius: 10px;
+    padding: 6px;
+    .value {
+      display: inline-block;
+    }
+  }
+}
+
+.success {
+  width: 100vw;
+  height: 100vh;
+  color: rgb(181, 206, 236);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 1;
+  transition:all .5s;
+  .title {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(2, 17, 76);
+    border-radius: 16px;
+    position: absolute;
+    z-index: 9;
+  }
+  .mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s;
+  }
+  
+}
