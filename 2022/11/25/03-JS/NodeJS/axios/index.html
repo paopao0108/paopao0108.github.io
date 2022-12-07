@@ -19,7 +19,7 @@
     <meta name="description" content="axiosAxios 是一个基于 promise 网络请求库，作用于node.js和浏览器中 Axios 是专注于网络数据请求的库。相比于原生的 XMLHttpRequest 对象，axios 简单易用。相比于 jQuery，axios 更加轻量化，只专注于网络数据请求  axios一个专注于请求的库 注意：axios()方法返回的是一个 Promise 实例  安装npm install axi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="axios">
-<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/11/25/03-JS/NodeJS/axios/index.html">
+<meta property="og:url" content="https://yupaopao.cloud/2022/11/25/03-JS/NodeJS/axios/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="axiosAxios 是一个基于 promise 网络请求库，作用于node.js和浏览器中 Axios 是专注于网络数据请求的库。相比于原生的 XMLHttpRequest 对象，axios 简单易用。相比于 jQuery，axios 更加轻量化，只专注于网络数据请求  axios一个专注于请求的库 注意：axios()方法返回的是一个 Promise 实例  安装npm install axi">
 <meta property="og:locale" content="zh_CN">
@@ -70,7 +70,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"yupaopao.cloud","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -275,7 +275,7 @@
 <h2 id="axios-直接发请求"><a href="#axios-直接发请求" class="headerlink" title="axios()直接发请求"></a>axios()直接发请求</h2><h3 id="GET请求"><a href="#GET请求" class="headerlink" title="GET请求"></a>GET请求</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 1. 调用 axios 方法得到的返回值是 Promise 对象</span><br><span class="hljs-title function_">axios</span>(&#123;<br>    <span class="hljs-comment">// 请求方式</span><br>    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,<br>    <span class="hljs-comment">// 请求的地址</span><br>    <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;http://www.liulongbin.top:3006/api/getbooks&#x27;</span>,<br>    <span class="hljs-comment">// URL 中的查询参数 GET请求时用params</span><br>    <span class="hljs-attr">params</span>: &#123;<br>        <span class="hljs-attr">id</span>: <span class="hljs-number">1</span><br>    &#125;,<br>&#125;).<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">result</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result)<br>&#125;)<br></code></pre></td></tr></table></figure>
 
 <p>执行结果：</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220809100741659.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220809100741659"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220809100741659.png" srcset="/img/loading.gif" lazyload alt="image-20220809100741659"></p>
 <p>真正的数据在 result.data.data 中</p>
 <h3 id="POST请求"><a href="#POST请求" class="headerlink" title="POST请求"></a>POST请求</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-title function_">axios</span>(&#123;<br>    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,<br>    <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;http://www.liulongbin.top:3006/api/post&#x27;</span>,<br>    <span class="hljs-attr">data</span>: &#123;<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;zs&#x27;</span>,<br>        <span class="hljs-attr">age</span>: <span class="hljs-number">20</span><br>    &#125;<br>&#125;).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);<br>&#125;)<br></code></pre></td></tr></table></figure>
 
@@ -369,7 +369,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>axios</div>
-      <div>https://kathyu.gitee.io/blog/2022/11/25/03-JS/NodeJS/axios/</div>
+      <div>https://yupaopao.cloud/2022/11/25/03-JS/NodeJS/axios/</div>
     </div>
     <div class="license-meta">
       

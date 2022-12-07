@@ -19,7 +19,7 @@
     <meta name="description" content="基础知识 变量类型和计算问题 typeof能判断哪些类型 何时使用 &#x3D;&#x3D;&#x3D; 何时使用 &#x3D;&#x3D; 值类型和引用类型的区别 手写深拷贝  知识点 值类型 VS 引用类型，堆栈模型，深拷贝 typeof运算符 类型转换，truly和false变量  数据类型基本数据类型JavaScript 中共有 6 种基本数据类型  Undefined、Null、Boolean、Number、String、Symbol">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面试题知识点">
-<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/09/27/12-%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
+<meta property="og:url" content="https://yupaopao.cloud/2022/09/27/12-%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="基础知识 变量类型和计算问题 typeof能判断哪些类型 何时使用 &#x3D;&#x3D;&#x3D; 何时使用 &#x3D;&#x3D; 值类型和引用类型的区别 手写深拷贝  知识点 值类型 VS 引用类型，堆栈模型，深拷贝 typeof运算符 类型转换，truly和false变量  数据类型基本数据类型JavaScript 中共有 6 种基本数据类型  Undefined、Null、Boolean、Number、String、Symbol">
 <meta property="og:locale" content="zh_CN">
@@ -134,7 +134,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"yupaopao.cloud","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -370,7 +370,7 @@
 <li><p>栈内存中保存了变量标识符和指向堆内存中该对象的指针</p>
 </li>
 <li><p>堆内存中保存了对象的内容</p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-09-15_16-57-06.jpg" srcset="/blog/img/loading.gif" lazyload alt="Snipaste_2022-09-15_16-57-06" style="zoom:50%;" /></li>
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-09-15_16-57-06.jpg" srcset="/img/loading.gif" lazyload alt="Snipaste_2022-09-15_16-57-06" style="zoom:50%;" /></li>
 </ul>
 </li>
 </ul>
@@ -482,14 +482,14 @@
 <p>即 <code>Student.prototype === xiaoluo.__proto__</code>为true</p>
 </li>
 </ul>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220803144026008.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220803144026008" style="zoom:67%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220803144026008.png" srcset="/img/loading.gif" lazyload alt="image-20220803144026008" style="zoom:67%;" />
 
 <h4 id="基于原型的执行规则"><a href="#基于原型的执行规则" class="headerlink" title="基于原型的执行规则"></a>基于原型的执行规则</h4><p>获取属性 实例.属性名 或 执行 实例.方法() 时：</p>
 <ul>
 <li>先在自身属性和方法寻找</li>
 <li>如果找不到自动去 __proto__ 中查找</li>
 </ul>
-<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><h4 id="原型链-1"><a href="#原型链-1" class="headerlink" title="原型链"></a>原型链</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220803145801110.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220803145801110"></p>
+<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><h4 id="原型链-1"><a href="#原型链-1" class="headerlink" title="原型链"></a>原型链</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220803145801110.png" srcset="/img/loading.gif" lazyload alt="image-20220803145801110"></p>
 <ul>
 <li><code>xiaoluo.__proto__ === Student.prototype </code> 为true</li>
 <li><code>Student.prototype.__proto__ === People.prototype</code> 为true</li>
@@ -824,19 +824,19 @@
 <ol start="3">
 <li>DOM性能</li>
 </ol>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806102901946.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806102901946"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806102915425.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806102915425"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806103236835.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806103236835"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104003721.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806104003721"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806102901946.png" srcset="/img/loading.gif" lazyload alt="image-20220806102901946"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806102915425.png" srcset="/img/loading.gif" lazyload alt="image-20220806102915425"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806103236835.png" srcset="/img/loading.gif" lazyload alt="image-20220806103236835"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104003721.png" srcset="/img/loading.gif" lazyload alt="image-20220806104003721"></p>
 <p>DOM性能</p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220806104256111.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806104256111" style="zoom:67%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220806104256111.png" srcset="/img/loading.gif" lazyload alt="image-20220806104256111" style="zoom:67%;" />
 
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104321385.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806104321385"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104321385.png" srcset="/img/loading.gif" lazyload alt="image-20220806104321385"></p>
 <p>将频繁操作改为一次性操作</p>
 <p>原本的做法：频繁地插入DOM</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104730137.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806104730137"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104730137.png" srcset="/img/loading.gif" lazyload alt="image-20220806104730137"></p>
 <p>改进：创建了一个临时区域，先插入到文档片段，最后只进行了一次DOM操作</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104639691.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806104639691"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806104639691.png" srcset="/img/loading.gif" lazyload alt="image-20220806104639691"></p>
 <h3 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h3><h4 id="内容概述-4"><a href="#内容概述-4" class="headerlink" title="内容概述"></a>内容概述</h4><h5 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h5><ol>
 <li><p>如何识别浏览器类型</p>
 <p>navigator.userAgent</p>
@@ -851,8 +851,8 @@
 <li>location</li>
 <li>history</li>
 </ul>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806105937642.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806105937642"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806110050698.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806110050698"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806105937642.png" srcset="/img/loading.gif" lazyload alt="image-20220806105937642"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806110050698.png" srcset="/img/loading.gif" lazyload alt="image-20220806110050698"></p>
 <p>location.host 域名</p>
 <p>location.hash 一般是#后面的（链接）</p>
 <h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><h4 id="内容概述-5"><a href="#内容概述-5" class="headerlink" title="内容概述"></a>内容概述</h4><p>题目</p>
@@ -867,21 +867,21 @@
 <li>事件冒泡</li>
 <li>事件代理</li>
 </ol>
-<h4 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806110909683.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806110909683"></p>
+<h4 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806110909683.png" srcset="/img/loading.gif" lazyload alt="image-20220806110909683"></p>
 <h4 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h4><p>e.preventDefault() 阻止默认行为</p>
 <p>e.stopPropagation() 阻止冒泡</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806112108661.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806112108661"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806112108661.png" srcset="/img/loading.gif" lazyload alt="image-20220806112108661"></p>
 <p>利用bindEvent来绑定的事件</p>
-<h4 id="事件代理"><a href="#事件代理" class="headerlink" title="事件代理"></a>事件代理</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806112143943.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806112143943"></p>
+<h4 id="事件代理"><a href="#事件代理" class="headerlink" title="事件代理"></a>事件代理</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806112143943.png" srcset="/img/loading.gif" lazyload alt="image-20220806112143943"></p>
 <ul>
 <li>若希望触发目标事件的标签过多，可以通过事件代理，对其父级进行事件绑定，点击子标签的时候，可以通过冒泡来触发父级节点绑定的事件</li>
 <li>在为父级绑定事件时，可以通过判断条件来筛选希望触发事件的标签</li>
 </ul>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806113310494.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806113310494"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806113310494.png" srcset="/img/loading.gif" lazyload alt="image-20220806113310494"></p>
 <p>改进-通用的事件监听函数</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806113819435.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220806113819435"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807081554227.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807081554227"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807081610243.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807081610243"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220806113819435.png" srcset="/img/loading.gif" lazyload alt="image-20220806113819435"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807081554227.png" srcset="/img/loading.gif" lazyload alt="image-20220807081554227"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807081610243.png" srcset="/img/loading.gif" lazyload alt="image-20220807081610243"></p>
 <h2 id="Ajax跨域"><a href="#Ajax跨域" class="headerlink" title="Ajax跨域"></a>Ajax跨域</h2><h3 id="内容概述-6"><a href="#内容概述-6" class="headerlink" title="内容概述"></a>内容概述</h3><h4 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h4><ol>
 <li>手写一个建议的ajax</li>
 <li>跨域的常用方式</li>
@@ -891,30 +891,30 @@
 <li>状态码</li>
 <li>跨域：同源策略，跨域解决方案</li>
 </ol>
-<h3 id="XMLHTtpReaquest"><a href="#XMLHTtpReaquest" class="headerlink" title="XMLHTtpReaquest"></a>XMLHTtpReaquest</h3><h5 id="xhr发起get请求"><a href="#xhr发起get请求" class="headerlink" title="xhr发起get请求"></a>xhr发起get请求</h5><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807082229741.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807082229741"></p>
+<h3 id="XMLHTtpReaquest"><a href="#XMLHTtpReaquest" class="headerlink" title="XMLHTtpReaquest"></a>XMLHTtpReaquest</h3><h5 id="xhr发起get请求"><a href="#xhr发起get请求" class="headerlink" title="xhr发起get请求"></a>xhr发起get请求</h5><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807082229741.png" srcset="/img/loading.gif" lazyload alt="image-20220807082229741"></p>
 <p>上面的 == 应为 === false（同步）应为true（异步）</p>
-<h5 id="xhr发起post请求"><a href="#xhr发起post请求" class="headerlink" title="xhr发起post请求"></a>xhr发起post请求</h5><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807082917238.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807082917238"></p>
+<h5 id="xhr发起post请求"><a href="#xhr发起post请求" class="headerlink" title="xhr发起post请求"></a>xhr发起post请求</h5><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807082917238.png" srcset="/img/loading.gif" lazyload alt="image-20220807082917238"></p>
 <p>上面open()里面的false时true， 代表异步，false表示同步的请求</p>
-<h4 id="状态码"><a href="#状态码" class="headerlink" title="状态码"></a>状态码</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807083120192.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807083120192"></p>
+<h4 id="状态码"><a href="#状态码" class="headerlink" title="状态码"></a>状态码</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807083120192.png" srcset="/img/loading.gif" lazyload alt="image-20220807083120192"></p>
 <h3 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h3><ol>
 <li><p>什么是跨域</p>
 </li>
 <li><p>JSONP</p>
 </li>
 </ol>
-<h4 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807093623139.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807093623139"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807093824667.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807093824667"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807093954100.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807093954100"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807094022814.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807094022814"></p>
-<h4 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807095531231.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807095531231"></p>
+<h4 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807093623139.png" srcset="/img/loading.gif" lazyload alt="image-20220807093623139"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807093824667.png" srcset="/img/loading.gif" lazyload alt="image-20220807093824667"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807093954100.png" srcset="/img/loading.gif" lazyload alt="image-20220807093954100"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807094022814.png" srcset="/img/loading.gif" lazyload alt="image-20220807094022814"></p>
+<h4 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807095531231.png" srcset="/img/loading.gif" lazyload alt="image-20220807095531231"></p>
 <h4 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h4><p>是纯服务端的</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807101351125.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220807101351125"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220807101351125.png" srcset="/img/loading.gif" lazyload alt="image-20220807101351125"></p>
 <h3 id="问题解答-1"><a href="#问题解答-1" class="headerlink" title="问题解答"></a>问题解答</h3><ol>
 <li>手写简易的ajax </li>
 </ol>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808090201138.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808090201138"></p>
-<p>上面没有写 new 和 xhr.send()<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808090705249.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808090705249"></p>
-<p>使用上面定义的ajax：<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808090302205.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808090302205"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808090201138.png" srcset="/img/loading.gif" lazyload alt="image-20220808090201138"></p>
+<p>上面没有写 new 和 xhr.send()<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808090705249.png" srcset="/img/loading.gif" lazyload alt="image-20220808090705249"></p>
+<p>使用上面定义的ajax：<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808090302205.png" srcset="/img/loading.gif" lazyload alt="image-20220808090302205"></p>
 <p>常用的ajax插件</p>
 <ul>
 <li><p>$.ajax()</p>
@@ -938,11 +938,11 @@
 <li>http请求时需要发送到服务端，增加请求的数据量</li>
 <li>只能通过 document.cookie=‘…’ 来修改，可读性差</li>
 </ul>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808102056176.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808102056176"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808102159166.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808102159166"></p>
-<h4 id="localStorage与sessionStorage"><a href="#localStorage与sessionStorage" class="headerlink" title="localStorage与sessionStorage"></a>localStorage与sessionStorage</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808100047287.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808100047287"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808100209867.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808100209867"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808101736006.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808101736006"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808102056176.png" srcset="/img/loading.gif" lazyload alt="image-20220808102056176"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808102159166.png" srcset="/img/loading.gif" lazyload alt="image-20220808102159166"></p>
+<h4 id="localStorage与sessionStorage"><a href="#localStorage与sessionStorage" class="headerlink" title="localStorage与sessionStorage"></a>localStorage与sessionStorage</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808100047287.png" srcset="/img/loading.gif" lazyload alt="image-20220808100047287"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808100209867.png" srcset="/img/loading.gif" lazyload alt="image-20220808100209867"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808101736006.png" srcset="/img/loading.gif" lazyload alt="image-20220808101736006"></p>
 <h1 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h1><p>git</p>
 <p>调式工具</p>
 <p>抓包</p>
@@ -1149,8 +1149,8 @@
 <p>作用：拉取远程分支的最新代码</p>
 <p>即 在远程分支编辑的代码，可以下载到本地对应的分支中</p>
 </blockquote>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808103644133.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808103644133"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808103742778.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220808103742778"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808103644133.png" srcset="/img/loading.gif" lazyload alt="image-20220808103644133"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220808103742778.png" srcset="/img/loading.gif" lazyload alt="image-20220808103742778"></p>
 <h2 id="调试和抓包"><a href="#调试和抓包" class="headerlink" title="调试和抓包"></a>调试和抓包</h2><h3 id="chrome调试工具"><a href="#chrome调试工具" class="headerlink" title="chrome调试工具"></a>chrome调试工具</h3><ul>
 <li><p>Elements</p>
 </li>
@@ -1185,12 +1185,12 @@
 <li><p>在webpack-demo目录下打开终端，执行如下命令</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cmd">node -v<br><br># 执行完这条命令，文件夹中会出现 package.json 文件<br>npm init -y<br># 执行完这条命令，文件夹中会出现 package-lock.json文件 和 node-modules文件夹<br>npm install webpack webpack-cli -D<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912154702420.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912154702420"></p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220912103454713.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912103454713" style="zoom:70%;" /></li>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912154702420.png" srcset="/img/loading.gif" lazyload alt="image-20220912154702420"></p>
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220912103454713.png" srcset="/img/loading.gif" lazyload alt="image-20220912103454713" style="zoom:70%;" /></li>
 </ol>
 <ol start="3">
 <li><p>新建src文件夹，并在src文件夹下新建 index.js ,作为将来的入口文件</p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220912153803533.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912153803533" style="zoom:70%;" /></li>
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/面试题知识点/image-20220912153803533.png" srcset="/img/loading.gif" lazyload alt="image-20220912153803533" style="zoom:70%;" /></li>
 <li><p>新建webpack.config.js 是webpack的默认配置文件，内容为：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;path&#x27;</span>)<br><span class="hljs-variable language_">module</span>.<span class="hljs-property">export</span> = &#123;<br>    <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;development&#x27;</span>,	<span class="hljs-comment">// 开发模式，production上线模式</span><br>    <span class="hljs-attr">entry</span>: path.<span class="hljs-title function_">join</span>(__dirname, <span class="hljs-string">&#x27;src&#x27;</span>, <span class="hljs-string">&#x27;index.js&#x27;</span>),<br>    <span class="hljs-attr">output</span>: &#123;<br>        <span class="hljs-attr">filename</span>: <span class="hljs-string">&#x27;bundle.js&#x27;</span>,<br>        <span class="hljs-attr">path</span>: path.<span class="hljs-title function_">join</span>(__dirname, <span class="hljs-string">&#x27;dist&#x27;</span>)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
@@ -1209,12 +1209,12 @@
 <p>由于 webpack.config.js 是webpack默认的配置文件，因此，可以简写为：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-string">&quot;build&quot;</span>: <span class="hljs-string">&quot;webpack&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912154241910.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912154241910"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912154241910.png" srcset="/img/loading.gif" lazyload alt="image-20220912154241910"></p>
 </li>
 <li><p>在命令行中运行 <code>npm run build</code> build就是上面在package中添加的build</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912154924552.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912154924552"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912154924552.png" srcset="/img/loading.gif" lazyload alt="image-20220912154924552"></p>
 <p>文件夹中会自动新建一个dist文件夹以及bundle.js文件</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912155006831.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912155006831"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912155006831.png" srcset="/img/loading.gif" lazyload alt="image-20220912155006831"></p>
 <p>在bundle.js文件中就有src/index.js中的内容</p>
 </li>
 <li><p>新建文件 src/index.html</p>
@@ -1224,7 +1224,7 @@
 </li>
 <li><p>安装插件 webpack-dev-server 用于启动服务的插件</p>
 <p><code>npm i webpack-dev-server -D</code></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912161732639.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912161732639"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912161732639.png" srcset="/img/loading.gif" lazyload alt="image-20220912161732639"></p>
 </li>
 <li><p>安装完后，再去webpack配置文件中添加配置</p>
 <ul>
@@ -1234,14 +1234,14 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912162503639.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912162503639"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912162503639.png" srcset="/img/loading.gif" lazyload alt="image-20220912162503639"></p>
 <ul>
 <li><p>配置devServer，用于启动本地服务</p>
 <ul>
 <li>port：本地服务的端口号</li>
 <li>directory：当前的目录（就是出口dist）</li>
 </ul>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912164549360.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912164549360"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912164549360.png" srcset="/img/loading.gif" lazyload alt="image-20220912164549360"></p>
 </li>
 </ul>
 </li>
@@ -1274,7 +1274,7 @@
 <li><p>添加webpack配置</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-attr">module</span>: &#123;<br>    <span class="hljs-attr">rules</span>: [<br>        &#123;<br>            <span class="hljs-comment">// 正则匹配所有.js的文件</span><br>            <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.js$/</span>,<br>            <span class="hljs-comment">// loader: [&#x27;babel-loader&#x27;], // 用loader会报错，改为了use</span><br>            <span class="hljs-attr">use</span>: [<span class="hljs-string">&#x27;babel-loader&#x27;</span>],<br>        	<span class="hljs-comment">// 哪些文件需要经过loader</span><br>        	<span class="hljs-attr">include</span>: path.<span class="hljs-title function_">join</span>(_dirname, <span class="hljs-string">&#x27;src&#x27;</span>),<br>            <span class="hljs-comment">// 哪些文件需要经过loder</span><br>            <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span><br>        &#125;<br>    ]<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912182721085.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912182721085"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912182721085.png" srcset="/img/loading.gif" lazyload alt="image-20220912182721085"></p>
 </li>
 <li><p>向index.js中写入一些ES6的语法，进行测试</p>
 <p>箭头函数是ES6中的语法</p>
@@ -1282,9 +1282,9 @@
 <li><p>在命令行运行 <code>npm run dev</code></p>
 <ul>
 <li><p>在网页中查看 bundle.js</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912182904278.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912182904278"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912182904278.png" srcset="/img/loading.gif" lazyload alt="image-20220912182904278"></p>
 <p>发现 index.js 中的箭头函数，已经转换成了普通的函数</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912183033206.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912183033206"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912183033206.png" srcset="/img/loading.gif" lazyload alt="image-20220912183033206"></p>
 </li>
 </ul>
 </li>
@@ -1364,11 +1364,11 @@
 
 <p>更加倾向于选择DOMContentLoaded区监听加载，因此图片、视频等是否加载完毕，一般不会影响后续的操作，使用 DOMContentLoaded 会更快</p>
 <p>执行顺序就是：<strong>DOMContentLoaded &gt; 图片加载完毕 &gt; window.onload</strong></p>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><h4 id="为何建议将CSS放在head中？"><a href="#为何建议将CSS放在head中？" class="headerlink" title="==为何建议将CSS放在head中？=="></a>==为何建议将CSS放在head中？==</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912184936821.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912184936821"></p>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><h4 id="为何建议将CSS放在head中？"><a href="#为何建议将CSS放在head中？" class="headerlink" title="==为何建议将CSS放在head中？=="></a>==为何建议将CSS放在head中？==</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912184936821.png" srcset="/img/loading.gif" lazyload alt="image-20220912184936821"></p>
 <p>原因：</p>
 <p>若css文件放在body最后，那么html会先渲染，若css里面的修改了结构的样式，在一些旧的浏览器中可能会有闪现的问题，就是会先出现没有css样式的页面，然后再出现添加了样式的页面，用户体验很不好</p>
-<h4 id="为何建议将JS放在body的最后？"><a href="#为何建议将JS放在body的最后？" class="headerlink" title="==为何建议将JS放在body的最后？=="></a>==为何建议将JS放在body的最后？==</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912190121310.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912190121310"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912190152454.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912190152454"></p>
+<h4 id="为何建议将JS放在body的最后？"><a href="#为何建议将JS放在body的最后？" class="headerlink" title="==为何建议将JS放在body的最后？=="></a>==为何建议将JS放在body的最后？==</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912190121310.png" srcset="/img/loading.gif" lazyload alt="image-20220912190121310"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912190152454.png" srcset="/img/loading.gif" lazyload alt="image-20220912190152454"></p>
 <p>原因：若放在中间，那么页面渲染一部分后，就会停止渲染，转而执行js文件，等js文件执行完毕后，才会继续渲染，用户看不到完整的页面。</p>
 <p>而需要达到的效果是，用户开始可以看到完整页面，等到最后执行js文件时，一并更新到页面上</p>
 <h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><h3 id="性能优化原则"><a href="#性能优化原则" class="headerlink" title="性能优化原则"></a>性能优化原则</h3><ol>
@@ -1388,7 +1388,7 @@
 
 
 
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912201938604.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912201938604"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912201938604.png" srcset="/img/loading.gif" lazyload alt="image-20220912201938604"></p>
 </li>
 <li><p>使用更快的网络：CDN</p>
 </li>
@@ -1401,19 +1401,19 @@
 <li><p>懒加载（图片懒加载，上滑加载更多）</p>
 </li>
 <li><p>对DOM查询进行缓存</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912201857687.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912201857687"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912201857687.png" srcset="/img/loading.gif" lazyload alt="image-20220912201857687"></p>
 </li>
 <li><p>频繁DOM操作，合并到一起插入DOM结构</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912201834235.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912201834235"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912201834235.png" srcset="/img/loading.gif" lazyload alt="image-20220912201834235"></p>
 </li>
 <li><p>节流 throttle 防抖debounce</p>
 </li>
 </ol>
 <h3 id="防抖debounce"><a href="#防抖debounce" class="headerlink" title="防抖debounce"></a>防抖debounce</h3><p>用户输入结束或暂停时，才会触发change事件</p>
-<h4 id="防抖的应用"><a href="#防抖的应用" class="headerlink" title="防抖的应用"></a>防抖的应用</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912204652968.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912204652968"></p>
-<h4 id="封装为函数"><a href="#封装为函数" class="headerlink" title="封装为函数"></a>封装为函数</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912203750662.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912203750662"></p>
+<h4 id="防抖的应用"><a href="#防抖的应用" class="headerlink" title="防抖的应用"></a>防抖的应用</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912204652968.png" srcset="/img/loading.gif" lazyload alt="image-20220912204652968"></p>
+<h4 id="封装为函数"><a href="#封装为函数" class="headerlink" title="封装为函数"></a>封装为函数</h4><p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912203750662.png" srcset="/img/loading.gif" lazyload alt="image-20220912203750662"></p>
 <p><strong>注意：</strong></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912204354590.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912204354590"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912204354590.png" srcset="/img/loading.gif" lazyload alt="image-20220912204354590"></p>
 <p><strong>注意：</strong></p>
 <blockquote>
 <ol>
@@ -1423,10 +1423,10 @@
 </blockquote>
 <h3 id="节流throttle"><a href="#节流throttle" class="headerlink" title="节流throttle"></a>节流throttle</h3><h4 id="节流的应用"><a href="#节流的应用" class="headerlink" title="节流的应用"></a>节流的应用</h4><p>拖拽一个元素，需要随时拿到改元素被拖拽的位置</p>
 <p>节流：无论拖拽速度有多快，都会每隔100ms触发一次</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912205146474.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912205146474"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912205146474.png" srcset="/img/loading.gif" lazyload alt="image-20220912205146474"></p>
 <h4 id="封装为函数-1"><a href="#封装为函数-1" class="headerlink" title="封装为函数"></a>封装为函数</h4><p>注意：使用时下面的function里面要写参数e</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912205454105.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912205454105"></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912210352015.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220912210352015"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912205454105.png" srcset="/img/loading.gif" lazyload alt="image-20220912205454105"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9F%A5%E8%AF%86%E7%82%B9/image-20220912210352015.png" srcset="/img/loading.gif" lazyload alt="image-20220912210352015"></p>
 <blockquote>
 <p>为何要使用apply？</p>
 </blockquote>
@@ -1691,7 +1691,7 @@
 <p>总宽度：width + margin（左右） + padding（左右） + border（左右）</p>
 <p>总高度：height +margin（上下） + padding（上下） + border（上下）</p>
 <p>增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加<strong>元素框的总尺寸</strong></p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221012211047582.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221012211047582" style="zoom: 50%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221012211047582.png" srcset="/img/loading.gif" lazyload alt="image-20221012211047582" style="zoom: 50%;" />
 
 <p><strong>IE盒子模型</strong></p>
 <p>width = border + padding + 内容（content）的宽度</p>
@@ -1699,7 +1699,7 @@
 <p>总宽度：width + margin（左右）（即 width 已经包含了 padding 和 border）</p>
 <p>总高度：height + margin（上下）（即 height 已经包含了 padding 和 border）</p>
 <p>设置 padding 、border 后，<strong>真正宽度或高度就会改变</strong></p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221012211411564.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221012211411564" style="zoom:50%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221012211411564.png" srcset="/img/loading.gif" lazyload alt="image-20221012211411564" style="zoom:50%;" />
 
 <h3 id="32、跨域有什么方法？"><a href="#32、跨域有什么方法？" class="headerlink" title="32、跨域有什么方法？"></a>32、跨域有什么方法？</h3><ul>
 <li><p>JSONP</p>
@@ -1985,7 +1985,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>面试题知识点</div>
-      <div>https://kathyu.gitee.io/blog/2022/09/27/12-面试题/面试题知识点/</div>
+      <div>https://yupaopao.cloud/2022/09/27/12-面试题/面试题知识点/</div>
     </div>
     <div class="license-meta">
       

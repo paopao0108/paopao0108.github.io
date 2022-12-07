@@ -19,7 +19,7 @@
     <meta name="description" content="grid网格布局display: grid 常见属性    属性 属性值    grid-template-columns 定义每一列的列宽，如 100px 100px 100px; 或 repeat(3,100px); 总共三列，每列列宽是100px   grid-template-rows 定义每一行的行高，如 100px 100px 100px; 或 repeat(3,100px);从上至下">
 <meta property="og:type" content="article">
 <meta property="og:title" content="grid网格布局">
-<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/10/31/02-CSS/CSS/%E5%B8%83%E5%B1%80/grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/index.html">
+<meta property="og:url" content="https://yupaopao.cloud/2022/10/31/02-CSS/CSS/%E5%B8%83%E5%B1%80/grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="grid网格布局display: grid 常见属性    属性 属性值    grid-template-columns 定义每一列的列宽，如 100px 100px 100px; 或 repeat(3,100px); 总共三列，每列列宽是100px   grid-template-rows 定义每一行的行高，如 100px 100px 100px; 或 repeat(3,100px);从上至下">
 <meta property="og:locale" content="zh_CN">
@@ -76,7 +76,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"yupaopao.cloud","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -293,7 +293,7 @@
 <h4 id="grid-template-columns的属性值"><a href="#grid-template-columns的属性值" class="headerlink" title="grid-template-columns的属性值"></a>grid-template-columns的属性值</h4><h5 id="使用px"><a href="#使用px" class="headerlink" title="使用px"></a>使用px</h5><p><code>grid-template-columns: 100px, 100px 80px;</code></p>
 <h5 id="使用repeat"><a href="#使用repeat" class="headerlink" title="使用repeat"></a>使用repeat</h5><ul>
 <li><p>repeat(次数, 大小)：<code>grid-template-columns: repeat(2, 100px 80px);</code> 等价于 <code>grid-template-columns: 100px 80px 100px 80px;</code> </p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026170308724.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221026170308724"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026170308724.png" srcset="/img/loading.gif" lazyload alt="image-20221026170308724"></p>
 </li>
 <li><p>repeat(auto-fill, minmax(50px, 1fr))</p>
 <ul>
@@ -321,17 +321,17 @@
 </ul>
 <h5 id="使用fr"><a href="#使用fr" class="headerlink" title="使用fr"></a>使用fr</h5><ul>
 <li><p>单位fr：<code>grid-template-columns: 1fr 2fr;</code> 表示 后者列宽是前者的两倍</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026170044349.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221026170044349"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026170044349.png" srcset="/img/loading.gif" lazyload alt="image-20221026170044349"></p>
 </li>
 </ul>
 <h5 id="使用fr和px配合"><a href="#使用fr和px配合" class="headerlink" title="使用fr和px配合"></a>使用fr和px配合</h5><ul>
 <li><p>单位fr也可以和px配合使用：<code>grid-template-columns: 800px 1fr 2fr;</code> 第1列列宽800px，第3列列宽为第2列的2倍</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026170007891.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221026170007891"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026170007891.png" srcset="/img/loading.gif" lazyload alt="image-20221026170007891"></p>
 </li>
 </ul>
 <h5 id="使用minmax"><a href="#使用minmax" class="headerlink" title="使用minmax()"></a>使用minmax()</h5><ul>
 <li><p><code>grid-template-columns: 1fr 5fr minmax(100px, 2fr);</code> 第一列是1fr，第二列是5fr，第三列最小值是100px,最大是2fr。当第二列fr无限大时和第三列到100px时，会往第一列借值</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026171341703.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221026171341703"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221026171341703.png" srcset="/img/loading.gif" lazyload alt="image-20221026171341703"></p>
 </li>
 </ul>
 <h5 id="使用auto"><a href="#使用auto" class="headerlink" title="使用auto"></a>使用auto</h5><ul>
@@ -357,13 +357,13 @@
 <p>默认是row；</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">grid-auto-flow</span>: row;<br></code></pre></td></tr></table></figure>
 
-<p>效果如下所示<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221106211040851.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221106211040851"></p>
+<p>效果如下所示<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221106211040851.png" srcset="/img/loading.gif" lazyload alt="image-20221106211040851"></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">grid-auto-flow</span>: column;<br></code></pre></td></tr></table></figure>
 
-<p>效果如下所示<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221106211131054.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221106211131054"></p>
+<p>效果如下所示<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221106211131054.png" srcset="/img/loading.gif" lazyload alt="image-20221106211131054"></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">grid-auto-flow</span>: row dense;<br></code></pre></td></tr></table></figure>
 
-<p>效果如下所示<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221106211203590.png" srcset="/blog/img/loading.gif" lazyload alt="image-20221106211203590"></p>
+<p>效果如下所示<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20221106211203590.png" srcset="/img/loading.gif" lazyload alt="image-20221106211203590"></p>
 <p>参数形式：</p>
 <ul>
 <li>单个关键字：<code>row</code>、<code>column</code>，或 <code>dense</code> 中的一个。</li>
@@ -439,7 +439,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>grid网格布局</div>
-      <div>https://kathyu.gitee.io/blog/2022/10/31/02-CSS/CSS/布局/grid网格布局/</div>
+      <div>https://yupaopao.cloud/2022/10/31/02-CSS/CSS/布局/grid网格布局/</div>
     </div>
     <div class="license-meta">
       

@@ -19,7 +19,7 @@
     <meta name="description" content="HTTP什么是HTTP协议HTTP 协议即超文本传送协议 (HyperText Transfer Protocol) ，它规定了客户端与服务器之间进行网页内容传输时，所必须遵守的传输格式。例如：  客户端要以HTTP协议要求的格式把数据提交到服务器 服务器要以HTTP协议要求的格式把内容响应给客户端  HTTP请求 HTTP 协议属于客户端浏览器和服务器之间的通信协议。因此，客户端发起的请求叫做">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP">
-<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/11/25/03-JS/JS%E8%AF%AD%E6%B3%95/WebAPI/HTTP/index.html">
+<meta property="og:url" content="https://yupaopao.cloud/2022/11/25/03-JS/JS%E8%AF%AD%E6%B3%95/WebAPI/HTTP/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="HTTP什么是HTTP协议HTTP 协议即超文本传送协议 (HyperText Transfer Protocol) ，它规定了客户端与服务器之间进行网页内容传输时，所必须遵守的传输格式。例如：  客户端要以HTTP协议要求的格式把数据提交到服务器 服务器要以HTTP协议要求的格式把内容响应给客户端  HTTP请求 HTTP 协议属于客户端浏览器和服务器之间的通信协议。因此，客户端发起的请求叫做">
 <meta property="og:locale" content="zh_CN">
@@ -74,7 +74,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"yupaopao.cloud","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -273,10 +273,10 @@
 </ul>
 <h2 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h2><p> HTTP 协议属于客户端浏览器和服务器之间的通信协议。因此，客户端发起的请求叫做 HTTP 请求，客户端发送到服务器的消息，叫做 HTTP 请求消息</p>
 <h3 id="HTTP-请求消息"><a href="#HTTP-请求消息" class="headerlink" title="HTTP 请求消息"></a>HTTP 请求消息</h3><p>HTTP 请求消息由请求行（request line）、请求头部（ header ） 、空行 和 请求体 4 个部分组成</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925213036902.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220925213036902"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925213036902.png" srcset="/img/loading.gif" lazyload alt="image-20220925213036902"></p>
 <h4 id="请求行"><a href="#请求行" class="headerlink" title="请求行"></a>请求行</h4><p>请求行由请求方式、URL 和 HTTP 协议版本 3 个部分组成，他们之间使用空格隔开。</p>
 <p>第一行： POST /api/post HTTP/1.1 就是请求行</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925213808760.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220925213808760"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925213808760.png" srcset="/img/loading.gif" lazyload alt="image-20220925213808760"></p>
 <h4 id="请求头部"><a href="#请求头部" class="headerlink" title="请求头部"></a>请求头部</h4><p>请求头部用来<strong>描述客户端的基本信息</strong>，从而把客户端相关的信息告知服务器。</p>
 <p>比如</p>
 <ul>
@@ -336,14 +336,14 @@
 <p><strong>注意：</strong>只有 POST 请求才有请求体，GET 请求没有请求体</p>
 <h2 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h2><h3 id="HTTP响应消息"><a href="#HTTP响应消息" class="headerlink" title="HTTP响应消息"></a>HTTP响应消息</h3><p>响应消息就是服务器响应给客户端的消息内容，也叫作响应报文</p>
 <h3 id="响应消息的组成部分"><a href="#响应消息的组成部分" class="headerlink" title="响应消息的组成部分"></a>响应消息的组成部分</h3><p>HTTP响应消息由 <strong>状态行、响应头部、空行</strong> 和 <strong>响应体</strong> 4 个部分组成，如下图所示</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925215005419.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220925215005419"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925215005419.png" srcset="/img/loading.gif" lazyload alt="image-20220925215005419"></p>
 <h3 id="状态行"><a href="#状态行" class="headerlink" title="状态行"></a>状态行</h3><p>状态行由 <strong>HTTP 协议版本</strong>、<strong>状态码</strong>和<strong>状态码的描述文本</strong> 3 个部分组成，他们之间使用空格隔开</p>
 <p>第一行：HTTP/1.1 200 OK 为状态行</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925215223694.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220925215223694"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925215223694.png" srcset="/img/loading.gif" lazyload alt="image-20220925215223694"></p>
 <h3 id="响应头部"><a href="#响应头部" class="headerlink" title="响应头部"></a>响应头部</h3><p>响应头部用来<strong>描述服务器的基本信息</strong>。响应头部由多行 键/值对 组成，每行的键和值之间用英文的冒号分隔</p>
 <h3 id="空行-1"><a href="#空行-1" class="headerlink" title="空行"></a>空行</h3><p>在最后一个响应头部字段结束之后，会紧跟一个空行，用来通知客户端响应头部至此结束。<br>响应消息中的空行，用来分隔响应头部与响应体</p>
 <h3 id="响应体"><a href="#响应体" class="headerlink" title="响应体"></a>响应体</h3><p>响应体中存放的，是服务器响应给客户端的资源内容</p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925220229798.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220925220229798"></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220925220229798.png" srcset="/img/loading.gif" lazyload alt="image-20220925220229798"></p>
 <h2 id="HTTP请求法"><a href="#HTTP请求法" class="headerlink" title="HTTP请求法"></a>HTTP请求法</h2><p>HTTP 请求方法，属于 HTTP 协议中的一部分，请求方法的作用是：用来表明要对服务器上的资源执行的操作。最常用的请求方法是 GET 和 POST</p>
 <table>
 <thead>
@@ -676,7 +676,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>HTTP</div>
-      <div>https://kathyu.gitee.io/blog/2022/11/25/03-JS/JS语法/WebAPI/HTTP/</div>
+      <div>https://yupaopao.cloud/2022/11/25/03-JS/JS语法/WebAPI/HTTP/</div>
     </div>
     <div class="license-meta">
       

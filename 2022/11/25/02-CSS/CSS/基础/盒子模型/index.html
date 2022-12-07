@@ -19,7 +19,7 @@
     <meta name="description" content="盒子模型所谓盒子模型：就是把HTML页面中的布局元素看作是一个矩形的盒子，也就是一个盛装内容的容器 CSS合作模式本质上就是一个盒子，封装周围的HTML元素，它包括：边框、外边距、内边距、实际内容 边框border可以设置元素的边框。 边框由三部分组成：边框宽度（粗细）、边框样式、边框颜色 语法： 1border: border-width | border-style | border-colo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="盒子模型">
-<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
+<meta property="og:url" content="https://yupaopao.cloud/2022/11/25/02-CSS/CSS/%E5%9F%BA%E7%A1%80/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="盒子模型所谓盒子模型：就是把HTML页面中的布局元素看作是一个矩形的盒子，也就是一个盛装内容的容器 CSS合作模式本质上就是一个盒子，封装周围的HTML元素，它包括：边框、外边距、内边距、实际内容 边框border可以设置元素的边框。 边框由三部分组成：边框宽度（粗细）、边框样式、边框颜色 语法： 1border: border-width | border-style | border-colo">
 <meta property="og:locale" content="zh_CN">
@@ -72,7 +72,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"yupaopao.cloud","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -469,10 +469,10 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;style&gt;<br><span class="hljs-selector-tag">div</span> &#123;<br>    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;<br>    <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;<br>    <span class="hljs-attribute">background-color</span>: pink;<br>    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;<br><br>&#125;<br><br><span class="hljs-comment">/* 鼠标经过时显示阴影效果 */</span><br><span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:hover</span> &#123;<br>    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">10px</span> <span class="hljs-number">10px</span> <span class="hljs-number">25px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, .<span class="hljs-number">5</span>);<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>
 
 <p>示例效果：</p>
-<p>无阴影时<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173753314.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220701173753314" style="zoom:50%;" /></p>
-<p>有阴影时<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173921857.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220701173921857" style="zoom:50%;" /></p>
+<p>无阴影时<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173753314.png" srcset="/img/loading.gif" lazyload alt="image-20220701173753314" style="zoom:50%;" /></p>
+<p>有阴影时<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173921857.png" srcset="/img/loading.gif" lazyload alt="image-20220701173921857" style="zoom:50%;" /></p>
 <p>当修改box-shadow后（添加了inset，将外部阴影改为内部阴影）：<code>box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, .5) inset;</code></p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173822776.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220701173822776" style="zoom:50%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/01  HTML与CSS/image-20220701173822776.png" srcset="/img/loading.gif" lazyload alt="image-20220701173822776" style="zoom:50%;" />
 
 
 
@@ -530,7 +530,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>盒子模型</div>
-      <div>https://kathyu.gitee.io/blog/2022/11/25/02-CSS/CSS/基础/盒子模型/</div>
+      <div>https://yupaopao.cloud/2022/11/25/02-CSS/CSS/基础/盒子模型/</div>
     </div>
     <div class="license-meta">
       

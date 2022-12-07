@@ -19,7 +19,7 @@
     <meta name="description" content="MongoDB的安装与配置下载地址：https:&#x2F;&#x2F;www.mongodb.com&#x2F;try&#x2F;download&#x2F;community  配置  此电脑 → 属性 → 高级系统设置 → 环境变量 → 选择用户变量里面的path → 点击编辑    将mongoDB的bin的地址添加到path里面：    指定data的地址，默认为C盘的data文件夹，因此一般在C盘里面新建一个data文件夹，并把Mon">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MongoDB">
-<meta property="og:url" content="https://kathyu.gitee.io/blog/2022/09/12/MongoDB/index.html">
+<meta property="og:url" content="https://yupaopao.cloud/2022/09/12/MongoDB/index.html">
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="MongoDB的安装与配置下载地址：https:&#x2F;&#x2F;www.mongodb.com&#x2F;try&#x2F;download&#x2F;community  配置  此电脑 → 属性 → 高级系统设置 → 环境变量 → 选择用户变量里面的path → 点击编辑    将mongoDB的bin的地址添加到path里面：    指定data的地址，默认为C盘的data文件夹，因此一般在C盘里面新建一个data文件夹，并把Mon">
 <meta property="og:locale" content="zh_CN">
@@ -74,7 +74,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"kathyu.gitee.io","root":"/blog/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"yupaopao.cloud","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -267,15 +267,15 @@
               <div class="markdown-body">
                 
                 <h1 id="MongoDB的安装与配置"><a href="#MongoDB的安装与配置" class="headerlink" title="MongoDB的安装与配置"></a>MongoDB的安装与配置</h1><p>下载地址：<a target="_blank" rel="noopener" href="https://www.mongodb.com/try/download/community">https://www.mongodb.com/try/download/community</a></p>
-<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220801154831707.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220801154831707" style="zoom:50%;" /><img src="C:\Users\余萍萍\AppData\Roaming\Typora\typora-user-images\image-20220801155318645.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220801155318645" style="zoom:50%;" /><img src="C:\Users\余萍萍\AppData\Roaming\Typora\typora-user-images\image-20220801155352283.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220801155352283" style="zoom:50%;" /></p>
+<p><img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220801154831707.png" srcset="/img/loading.gif" lazyload alt="image-20220801154831707" style="zoom:50%;" /><img src="C:\Users\余萍萍\AppData\Roaming\Typora\typora-user-images\image-20220801155318645.png" srcset="/img/loading.gif" lazyload alt="image-20220801155318645" style="zoom:50%;" /><img src="C:\Users\余萍萍\AppData\Roaming\Typora\typora-user-images\image-20220801155352283.png" srcset="/img/loading.gif" lazyload alt="image-20220801155352283" style="zoom:50%;" /></p>
 <p>配置</p>
 <ol>
 <li>此电脑 → 属性 → 高级系统设置 → 环境变量 → 选择用户变量里面的path → 点击编辑</li>
 </ol>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220801180832848.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220801180832848" style="zoom:50%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220801180832848.png" srcset="/img/loading.gif" lazyload alt="image-20220801180832848" style="zoom:50%;" />
 
 <p>将mongoDB的bin的地址添加到path里面：</p>
-<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220801181122007.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220801181122007" style="zoom:50%;" />
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/image-20220801181122007.png" srcset="/img/loading.gif" lazyload alt="image-20220801181122007" style="zoom:50%;" />
 
 <ol start="2">
 <li><p>指定data的地址，默认为C盘的data文件夹，因此一般在C盘里面新建一个data文件夹，并把MongoDB的dbpath配置C盘的data文件夹</p>
@@ -308,7 +308,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>MongoDB</div>
-      <div>https://kathyu.gitee.io/blog/2022/09/12/MongoDB/</div>
+      <div>https://yupaopao.cloud/2022/09/12/MongoDB/</div>
     </div>
     <div class="license-meta">
       
