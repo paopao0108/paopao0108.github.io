@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flappyBird</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="game">
+        <!-- 障碍物：管子 -->
+        <ul class="blocks">
+          <li class="block">
+            <div class="bar upbar">
+              <img src="assets/img/pipe.png" alt="" />
+            </div>
+            <div class="bar downbar">
+              <img src="assets/img/pipe.png" alt="" />
+            </div>
+          </li>
+          <li class="block">
+            <div class="bar upbar">
+              <img src="assets/img/pipe.png" alt="" />
+            </div>
+            <div class="bar downbar">
+              <img src="assets/img/pipe.png" alt="" />
+            </div>
+          </li>
+          <li class="block">
+            <div class="bar upbar">
+              <img src="assets/img/pipe.png" alt="" />
+            </div>
+            <div class="bar downbar">
+              <img src="assets/img/pipe.png" alt="" />
+            </div>
+          </li>
+        </ul>
+        <!-- 玩家 -->
+        <div class="bird">
+          <!-- <img src="assets/img/birdfly.gif" alt=""> -->
+        </div>
+        <!-- 开始按钮 -->
+        <button class="start">START</button>
+        <!-- 结束页面 -->
+        <div class="end">
+          <span class="gameover">GAME OVER</span>
+          <button class="again">Play Again</button>
+        </div>
+        <!-- 得分记录 -->
+        <div class="score">
+          SCORE:
+          <span class="val"></span>
+        </div>
+      </div>
+      <!-- 地面 -->
+      <div class="ground"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
