@@ -138,7 +138,7 @@
 }
 @media screen and (max-width: 810px) {
   .wrap {
-    padding-top: 10px;
+    padding-top: 1px;
   }
   .wrap .container {
     justify-content: flex-start;
