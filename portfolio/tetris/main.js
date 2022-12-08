@@ -113,6 +113,7 @@ const colors = ['#2B7AF5', '#2B9DF5'];
 const bgColors = ['linear-gradient(to right, #FF8489 0%, #fbb0b3 100%)', 'linear-gradient(to right, #D7749B 0%, #e991b4 100%)', 'linear-gradient(to right, #A46C9F 0%, #d195cc 100%)', 'linear-gradient(to right, #706493 0%, #9081bc 100%)', 'linear-gradient(to right, #FF8359 0%, #f7ab91 100%)', 'linear-gradient(to right, #9BB41E 0%, #d0e46a 100%)', 'linear-gradient(to right, #339E3D 0%, #339E3D 100%)'];
 
 const keys = document.querySelectorAll('.key');
+console.log(keys);
 
 // 定时器，自动下落
 let timer = null;
@@ -208,8 +209,8 @@ function move(e) {
 
 function moveBymouse(e) {
   const activeModel = document.querySelector('.active-model');
-  console.log(e.target.id);
-  let key = e.target.id;
+  console.log(e.target.parentNode.id);
+  let key = e.target.parentNode.id;
   switch (key) {
     case 'rotate':
       // console.log('space'); // 按下空格键

@@ -224,6 +224,8 @@
 .controlBtn .key {
   position: absolute;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 .controlBtn .key.rotate {
   top: 0;
