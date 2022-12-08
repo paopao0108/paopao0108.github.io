@@ -16,12 +16,12 @@
   <meta name="author" content="Yu Pingping">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Express初识Express安装运行如下终端命令  npm i &amp;#101;&amp;#x78;&amp;#x70;&amp;#x72;&amp;#x65;&amp;#x73;&amp;#115;&amp;#64;&amp;#52;&amp;#x2e;&amp;#49;&amp;#x37;&amp;#x2e;&amp;#49;  创建基本的Web服务器12345678&#x2F;&#x2F; 1 导入expressconst express &#x3D; require(&amp;#x27;express&amp;#x27;)&#x2F;&#x2F; 2 创建">
+    <meta name="description" content="Express初识Express安装运行如下终端命令  npm i &amp;#101;&amp;#x78;&amp;#x70;&amp;#114;&amp;#x65;&amp;#x73;&amp;#115;&amp;#x40;&amp;#x34;&amp;#x2e;&amp;#x31;&amp;#x37;&amp;#46;&amp;#49;  创建基本的Web服务器12345678&#x2F;&#x2F; 1 导入expressconst express &#x3D; require(&amp;#x27;express&amp;#x27;)&#x2F;&#x2F; 2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Express">
 <meta property="og:url" content="https://yupaopao.cloud/2022/11/25/03-JS/NodeJS/%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6/Express/index.html">
 <meta property="og:site_name" content="个人站点">
-<meta property="og:description" content="Express初识Express安装运行如下终端命令  npm i &amp;#101;&amp;#x78;&amp;#x70;&amp;#x72;&amp;#x65;&amp;#x73;&amp;#115;&amp;#64;&amp;#52;&amp;#x2e;&amp;#49;&amp;#x37;&amp;#x2e;&amp;#49;  创建基本的Web服务器12345678&#x2F;&#x2F; 1 导入expressconst express &#x3D; require(&amp;#x27;express&amp;#x27;)&#x2F;&#x2F; 2 创建">
+<meta property="og:description" content="Express初识Express安装运行如下终端命令  npm i &amp;#101;&amp;#x78;&amp;#x70;&amp;#114;&amp;#x65;&amp;#x73;&amp;#115;&amp;#x40;&amp;#x34;&amp;#x2e;&amp;#x31;&amp;#x37;&amp;#46;&amp;#49;  创建基本的Web服务器12345678&#x2F;&#x2F; 1 导入expressconst express &#x3D; require(&amp;#x27;express&amp;#x27;)&#x2F;&#x2F; 2">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/06 前后端交互/image-20220529090403125.png">
 <meta property="article:published_time" content="2022-11-25T08:06:26.784Z">
@@ -264,7 +264,7 @@
                 
                 <h2 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h2><h3 id="初识Express"><a href="#初识Express" class="headerlink" title="初识Express"></a>初识Express</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>运行如下终端命令</p>
 <blockquote>
-<p>npm i <a href="mailto:&#101;&#x78;&#x70;&#x72;&#x65;&#x73;&#115;&#64;&#52;&#x2e;&#49;&#x37;&#x2e;&#49;">&#101;&#x78;&#x70;&#x72;&#x65;&#x73;&#115;&#64;&#52;&#x2e;&#49;&#x37;&#x2e;&#49;</a></p>
+<p>npm i <a href="mailto:&#101;&#x78;&#x70;&#114;&#x65;&#x73;&#115;&#x40;&#x34;&#x2e;&#x31;&#x37;&#46;&#49;">&#101;&#x78;&#x70;&#114;&#x65;&#x73;&#115;&#x40;&#x34;&#x2e;&#x31;&#x37;&#46;&#49;</a></p>
 </blockquote>
 <h4 id="创建基本的Web服务器"><a href="#创建基本的Web服务器" class="headerlink" title="创建基本的Web服务器"></a>创建基本的Web服务器</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-comment">// 1 导入express</span><br><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>)<br><span class="hljs-comment">// 2 创建web服务器</span><br><span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>()<br><span class="hljs-comment">// 3 调用 app.listen(端口号， 启动成功后的回调函数)，启动服务器</span><br>app.<span class="hljs-title function_">listen</span>(<span class="hljs-number">80</span>, <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;express server running at http://127.0.0.1&#x27;</span>)<br>&#125;)<br></code></pre></td></tr></table></figure>
 
