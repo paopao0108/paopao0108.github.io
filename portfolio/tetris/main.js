@@ -1,3 +1,13 @@
+if ('addEventListener' in document) {
+  document.addEventListener(
+    'DOMContentLoaded',
+    function () {
+      FastClick.attach(document.body);
+    },
+    false
+  );
+}
+
 // 声明全局变量
 const blockSize = 30;
 const colNum = 10;
