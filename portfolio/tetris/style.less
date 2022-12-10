@@ -104,10 +104,13 @@
     width: 150px;
     height: 100px;
     border-radius: 50%;
-    background-color: #53596E;
+    // background-color: #53596E;
+    width: @gameWidth * 1px;
+  height: 120px;
     .key {
       position: absolute;
       cursor: pointer;
+
       &.rotate {
         top: 0;
         left: 50%;
@@ -129,15 +132,19 @@
         transform: translateY(-50%);
       }
       button {
+        font-family: "iconfont";
         border: 0;
         width: 50px;
         height: 50px;
         text-align: center;
-        line-height: 36px;
-        font-size: 46px;
-        font-weight: 700;
-        color:#5DA0A6;;
-        background-color: transparent;
+        line-height: 50px;
+        font-size: 40px;
+        // font-weight: 700;
+        color:#fff;
+        background-color: #845EC2;
+        border-radius: 10px;
+        user-select: none;
+      // background-color: transparent;
       }
       // img {
       //   width: 45px;
