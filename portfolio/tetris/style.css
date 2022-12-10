@@ -120,16 +120,16 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.wrap .controlBtn .key img {
-  width: 45px;
-  height: 45px;
-}
-.wrap .controlBtn .key svg {
-  width: 40px;
-  height: 40px;
-}
-.wrap .controlBtn .key svg path {
-  fill: #5DA0A6;
+.wrap .controlBtn .key button {
+  border: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 46px;
+  font-weight: 700;
+  color: #5DA0A6;
+  background-color: transparent;
 }
 @media screen and (max-width: 1024px) {
   .wrap .controlBtn {

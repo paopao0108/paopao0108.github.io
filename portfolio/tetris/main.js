@@ -1,13 +1,3 @@
-if ('addEventListener' in document) {
-  document.addEventListener(
-    'DOMContentLoaded',
-    function () {
-      FastClick.attach(document.body);
-    },
-    false
-  );
-}
-
 // 声明全局变量
 const blockSize = 30;
 const colNum = 10;
@@ -219,8 +209,8 @@ function move(e) {
 
 function moveBymouse(e) {
   const activeModel = document.querySelector('.active-model');
-  console.log(e.target.parentNode.id);
-  let key = e.target.parentNode.id;
+  console.log(e.target.id);
+  let key = e.target.id;
   switch (key) {
     case 'rotate':
       // console.log('space'); // 按下空格键
