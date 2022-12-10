@@ -91,9 +91,6 @@
 .wrap .controlBtn {
   position: relative;
   display: none;
-  width: 150px;
-  height: 100px;
-  border-radius: 50%;
   width: 300px;
   height: 120px;
 }
