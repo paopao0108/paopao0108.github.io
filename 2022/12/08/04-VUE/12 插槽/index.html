@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../../img/fluid.png">
+  <link rel="icon" href="../../../../../img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Yu Pingping">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="插槽允许开发者在封装组件时，把不确定的、希望由用户指定的部分定义为插槽。简单来说可以认为是：组件封装期间，为用户预留的内容的占位符 基础用法1234567891011121314151617181920212223242526272829&lt;!-- Left组件 --&gt;&lt;template&gt;  &lt;div class&#x3D;&quot;left-container&quot;&amp;g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="12 插槽">
+<meta property="og:url" content="https://yupaopao.cloud/2022/12/08/04-VUE/12%20%E6%8F%92%E6%A7%BD/index.html">
+<meta property="og:site_name" content="个人站点">
+<meta property="og:description" content="插槽允许开发者在封装组件时，把不确定的、希望由用户指定的部分定义为插槽。简单来说可以认为是：组件封装期间，为用户预留的内容的占位符 基础用法1234567891011121314151617181920212223242526272829&lt;!-- Left组件 --&gt;&lt;template&gt;  &lt;div class&#x3D;&quot;left-container&quot;&amp;g">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/07 VUE2基础/image-20220809121343212.png">
+<meta property="article:published_time" content="2022-12-08T09:18:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T05:50:20.103Z">
+<meta property="article:author" content="Yu Pingping">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/07 VUE2基础/image-20220809121343212.png">
+  
+  
+  
+  <title>12 插槽 - 个人站点</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="../../../../../css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="../../../../../css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../../css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yupaopao.cloud","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="../../../../../js/utils.js" ></script>
+  <script  src="../../../../../js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="../../../../../index.html">
+      <strong>BLOG</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../../index.html">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../../archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../../categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../../about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/blog/img/bg6.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="12 插槽"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-12-08 17:18" pubdate>
+          2022年12月8日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          40 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">12 插槽</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h1><p>允许开发者在封装组件时，把不确定的、希望由用户指定的部分定义为插槽。简单来说可以认为是：组件封装期间，为用户预留的内容的占位符</p>
+<h2 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- Left组件 --&gt;<br>&lt;template&gt;<br>  &lt;div class=&quot;left-container&quot;&gt;<br>    &lt;h2&gt;Left组件&lt;/h2&gt;<br>    &lt;!-- 通过slot标签预留内容占位符 --&gt;<br>    &lt;slot&gt;后备内容&lt;/slot&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br><br>&lt;!-- App组件 --&gt;<br>&lt;template&gt;<br>  &lt;div class=&quot;app-container&quot;&gt;<br>    &lt;h1&gt;App组件&lt;/h1&gt;<br>    &lt;Left&gt;<br>      &lt;p&gt;这是插槽内容&lt;/p&gt;<br>    &lt;/Left&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br><br>&lt;script&gt;<br>import Left from &#x27;./components/Left.vue&#x27;;<br><br>export default &#123;<br>  name: &#x27;App&#x27;,<br>  components: &#123;<br>    Left<br>  &#125;<br>&#125;;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>如果Left组件中没有slot来预留内容占位符，那么 在App组件中的p标签里面的内容就会被丢弃，而无法显示</p>
+</li>
+<li><p>Left组件中slot标签里面的内容会在 Left组件的使用者(App组件)没有提供内容时 显示。如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;div class=&quot;app-container&quot;&gt;<br>    &lt;h1&gt;App组件&lt;/h1&gt;<br>    &lt;!-- Left中没有提供内容 --&gt;<br>    &lt;Left&gt;&lt;/Left&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h2><h3 id="为插槽指定name"><a href="#为插槽指定name" class="headerlink" title="为插槽指定name"></a>为插槽指定name</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- Left组件 --&gt;<br>&lt;template&gt;<br>  &lt;div class=&quot;left-container&quot;&gt;<br>    &lt;h2&gt;Left组件&lt;/h2&gt;<br>    &lt;!-- 通过slot标签预留内容占位符 --&gt;<br>    &lt;header&gt;<br>      &lt;!-- 为当前插槽指定了header的name --&gt;<br>      &lt;slot name=&quot;header&quot;&gt;&lt;/slot&gt;<br>    &lt;/header&gt;<br>    &lt;main&gt;<br>      &lt;!-- 没有指定时，插槽默认name为default --&gt;<br>      &lt;slot&gt;&lt;/slot&gt;<br>    &lt;/main&gt;<br>    &lt;footer&gt;<br>      &lt;!-- 为当前插槽指定了footer的name --&gt;<br>      &lt;slot name=&quot;footer&quot;&gt;&lt;/slot&gt;<br>    &lt;/footer&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="为具名插槽提供内容"><a href="#为具名插槽提供内容" class="headerlink" title="为具名插槽提供内容"></a>为具名插槽提供内容</h3><blockquote>
+<p>在&lt;template&gt;元素上使用v-slot指令，以v-slot参数的形式提供插槽名称，就可以为对应名称的插槽提供内容，如下：</p>
+</blockquote>
+<blockquote>
+<template v-slot:header>
+<h3>标题</h3>
+</template>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- App组件 --&gt;<br>&lt;template&gt;<br>  &lt;div class=&quot;app-container&quot;&gt;<br>    &lt;h1&gt;App组件&lt;/h1&gt;<br>    &lt;Left&gt;<br>      &lt;template v-slot:header&gt;<br>        &lt;h3&gt;标题&lt;/h3&gt;<br>      &lt;/template&gt;<br>      &lt;template v-slot:footer&gt;<br>        &lt;p&gt;页脚&lt;/p&gt;<br>      &lt;/template&gt;<br>      &lt;template v-slot: default&gt;<br>        &lt;div&gt;正文正文正文正文&lt;/div&gt;<br>      &lt;/template&gt;<br>    &lt;/Left&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<img src="https://oss-pic-bucket.oss-cn-shanghai.aliyuncs.com/img/07 VUE2基础/image-20220809121343212.png" srcset="/img/loading.gif" lazyload alt="image-20220809121343212" style="zoom:80%;" />
+
+
+
+<h3 id="具名插槽的简写"><a href="#具名插槽的简写" class="headerlink" title="具名插槽的简写"></a>具名插槽的简写</h3><blockquote>
+<p><code>v-slot：</code> 可以简写为 <code>#</code></p>
+</blockquote>
+<p>如下所示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template #header&gt;<br>	&lt;h3&gt;标题&lt;/h3&gt;<br>&lt;/template&gt;<br>&lt;template #footer&gt;<br>	&lt;p&gt;页脚&lt;/p&gt;<br>&lt;/template&gt;<br>&lt;template #default&gt;<br>	&lt;div&gt;正文正文正文正文&lt;/div&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h2><p><strong>数据在组件的自身，但根据数据生成的结构需要组件的使用者来决定</strong></p>
+<blockquote>
+<p>&lt;slot :user=”userinfo” :msg=”msg”&gt;&lt;/slot&gt;</p>
+</blockquote>
+<h3 id="预留作用域插槽"><a href="#预留作用域插槽" class="headerlink" title="预留作用域插槽"></a>预留作用域插槽</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- Left组件 --&gt;<br>&lt;template&gt;<br>  &lt;div class=&quot;left-container&quot;&gt;<br>    &lt;h2&gt;Left组件&lt;/h2&gt;<br>      <br>    &lt;main&gt;<br>      &lt;!-- 这是一个作用域插槽 --&gt;<br>      &lt;slot :user=&quot;userinfo&quot; :msg=&quot;msg&quot;&gt;&lt;/slot&gt;<br>    &lt;/main&gt;<br>      <br>  &lt;/div&gt;<br>&lt;/template&gt;<br><br>&lt;script&gt;<br>export default &#123; <br>  data() &#123;<br>    return &#123;<br>      userinfo: &#123;<br>        name: &#x27;zs&#x27;,<br>        age: 18<br>      &#125;,<br>      msg: &#x27;这是一段文字&#x27;<br>    &#125;;<br>  &#125;<br>&#125;;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="使用作用域插槽"><a href="#使用作用域插槽" class="headerlink" title="使用作用域插槽"></a>使用作用域插槽</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- App组件 --&gt;<br>&lt;template&gt;<br>  &lt;div class=&quot;app-container&quot;&gt;<br>    &lt;h1&gt;App组件&lt;/h1&gt;<br>    &lt;Left&gt;<br>        <br>      &lt;template #default=&quot;&#123; user, msg &#125;&quot;&gt;<br>        &lt;!-- 若没有 &#123;&#125;， 那么传过来的数据是个对象 --&gt;<br>        &lt;!-- 此处的 &#123; user, msg &#125; 相当于把传过来的数据对象 解构了--&gt;<br>        &lt;div&gt;<br>          正文正文正文正文<br>          &lt;p&gt;&#123;&#123; user &#125;&#125;&lt;/p&gt;<br>          &lt;p&gt;&#123;&#123; user.name &#125;&#125;&lt;/p&gt;<br>          &lt;p&gt;&#123;&#123; msg &#125;&#125;&lt;/p&gt;<br>        &lt;/div&gt;<br>      &lt;/template&gt;<br>		<br><br>    &lt;/Left&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意</p>
+<ul>
+<li><p>若没有解构传过来的数据，即 #default=”user, msg”，则的内容是：</p>
+<p>{ “user”: { “name”: “zs”, “age”: 18 }, “msg”: “这是一段文字” }</p>
+</li>
+<li><p>当通过解构 #default=”{ user, msg }” 后，就可以直接拿到user和msg里面的内容，则的内容是：{ {“name”: “zs”, “age”: 18 }</p>
+</li>
+</ul>
+</blockquote>
+<p>作用域插槽在App组件中的几种用法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;category title=&quot;游戏&quot;&gt;<br>    &lt;template scope=&quot;joney&quot;&gt;<br>		&lt;ul&gt;<br>    		&lt;li v-for=&quot;(g,index) in joney.games&quot; :key=&quot;index&quot;&gt;&#123;&#123;g&#125;&#125;&lt;/li&gt;<br>   		&lt;/ul&gt;<br>    &lt;/template&gt;<br>&lt;/category&gt;<br><br>&lt;category title=&quot;游戏&quot;&gt;<br>    &lt;template scope=&quot;&#123;games&#125;&quot;&gt;<br>		&lt;ol&gt;<br>    		&lt;li style=&quot;color:red&quot; v-for=&quot;(g,index) in games&quot; :key=&quot;index&quot;&gt;&#123;&#123;g&#125;&#125;&lt;/li&gt;<br>    	&lt;/ol&gt;<br>    &lt;/template&gt;<br>&lt;/category&gt;<br><br>&lt;category title=&quot;游戏&quot;&gt;<br>    &lt;template slot-scope=&quot;&#123;games&#125;&quot;&gt;<br>		&lt;h4 v-for=&quot;(g,index) in games&quot; :key=&quot;index&quot;&gt;&#123;&#123;g&#125;&#125;&lt;/h4&gt;<br>    &lt;/template&gt;<br>&lt;/category&gt;<br><br>&lt;category title=&quot;游戏&quot;&gt;<br>    &lt;template v-slot=&quot;&#123;games&#125;&quot;&gt;<br>		&lt;h4 v-for=&quot;(g,index) in games&quot; :key=&quot;index&quot;&gt;&#123;&#123;g&#125;&#125;&lt;/h4&gt;<br>    &lt;/template&gt;<br>&lt;/category&gt;<br></code></pre></td></tr></table></figure>
+
+<p>前两种已废弃，推荐使用 <code>v-slot</code>, games 是组件category提供的数据，数据生成的结构有使用者App组件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;游戏&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot</span>=<span class="hljs-string">&quot;&#123;games&#125;&quot;</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(g,index) in games&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span>&gt;</span>&#123;&#123;g&#125;&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">category</span>&gt;</span><br></code></pre></td></tr></table></figure>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="../../../../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>12 插槽</div>
+      <div>https://yupaopao.cloud/2022/12/08/04-VUE/12 插槽/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Yu Pingping</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年12月8日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="../14%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A42.0/" title="14 自定义指令2.0">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">14 自定义指令2.0</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="../11%20%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6/" title="11 动态组件">
+                        <span class="hidden-mobile">11 动态组件</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="../../../../../js/events.js" ></script>
+<script  src="../../../../../js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="../../../../../js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="../../../../../js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="../../../../../js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

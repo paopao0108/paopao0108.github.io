@@ -23,8 +23,8 @@
 <meta property="og:site_name" content="个人站点">
 <meta property="og:description" content="变量123456&lt;script&gt;    &#x2F;&#x2F; 用户输入姓名，并存入变量myname中    var myname &#x3D; prompt(&amp;#x27;请输入您的名字&amp;#x27;)    &#x2F;&#x2F; 输出这个姓名    alert(myname)&lt;&#x2F;script&gt;    变量命名规范 由字母、数字、下划线、美元符号($)组成。  严格区分大小写  不能以数字开头  不能是关键字、保留字。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-25T07:16:45.772Z">
-<meta property="article:modified_time" content="2022-12-11T02:48:39.233Z">
+<meta property="article:published_time" content="2022-11-25T07:16:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T05:50:19.910Z">
 <meta property="article:author" content="Yu Pingping">
 <meta name="twitter:card" content="summary">
   
@@ -206,7 +206,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.8k 字
+          6k 字
         
       </span>
     
@@ -217,7 +217,7 @@
         
         
         
-          49 分钟
+          50 分钟
         
       </span>
     
@@ -292,7 +292,12 @@
 <p>null属于特殊引用类型</p>
 <p><strong>引用类型的值是按引用访问的</strong></p>
 </blockquote>
-<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><h3 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h3><h4 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h4><p><strong>1 new Array()</strong></p>
+<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><h4 id="遍历方式"><a href="#遍历方式" class="headerlink" title="遍历方式"></a>遍历方式</h4><p>Object.keys() 获取对象的所有属性，返回一个 存放对象key的数组</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> objA = &#123;<br>    <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;lihua&#x27;</span>,<br>    <span class="hljs-attr">age</span>: <span class="hljs-number">18</span><br>&#125;<br><span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(objA).<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> &#123;<br>    <span class="hljs-comment">// 可以对 objA 每一项进行程序操作</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(objA[item])<br>&#125;);	<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h3><h4 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h4><p><strong>1 new Array()</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 利用new Array() 创建新数组</span><br>    <span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>();<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> arr);<br><br></code></pre></td></tr></table></figure>
 
 <p><strong>2 字面量创建</strong></p>

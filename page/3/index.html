@@ -211,15 +211,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/%E6%A6%82%E8%BF%B0%E4%B8%8E%E5%AE%89%E8%A3%85/" target="_self">
-          概述与安装
+        <a href="../../2022/12/08/04-VUE/VUE3/setup/" target="_self">
+          setup
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/%E6%A6%82%E8%BF%B0%E4%B8%8E%E5%AE%89%E8%A3%85/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/VUE3/setup/" target="_self">
         <div>
-          概述Vuex是什么Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 + 库。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化 使用Vuex统一管理数据的好处 能够在vuex中集中管理共享的数据，易于开发和后期维护 能够高效地实现组件之间的数据共享，提高开发效率 存储在vuex中的数据都是响应式的，能够实时保持数据与页面的同步  什么数据适合存
+          setup setup执行的时机  在beforeCreate之前执行一次，this是undefined。   setup的参数  props：值为对象，包含：组件外部传递过来，且组件内部声明接收了的属性。 context：上下文对象 attrs: 值为对象，包含：组件外部传递过来，但没有在props配置中声明的属性, 相当于 this.$attrs。 slots: 收到的插槽内容, 相当于 th
         </div>
       </a>
 
@@ -227,8 +227,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
+            <time datetime="2022-12-08 22:48" pubdate>
+              2022-12-08
             </time>
           </div>
         
@@ -248,7 +248,7 @@
   
     <span>></span>
     
-  <a href="../../categories/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" class="category-chain-item">Vuex状态管理</a>
+  <a href="../../categories/04-VUE/VUE3/" class="category-chain-item">VUE3</a>
   
   
 
@@ -272,15 +272,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" target="_self">
-          核心概念
+        <a href="../../2022/12/08/04-VUE/VUE3/reactive%E5%AF%B9%E6%AF%94ref/" target="_self">
+          reactive对比ref
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/VUE3/reactive%E5%AF%B9%E6%AF%94ref/" target="_self">
         <div>
-          State提供唯一的公共数据源，所有共享的数据都要统一放到Store的State中进行存储、 创建State数据1234// 创建store数据源，提供唯一公共资源const store = new Vuex.Store(&#123;    state: &#123; count: 0 &#125;&#125;)    访问State数据组件访问State中数据方式： 方式1 this.$stor
+          ref函数 作用: 定义一个响应式的数据 语法: const xxx = ref(initValue)  创建一个包含响应式数据的引用对象（reference对象，简称ref对象）。 JS中操作数据： xxx.value 模板中读取数据: 不需要.value，直接：&lt;div&gt;&#123;&#123;xxx&#125;&#125;&lt;/div&gt;   备注： 接收的数据可以是：基
         </div>
       </a>
 
@@ -288,8 +288,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
+            <time datetime="2022-12-08 22:47" pubdate>
+              2022-12-08
             </time>
           </div>
         
@@ -309,7 +309,7 @@
   
     <span>></span>
     
-  <a href="../../categories/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" class="category-chain-item">Vuex状态管理</a>
+  <a href="../../categories/04-VUE/VUE3/" class="category-chain-item">VUE3</a>
   
   
 
@@ -333,15 +333,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" target="_self">
-          命名空间
+        <a href="../../2022/12/08/04-VUE/vue2%20VS%20vue3/" target="_self">
+          vue2 VS vue3
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/vue2%20VS%20vue3/" target="_self">
         <div>
-          命名空间开启命名空间当有多个这样的js文件时，就可以引起数据冲突，因此需要开启命名空间，由此即使出现函数名重叠，也不会引起冲突  namespaced: true    // 开启命名空间  123456export default &#123;    namespaced: true,    state: &#123;&#125;,    mutations: &#123;&#125;,
+          vue2 VS vue3生命周期vue2的beforeDestroyed 和 destroyed 改为了 vue3的 beforeUnmounted 和 unmounted vue3生命周期钩子函数对应关系  beforeCreate===&gt;setup() created===&gt;setup() beforeMount ===&gt;onBeforeMount mounted===&gt
         </div>
       </a>
 
@@ -349,8 +349,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
+            <time datetime="2022-12-08 19:27" pubdate>
+              2022-12-08
             </time>
           </div>
         
@@ -368,9 +368,293 @@
   <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
   
   
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="../../2022/12/08/04-VUE/async%E5%92%8Cawait/" target="_self">
+          async和await
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/async%E5%92%8Cawait/" target="_self">
+        <div>
+          async和await 如果在 function 中使用了 await，则 function 必须被 async 修饰  在 async 方法中，第一个 await 之前的代码会同步执行，await 之后的代码会异步执行  注意：是await之后的所有代码都会被异步执行
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-08 18:43" pubdate>
+              2022-12-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="../../2022/12/08/04-VUE/Promise/" target="_self">
+          Promise
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/Promise/" target="_self">
+        <div>
+          Promise回调地狱123456789101112setTimeout(() =&gt; &#123;  // 第一层回调  console.log(&#x27;延时1s后输出&#x27;);  setTimeout(() =&gt; &#123;    // 第二层回调    console.log(&#x27;延时2s后输出&#x27;);    setTimeout(() =&gt; &#
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-08 18:42" pubdate>
+              2022-12-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="../../2022/12/08/03-JS/JS%E8%AF%AD%E6%B3%95/WebAPI/axios/" target="_self">
+          axios
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/03-JS/JS%E8%AF%AD%E6%B3%95/WebAPI/axios/" target="_self">
+        <div>
+          axios axios一个专注于请求的库 注意：axios()方法返回的是一个 Promise 实例  发起GET请求123456789101112131415// 1. 调用 axios 方法得到的返回值是 Promise 对象axios(&#123;    // 请求方式    method: &#x27;GET&#x27;,    // 请求的地址    url: &#x27;http://
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-08 18:36" pubdate>
+              2022-12-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="../../categories/03-JS/" class="category-chain-item">03-JS</a>
+  
+  
     <span>></span>
     
-  <a href="../../categories/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" class="category-chain-item">Vuex状态管理</a>
+  <a href="../../categories/03-JS/JS%E8%AF%AD%E6%B3%95/" class="category-chain-item">JS语法</a>
+  
+  
+    <span>></span>
+    
+  <a href="../../categories/03-JS/JS%E8%AF%AD%E6%B3%95/WebAPI/" class="category-chain-item">WebAPI</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="../../2022/12/08/04-VUE/nextTick/" target="_self">
+          nextTick
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/nextTick/" target="_self">
+        <div>
+          nextTick$nextTick(callback) 会把callback回调函数的执行 推迟到 下一个DOM更新周期 之后再执行
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-08 18:32" pubdate>
+              2022-12-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="../../2022/12/08/03-JS/JS%E8%AF%AD%E6%B3%95/%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" target="_self">
+          常用技巧
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/03-JS/JS%E8%AF%AD%E6%B3%95/%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" target="_self">
+        <div>
+          常用技巧反转字符串1message.split(&#x27;&#x27;).reverse().join(&#x27;&#x27;);
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-08 17:51" pubdate>
+              2022-12-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="../../categories/03-JS/" class="category-chain-item">03-JS</a>
+  
+  
+    <span>></span>
+    
+  <a href="../../categories/03-JS/JS%E8%AF%AD%E6%B3%95/" class="category-chain-item">JS语法</a>
   
   
 
@@ -394,15 +678,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/Vuex%E5%9C%A8vue2%E4%B8%8Evue3%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
-          Vuex在vue2与vue3的区别
+        <a href="../../2022/12/08/04-VUE/16%20%E6%89%A9%E5%B1%95VUE%E5%8A%9F%E8%83%BD/" target="_self">
+          16 扩展VUE功能
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/Vuex%E5%9C%A8vue2%E4%B8%8Evue3%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/16%20%E6%89%A9%E5%B1%95VUE%E5%8A%9F%E8%83%BD/" target="_self">
         <div>
-          Vuex在vue2与vue3的区别安装1npm install vuex –save    导入vuex vue2  ~~~jsimport Vuex from ‘vuex’1234567    * vue3  * ~~~js    import &#123; createStore &#125; from &#x27;vuex&#x27;    创建仓库 vue2  通过 new Vuex.St
+          扩展vue功能通过定义注册全局组件、自定义指令、挂载原型方法扩招VUE功能，就是插件 vue2插件写法要素：导出一个对象，有install函数，默认传入 Vue 构造函数，Vue 基础之上扩展 vue3插件写法要素：导入出一个对象，有install函数，默认传入 app 应用实例，app 基础之上扩展,（vue3没有全局过滤器） 全局组件注册全局组件的组件一定要有name属性 3.0版本在app上
         </div>
       </a>
 
@@ -410,8 +694,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
+            <time datetime="2022-12-08 17:45" pubdate>
+              2022-12-08
             </time>
           </div>
         
@@ -428,13 +712,6 @@
         
   <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
   
-  
-    <span>></span>
-    
-  <a href="../../categories/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" class="category-chain-item">Vuex状态管理</a>
-  
-  
-
   
 
       </span>
@@ -455,15 +732,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/Vuex/" target="_self">
-          Vuex
+        <a href="../../2022/12/08/04-VUE/14%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A42.0/" target="_self">
+          14 自定义指令2.0
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/Vuex/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/08/04-VUE/14%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A42.0/" target="_self">
         <div>
-          Vuex核心概念 State Mutation Action Getter   模块化&amp;命名空间命名空间开启命名空间当有多个这样的js文件时，就可以引起数据冲突，因此需要开启命名空间，由此即使出现函数名重叠，也不会引起冲突  namespaced: true    // 开启命名空间  123456export default &#123;    namespaced: true,
+          自定义指令私有自定义指令在directives节点下声明 私有自定义指令 1234567891011121314151617181920212223&lt;template&gt;  &lt;div class=&quot;app-container&quot;&gt;    &lt;!-- 使用自定义指令color时，需要在前加上 v- 前缀 --&gt;    &lt;h1 v-color&g
         </div>
       </a>
 
@@ -471,8 +748,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
+            <time datetime="2022-12-08 17:43" pubdate>
+              2022-12-08
             </time>
           </div>
         
@@ -489,318 +766,6 @@
         
   <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
   
-  
-    <span>></span>
-    
-  <a href="../../categories/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" class="category-chain-item">Vuex状态管理</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/Vue3%E4%B8%AD%E7%9A%84Vuex/" target="_self">
-          Vue3中的Vuex
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/Vue3%E4%B8%AD%E7%9A%84Vuex/" target="_self">
-        <div>
-          Vue3中的Vuex 基本使用 创建仓库 12// store/index.jsimport &#123; createStore &#125; from &#x27;vuex&#x27; 将store对象挂载到vue实例中 1234567// main.jsimport &#123; createApp &#125; from &#x27;vue&#x27;;import App from &#
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
-  
-  
-    <span>></span>
-    
-  <a href="../../categories/04-VUE/Vuex%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" class="category-chain-item">Vuex状态管理</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="../../2022/12/11/04-VUE/VueRouter/07%20%E5%AF%BC%E8%88%AA%E5%AE%88%E5%8D%AB/" target="_self">
-          07 导航守卫
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/VueRouter/07%20%E5%AF%BC%E8%88%AA%E5%AE%88%E5%8D%AB/" target="_self">
-        <div>
-          导航守卫可以控制路由的访问权限。 如：在未登录情况下，要访问后台主页，利用导航守卫来检测是否登录，未登录就强制跳转到登录页面，登录了才能访问后台主页 全局前置守卫通过路由实例对象的 beforeEach() 方法，即可声明全局前置守卫  在router/index.js中添加 1234567891011121314151617// 全局前置守卫router.beforeEach((to, from
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
-  
-  
-    <span>></span>
-    
-  <a href="../../categories/04-VUE/VueRouter/" class="category-chain-item">VueRouter</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="../../2022/12/11/04-VUE/VueRouter/06%20%E7%BC%96%E7%A8%8B%E5%BC%8F%E5%AF%BC%E8%88%AA/" target="_self">
-          06 编程式导航
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/VueRouter/06%20%E7%BC%96%E7%A8%8B%E5%BC%8F%E5%AF%BC%E8%88%AA/" target="_self">
-        <div>
-          编程式导航声明式&amp;编程式什么是声明式导航？  在浏览器中，点击链接实现导航的方式。如：点击&lt;a&gt;链接、点击&lt;router-link&gt;  什么是编程式导航？  在浏览器中，调用API方法实现导航的方式。如：调用location.href 跳转到新页面的方法  官网： https://router.vuejs.org/zh/guide/essentials/naviga
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
-  
-  
-    <span>></span>
-    
-  <a href="../../categories/04-VUE/VueRouter/" class="category-chain-item">VueRouter</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="../../2022/12/11/04-VUE/VueRouter/05%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8C%B9%E9%85%8D/" target="_self">
-          05 动态路由匹配
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/VueRouter/05%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8C%B9%E9%85%8D/" target="_self">
-        <div>
-          动态路由匹配什么是动态路由？  把Hash地址中的可变的部分定义为参数项，从而提供路由规则的复用性  没有动态路由时： 1234// router/index.js 文件中的路由规则&#123; path: &#x27;/movie/1&#x27;, component: Movie &#125;,&#123; path: &#x27;/movie/2&#x27;, component: Movi
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
-  
-  
-    <span>></span>
-    
-  <a href="../../categories/04-VUE/VueRouter/" class="category-chain-item">VueRouter</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="../../2022/12/11/04-VUE/VueRouter/04%20%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1/" target="_self">
-          04 嵌套路由
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="../../2022/12/11/04-VUE/VueRouter/04%20%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1/" target="_self">
-        <div>
-          嵌套路由声明子路由链接和占位符 路由链接 router-link 路由的占位符 router-view  12345678910111213141516171819202122232425&lt;!-- App组件 --&gt;&lt;template&gt;  &lt;div class=&quot;app-container&quot;&gt;    &lt;h1&gt;App组件&lt;/h
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-11 10:36" pubdate>
-              2022-12-11
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../categories/04-VUE/" class="category-chain-item">04-VUE</a>
-  
-  
-    <span>></span>
-    
-  <a href="../../categories/04-VUE/VueRouter/" class="category-chain-item">VueRouter</a>
-  
-  
-
   
 
       </span>
@@ -819,7 +784,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="../2/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="../../">1</a><a class="page-number" href="../2/#board">2</a><span class="page-number current">3</span><a class="page-number" href="../4/#board">4</a><a class="page-number" href="../5/#board">5</a><span class="space">&hellip;</span><a class="page-number" href="../14/#board">14</a><a class="extend next" rel="next" href="../4/#board"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="../2/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="../../">1</a><a class="page-number" href="../2/#board">2</a><span class="page-number current">3</span><a class="page-number" href="../4/#board">4</a><a class="page-number" href="../5/#board">5</a><span class="space">&hellip;</span><a class="page-number" href="../15/#board">15</a><a class="extend next" rel="next" href="../4/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 
