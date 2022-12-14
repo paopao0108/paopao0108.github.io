@@ -169,14 +169,14 @@ new Glide(testimonialCarousel, {
 }).mount();
 
 /* 解决手机微信video视频无法播放的问题 */
-videos = document.querySelectorAll('video');
-document.addEventListener(
-  'WeixinJSBridgeReady',
-  function () {
-    videos.forEach(video => {
-      video.play();
-      // video.pause();
-    });
-  },
-  false
-);
+// videos = document.querySelectorAll('video');
+// document.addEventListener(
+//   'WeixinJSBridgeReady',
+//   function () {
+//     videos.forEach(video => {
+//       video.play();
+//       // video.pause();
+//     });
+//   },
+//   false
+// );
