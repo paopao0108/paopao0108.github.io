@@ -175,7 +175,7 @@ document.addEventListener(
   function () {
     videos.forEach(video => {
       video.play();
-      video.pause();
+      // video.pause();
     });
   },
   false
