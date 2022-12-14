@@ -167,3 +167,16 @@ new Glide(testimonialCarousel, {
     // breakpoints 外面设置的就是在 992px 以上的屏幕中
   }
 }).mount();
+
+/* 解决手机微信video视频无法播放的问题 */
+videos = document.querySelectorAll('video');
+document.addEventListener(
+  'WeixinJSBridgeReady',
+  function () {
+    videos.forEach(video => {
+      video.play();
+      video.pause();
+    });
+  },
+  false
+);
